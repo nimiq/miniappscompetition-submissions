@@ -1,0 +1,33 @@
+app_name: VeriLock
+category: Productivity
+tagline: Sign together. Prove forever.
+description: Verilock lets landlords, freelancers, and small teams sign PDF
+  agreements with Nimiq wallet-backed signatures, then permanently anchor the
+  document fingerprint on-chain. Your PDF never leaves your device - anyone with
+  a copy can verify it matches the sealed record.
+pricing: Freemium
+repo_url: https://github.com/harmssam/verilock
+demo_url: https://verilock.online/
+video_url: https://ComingSoon.com
+contact_email: harmssam@gmail.com
+team_name: null
+team_members: null
+x_account: harmssam
+builder_story: "I built VeriLock after seeing how rental and freelance
+  agreements get disputed months later - with no easy way to prove everyone
+  signed the same document. Existing e-sign tools store your PDFs on their
+  servers and charge monthly fees. VeriLock takes a different approach:
+  fingerprint the PDF locally, collect wallet-backed signatures from each party,
+  and anchor the final hash on the Nimiq blockchain with a single seal
+  transaction. The file stays on your device, but the proof is permanent and
+  publicly verifiable. I used Cursor and Grok to ship the full stack - React
+  mini app, Express API, SQLite on Railway - in time for the competition."
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: harmssam
+submitted_at: 2026-07-07T00:27:55.091Z
