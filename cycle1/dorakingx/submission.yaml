@@ -1,0 +1,24 @@
+app_name: Roundtrip
+category: Productivity
+tagline: Split the trip. Settle in a tap.
+description: Roundtrip tracks shared expenses, finds the shortest settlement
+  path, and lets friends settle in NIM inside Nimiq Pay—no accounts, awkward
+  math, or separate payment app required.
+pricing: Free
+repo_url: https://github.com/dorakingx/nimiq-roundtrip
+demo_url: https://nimiq-roundtrip.vercel.app/
+video_url: https://youtube.com/shorts/VW2VYI5OGyk
+contact_email: hatatomo0310@gmail.com
+team_name: Doraking
+team_members: null
+x_account: doraking_en
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: dorakingx
+submitted_at: 2026-07-10T12:36:19.329Z
