@@ -5,7 +5,10 @@ on:
     types: [opened, synchronize, reopened]
     branches: [main]
 
-# Least-privilege: read the code, write PR comments, set commit statuses.
+# Least-privilege: read the code, write PR comments. We never call the
+# Statuses API ourselves — Actions creates the gate check-runs automatically
+# from these jobs' pass/fail — so `statuses: read` is granted (not `write`)
+# purely as least-privilege headroom, not because we set commit statuses.
 permissions:
   contents: read
   pull-requests: write

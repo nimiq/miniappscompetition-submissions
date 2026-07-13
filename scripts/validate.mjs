@@ -25,7 +25,17 @@ const readFile = (p) => {
 const listDir = (d) => {
   const abs = `${root}/${d}`
   if (!existsSync(abs)) return []
-  return readdirSync(abs).filter((f) => statSync(`${abs}/${f}`).isFile())
+  const out = []
+  const walk = (rel) => {
+    const dirAbs = rel ? `${abs}/${rel}` : abs
+    for (const entry of readdirSync(dirAbs, { withFileTypes: true })) {
+      const entryRel = rel ? `${rel}/${entry.name}` : entry.name
+      if (entry.isDirectory()) walk(entryRel)
+      else if (entry.isFile()) out.push(entryRel)
+    }
+  }
+  walk('')
+  return out
 }
 
 function changedPaths() {

@@ -61,7 +61,46 @@ test('undeclared extra file fails', () => {
   assert.match(r.details.join(' '), /sneaky\.txt/)
 })
 
+test('undeclared file nested in a subdirectory fails (recursive listDir)', () => {
+  // The real listDir (in validate.mjs) walks recursively and yields relative
+  // paths like "extra/junk.bin" for nested files. A bare-filename allowlist
+  // never matches a path containing "/", so this must be flagged even though
+  // it's not directly inside the submission folder.
+  const r = checkImages(ctx({ ...goodFiles, 'cycle1/foo/extra/junk.bin': Buffer.from('hi') }, baseValue))
+  assert.equal(r.ok, false)
+  assert.match(r.details.join(' '), /extra\/junk\.bin/)
+})
+
 test('unsafe filename in manifest fails', () => {
   const r = checkImages(ctx(goodFiles, { ...baseValue, icon: '../evil.png' }))
   assert.equal(r.ok, false)
+})
+
+test('too few screenshots fails with a count message', () => {
+  const files = { ...goodFiles }
+  delete files['cycle1/foo/screenshot-2.png']
+  delete files['cycle1/foo/screenshot-3.png']
+  const value = { ...baseValue, screenshots: ['screenshot-1.png'] }
+  const r = checkImages(ctx(files, value))
+  assert.equal(r.ok, false)
+  assert.match(r.details.join(' '), /3-5 screenshots/i)
+})
+
+test('too many screenshots fails with a count message', () => {
+  const files = {
+    ...goodFiles,
+    'cycle1/foo/screenshot-4.png': PNG,
+    'cycle1/foo/screenshot-5.png': PNG,
+    'cycle1/foo/screenshot-6.png': PNG,
+  }
+  const value = {
+    ...baseValue,
+    screenshots: [
+      'screenshot-1.png', 'screenshot-2.png', 'screenshot-3.png',
+      'screenshot-4.png', 'screenshot-5.png', 'screenshot-6.png',
+    ],
+  }
+  const r = checkImages(ctx(files, value))
+  assert.equal(r.ok, false)
+  assert.match(r.details.join(' '), /3-5 screenshots/i)
 })

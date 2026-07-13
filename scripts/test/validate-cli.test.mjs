@@ -1,7 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
-import { readFileSync, rmSync, existsSync } from 'node:fs'
+import { readFileSync, rmSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 
@@ -53,6 +53,37 @@ test('structural phase exits non-zero when a file is outside the folder', () => 
   assert.ok(threw, 'expected non-zero exit')
   const jsonPath = resolve(fixtureRoot, 'findings-structural.json')
   if (existsSync(jsonPath)) rmSync(jsonPath)
+})
+
+test('structural phase fails on an undeclared file nested in a subdirectory (real recursive listDir)', () => {
+  const changed = [
+    'cycle1/foo/submission.yaml',
+    'cycle1/foo/icon.png',
+    'cycle1/foo/thumbnail.png',
+    'cycle1/foo/screenshot-1.png',
+    'cycle1/foo/screenshot-2.png',
+    'cycle1/foo/screenshot-3.png',
+  ]
+  const nestedDir = resolve(fixtureRoot, 'cycle1/foo/extra')
+  const jsonPath = resolve(fixtureRoot, 'findings-structural.json')
+  mkdirSync(nestedDir, { recursive: true })
+  writeFileSync(resolve(nestedDir, 'junk.bin'), 'junk')
+  try {
+    let threw = false
+    let out = ''
+    try {
+      runStructural(changed)
+    } catch (err) {
+      threw = true
+      out = String(err.stdout || '')
+      assert.equal(err.status, 1)
+    }
+    assert.ok(threw, 'expected non-zero exit')
+    assert.match(out, /extra\/junk\.bin/)
+  } finally {
+    rmSync(nestedDir, { recursive: true, force: true })
+    if (existsSync(jsonPath)) rmSync(jsonPath)
+  }
 })
 
 test('bad usage exits 2', () => {

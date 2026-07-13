@@ -16,7 +16,7 @@ export function renderComment({ dir, findings }) {
   ]
   for (const f of findings) {
     lines.push(`${iconFor(f)} ${f.label}`)
-    if (!f.ok) for (const d of f.details) lines.push(`  - ${d}`)
+    if (!f.ok) for (const d of (f.details || [])) lines.push(`  - ${d}`)
   }
 
   const blockingFailed = findings.some((f) => isBlocking(f) && !f.ok)

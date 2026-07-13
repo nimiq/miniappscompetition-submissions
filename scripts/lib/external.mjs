@@ -62,6 +62,7 @@ async function ghGet(path, token, fetchImpl) {
       Accept: 'application/vnd.github+json',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     },
+    signal: AbortSignal.timeout(15000),
   })
   if (res.status >= 500) throw new Error(`GitHub API ${res.status}`)
   const body = res.status === 200 ? await res.json() : null
@@ -126,7 +127,7 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
   } else {
     try {
       const res = await withRetry(async () => {
-        const r = await fetchImpl(demoUrl, { method: 'GET', redirect: 'follow' })
+        const r = await fetchImpl(demoUrl, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(15000) })
         if (r.status >= 500) throw new Error(`status ${r.status}`)
         return r
       }, { retries, sleep })
