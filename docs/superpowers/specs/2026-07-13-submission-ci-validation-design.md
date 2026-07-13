@@ -104,23 +104,28 @@ CI can (github.com).
 5. Every referenced image (`icon`, `thumbnail`, each `screenshots[]`) exists as a file in the
    folder; its magic-byte-sniffed type is allowed for its slot; each ≤2 MB; total ≤14 MB;
    3–5 screenshots.
-6. The folder contains **no undeclared files** — its contents are exactly `submission.yaml`
-   plus the referenced images. (Blocks smuggling stray/extra files.)
+6. The folder contains **no undeclared files** — its contents are exactly `submission.yaml`,
+   `README.md` and the referenced images. (Blocks smuggling stray/extra files.)
+7. **`cycleN/<login>/README.md` exists.** The portal renders the manifest to a human-readable
+   `README.md` and commits it beside `submission.yaml` (GitHub auto-renders it when browsing
+   the folder, and the PR body links it at the commit SHA) — so a folder without one did not
+   come from the form. **Presence only:** the render is not re-derived and compared here.
+   `submission.yaml` remains the source of truth; the README is the derived human view.
 
 ### External liveness checks (job `external`, network, retried)
 
-7. **`repo_url` is a public, anonymously-cloneable git repo on any host** — verified with
+8. **`repo_url` is a public, anonymously-cloneable git repo on any host** — verified with
    `git ls-remote <repo_url>` (run with `GIT_TERMINAL_PROMPT=0` so a private repo fails fast
    instead of prompting for credentials). Exit 0 → public. Host-agnostic; **blocking**.
-8. **MIT license:**
+9. **MIT license:**
    - If `repo_url` is a `github.com` repo → license SPDX id must be exactly **`MIT`** (GitHub API
      `GET /repos/{owner}/{repo}/license` → `license.spdx_id === "MIT"`). Strict, no LICENSE-text
      fallback. **Blocking.**
    - Otherwise (GitLab, Bitbucket, Codeberg, self-hosted, …) → CI cannot auto-verify the license,
      so it emits a **non-blocking `notice`** ("license not auto-verified — reviewer must confirm
      MIT") rendered with ⚠️. Does not gate the merge.
-9. `demo_url` returns HTTP **200** (follow redirects; `GET`). **Blocking.**
-10. **`video_url` is a public demo video on YouTube, Loom, or Vimeo. Blocking.** The submit page
+10. `demo_url` returns HTTP **200** (follow redirects; `GET`). **Blocking.**
+11. **`video_url` is a public demo video on YouTube, Loom, or Vimeo. Blocking.** The submit page
     requires a demo video. Two steps: (a) the URL host must be YouTube (`youtube.com`,
     `youtu.be`, `m.youtube.com`, `youtube-nocookie.com`), Loom (`loom.com`), or Vimeo
     (`vimeo.com`, `player.vimeo.com`) — `www.` is normalized off; (b) the platform's **oEmbed**

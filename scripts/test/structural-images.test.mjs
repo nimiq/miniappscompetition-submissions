@@ -29,6 +29,12 @@ test('valid images pass', () => {
   assert.equal(r.ok, true, r.details.join('; '))
 })
 
+test('README.md is not an undeclared file', () => {
+  const files = { ...goodFiles, 'cycle1/foo/README.md': Buffer.from('# Foo App') }
+  const r = checkImages(ctx(files, baseValue))
+  assert.equal(r.ok, true, r.details.join('; '))
+})
+
 test('missing referenced image fails', () => {
   const files = { ...goodFiles }
   delete files['cycle1/foo/screenshot-2.png']

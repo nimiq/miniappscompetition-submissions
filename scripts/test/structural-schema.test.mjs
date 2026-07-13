@@ -59,6 +59,31 @@ test('screenshots must be 3-5 strings', () => {
   assert.ok(validateManifest({ ...base, screenshots: 'a.png' }).some((e) => /screenshots/i.test(e)))
 })
 
+test('readme fails when the folder has no README.md', () => {
+  const dir = 'cycle1/foo'
+  const readFile = (p) => (p === `${dir}/submission.yaml` ? Buffer.from('app_name: X\ngithub_login: foo\n') : null)
+  const findings = checkStructural({
+    changedPaths: [`${dir}/submission.yaml`],
+    readFile,
+    listDir: () => ['submission.yaml', 'icon.png'],
+  })
+  const readme = findings.find((f) => f.id === 'readme')
+  assert.equal(readme.ok, false)
+  assert.match(readme.details.join(' '), /README\.md is missing/)
+})
+
+test('readme passes when the folder has a README.md, even if the manifest is unparseable', () => {
+  const dir = 'cycle1/foo'
+  const readFile = (p) => (p === `${dir}/submission.yaml` ? Buffer.from('app_name: "unterminated\n') : null)
+  const findings = checkStructural({
+    changedPaths: [`${dir}/submission.yaml`],
+    readFile,
+    listDir: () => ['submission.yaml', 'README.md'],
+  })
+  assert.equal(findings.find((f) => f.id === 'yaml').ok, false)
+  assert.equal(findings.find((f) => f.id === 'readme').ok, true)
+})
+
 test('login-match fails when submission.yaml github_login does not match the folder login', () => {
   const dir = 'cycle1/realuser'
   const readFile = (p) => (p === `${dir}/submission.yaml` ? Buffer.from('app_name: X\ngithub_login: someoneelse\n') : null)

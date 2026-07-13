@@ -82,6 +82,7 @@ const LABELS = {
   schema: 'Manifest schema',
   'login-match': 'github_login matches folder',
   images: 'Images present & valid',
+  readme: 'README.md present',
 }
 
 // From the PR's changed-file list, find the single submission folder and read
@@ -176,12 +177,13 @@ export function checkImages({ dir, value, readFile, listDir }) {
 
   if (total > IMAGE.maxTotalBytes) details.push('The images add up to more than 14 MB in total.')
 
-  // Undeclared files: everything in the folder except submission.yaml and the
-  // referenced images.
+  // Undeclared files: everything in the folder except submission.yaml, the
+  // derived README.md (rendered from the manifest by the portal, checked for
+  // presence separately — see readmeFinding), and the referenced images.
   const present = listDir(dir)
-  const allowedNames = new Set(['submission.yaml', ...referenced])
+  const allowedNames = new Set(['submission.yaml', 'README.md', ...referenced])
   for (const name of present) {
-    if (!allowedNames.has(name)) details.push(`Undeclared file in folder: "${name}". Only submission.yaml and referenced images are allowed.`)
+    if (!allowedNames.has(name)) details.push(`Undeclared file in folder: "${name}". Only submission.yaml, README.md and referenced images are allowed.`)
   }
 
   return { ok: details.length === 0, details }
@@ -189,20 +191,37 @@ export function checkImages({ dir, value, readFile, listDir }) {
 
 const notEvaluated = (id) => finding(id, LABELS[id], false, ['Not evaluated until earlier checks pass.'])
 
+// The portal commits README.md beside submission.yaml — a human-readable render
+// of the manifest, which is what a reviewer actually reads (GitHub renders it
+// when browsing the folder, and the PR body links it). A submission without one
+// means it did not come from the form, so require it. Presence only: the YAML
+// stays the source of truth, and the render is not re-derived here.
+function readmeFinding(dir, listDir) {
+  const present = listDir(dir).includes('README.md')
+  return finding('readme', LABELS.readme, present, present ? [] : [
+    'README.md is missing from the folder. The submission form commits it alongside submission.yaml; submit through the form rather than hand-writing the folder.',
+  ])
+}
+
 export function checkStructural({ changedPaths, readFile, listDir }) {
   const r = resolveSubmission({ changedPaths, readFile })
   const pathScope = pathScopeFinding(r, changedPaths)
 
   if (!r.dir) {
-    return [pathScope, notEvaluated('yaml'), notEvaluated('schema'), notEvaluated('login-match'), notEvaluated('images')]
+    return [pathScope, notEvaluated('yaml'), notEvaluated('schema'), notEvaluated('login-match'), notEvaluated('images'), notEvaluated('readme')]
   }
+
+  // Needs only the folder listing, so it is evaluated even when the manifest is
+  // missing or unparseable — fixing one shouldn't cost a push to learn the other
+  // is also wrong.
+  const readme = readmeFinding(r.dir, listDir)
 
   if (r.yamlError || !r.value) {
     const detail = r.yamlError === 'missing'
       ? 'submission.yaml is missing from the folder.'
       : `submission.yaml could not be parsed: ${r.yamlError}`
     const yaml = finding('yaml', LABELS.yaml, false, [detail])
-    return [pathScope, yaml, notEvaluated('schema'), notEvaluated('login-match'), notEvaluated('images')]
+    return [pathScope, yaml, notEvaluated('schema'), notEvaluated('login-match'), notEvaluated('images'), readme]
   }
 
   const yaml = finding('yaml', LABELS.yaml, true)
@@ -216,5 +235,5 @@ export function checkStructural({ changedPaths, readFile, listDir }) {
 
   const imageResult = checkImages({ dir: r.dir, value: r.value, readFile, listDir })
   const images = finding('images', LABELS.images, imageResult.ok, imageResult.details)
-  return [pathScope, yaml, schema, loginMatch, images]
+  return [pathScope, yaml, schema, loginMatch, images, readme]
 }
