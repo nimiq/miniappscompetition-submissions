@@ -1,0 +1,21 @@
+app_name: Foo App
+category: Productivity
+tagline: Do the thing.
+description: A working mini app for the test fixture.
+pricing: Free
+repo_url: https://github.com/foo/foo
+demo_url: https://foo.example
+video_url: https://foo.example/v
+contact_email: foo@example.com
+team_name: null
+team_members: null
+x_account: foo
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: foo
+submitted_at: 2026-07-13T00:00:00.000Z
