@@ -1671,7 +1671,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
-            --paginate -q '.[].path' > changed.txt
+            --paginate -q '.[].filename' > changed.txt
           echo "Changed files:"; cat changed.txt
       - name: Run structural checks
         run: |
@@ -1699,7 +1699,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
-            --paginate -q '.[].path' > changed.txt
+            --paginate -q '.[].filename' > changed.txt
       - name: Run external checks
         env:
           GITHUB_TOKEN: ${{ github.token }}
