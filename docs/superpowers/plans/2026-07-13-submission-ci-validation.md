@@ -6,7 +6,7 @@
 
 **Architecture:** A small Node package under `scripts/` holds pure check functions (`lib/*.mjs`) plus two thin CLI entrypoints (`validate.mjs`, `comment.mjs`). The workflow `.github/workflows/validate-submission.yml` runs two required gate jobs — `structural` (no network) and `external` (GitHub API + demo fetch, retried) — each writing a `findings-<phase>.json` artifact, then a non-blocking `summary` job renders one sticky PR comment from both. All check logic is unit-tested with `node:test` using injected file/fetch stubs (no real network).
 
-**Tech Stack:** Node ≥20 (ESM `.mjs`), the `yaml` package (matches the portal's serializer), `node:test` + `node:assert`, GitHub Actions, `actions/checkout@v4`, `actions/setup-node@v4`, `actions/upload-artifact@v4`, `actions/download-artifact@v4`.
+**Tech Stack:** Node ≥20 for the scripts (CI runs them on Node 24; ESM `.mjs`), the `yaml` package (matches the portal's serializer), `node:test` + `node:assert`, GitHub Actions, `actions/checkout@v7`, `actions/setup-node@v6`, `actions/upload-artifact@v7`, `actions/download-artifact@v8`.
 
 ## Global Constraints
 
@@ -1662,10 +1662,10 @@ jobs:
   structural:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Install script deps
         working-directory: scripts
         run: npm ci
@@ -1681,7 +1681,7 @@ jobs:
           CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs structural
       - name: Upload findings
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: findings-structural
           path: findings-structural.json
@@ -1690,10 +1690,10 @@ jobs:
   external:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Install script deps
         working-directory: scripts
         run: npm ci
@@ -1710,7 +1710,7 @@ jobs:
           CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs external
       - name: Upload findings
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: findings-external
           path: findings-external.json
@@ -1721,17 +1721,17 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Download structural findings
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: findings-structural
         continue-on-error: true
       - name: Download external findings
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: findings-external
         continue-on-error: true
