@@ -21,7 +21,7 @@
 | --- | --- |
 | Repo | [https://github.com/nimjump/game](<https://github.com/nimjump/game>) |
 | Demo | [https://nimjump.zetashare.com](<https://nimjump.zetashare.com>) |
-| Video | [https://x.com/NimJump/status/2075644821327269907/video/1](<https://x.com/NimJump/status/2075644821327269907/video/1>) |
+| Video | [https://youtube.com/shorts/fmffN9FQpkM](<https://youtube.com/shorts/fmffN9FQpkM>) |
 
 ## Description
 
