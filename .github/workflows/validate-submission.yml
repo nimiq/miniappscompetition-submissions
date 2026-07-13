@@ -1,0 +1,107 @@
+name: Validate submission
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+    # Only run on PRs that touch a submission folder — infra/docs PRs (which
+    # touch no cycleN/<login>/ files) must not be gated by submission checks.
+    paths:
+      - 'cycle*/**'
+
+# Least-privilege: read the code, write PR comments. We never call the
+# Statuses API ourselves — Actions creates the gate check-runs automatically
+# from these jobs' pass/fail — so `statuses: read` is granted (not `write`)
+# purely as least-privilege headroom, not because we set commit statuses.
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: read
+
+concurrency:
+  group: validate-submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  structural:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install script deps
+        working-directory: scripts
+        run: npm ci
+      - name: Compute changed files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate -q '.[].filename' > changed.txt
+          echo "Changed files:"; cat changed.txt
+      - name: Run structural checks
+        run: |
+          CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs structural
+      - name: Upload findings
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: findings-structural
+          path: findings-structural.json
+          if-no-files-found: ignore
+
+  external:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install script deps
+        working-directory: scripts
+        run: npm ci
+      - name: Compute changed files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate -q '.[].filename' > changed.txt
+      - name: Run external checks
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs external
+      - name: Upload findings
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: findings-external
+          path: findings-external.json
+          if-no-files-found: ignore
+
+  summary:
+    needs: [structural, external]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Download structural findings
+        uses: actions/download-artifact@v8
+        with:
+          name: findings-structural
+        continue-on-error: true
+      - name: Download external findings
+        uses: actions/download-artifact@v8
+        with:
+          name: findings-external
+        continue-on-error: true
+      - name: Post/update PR comment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node scripts/comment.mjs
