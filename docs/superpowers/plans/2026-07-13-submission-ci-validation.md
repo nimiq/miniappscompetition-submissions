@@ -1644,6 +1644,9 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches: [main]
+    # Only run on PRs that touch a submission folder — infra/docs PRs are not gated.
+    paths:
+      - 'cycle*/**'
 
 # Least-privilege: read the code, write PR comments, set commit statuses.
 permissions:

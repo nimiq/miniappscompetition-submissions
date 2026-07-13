@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches: [main]
+    # Only run on PRs that touch a submission folder — infra/docs PRs (which
+    # touch no cycleN/<login>/ files) must not be gated by submission checks.
+    paths:
+      - 'cycle*/**'
 
 # Least-privilege: read the code, write PR comments. We never call the
 # Statuses API ourselves — Actions creates the gate check-runs automatically

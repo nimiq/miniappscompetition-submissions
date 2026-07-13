@@ -141,7 +141,9 @@ job's own exit code is what actually blocks — the artifacts are only for the c
 
 Single workflow `.github/workflows/validate-submission.yml`.
 
-**Triggers:** `pull_request` (`opened`, `synchronize`, `reopened`) targeting `main`.
+**Triggers:** `pull_request` (`opened`, `synchronize`, `reopened`) targeting `main`, restricted
+to PRs that touch a submission folder via `paths: ['cycle*/**']` — so infra/docs PRs (which
+change no `cycleN/<login>/` files) are not falsely gated by submission checks.
 (No `workflow_dispatch` — a manual dispatch carries no PR context, so it can't validate a PR.
 Transient re-runs use GitHub's native "Re-run failed jobs", which preserves the PR context.)
 
