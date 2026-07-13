@@ -1,0 +1,48 @@
+app_name: TipWall
+category: Social
+tagline: Tip the creator, Not the platform.
+description: A tipping wall for creators where supporters tip NIM straight to
+  your wallet, no platform, no fees, no sign-up.
+pricing: Free
+repo_url: https://github.com/natureloved/TipWall
+demo_url: https://tipwall.vercel.app/
+video_url: https://youtube.com/shorts/HRj58B8pa5A
+contact_email: akinolaa769@gmail.com
+team_name: Adejoke
+team_members:
+  - Adejoke
+x_account: adejoke_btc
+builder_story: "I kept seeing the same pattern, someone posts a genuinely
+  helpful thread, an open-source tool, a tutorial and the replies fill with
+  \"this saved me hours, how can I support you?\" And the honest answer is
+  always awkward. Patreon wants a subscription and takes a cut. Buy Me a Coffee
+  needs Stripe, which doesn't even work in many countries including for a lot of
+  creators here in Africa. Dropping a raw wallet address into a bio feels cold,
+  and nobody wants to be the first to send to a void.\r
+
+  \r
+
+  TipWall is my answer: every creator gets a wall with one link where support is
+  instant, direct, and visible. Supporters tip NIM straight to the creator's
+  wallet through Nimiq Pay and TipWall never holds a cent. But the part I cared
+  most about is that support shouldn't be a private transaction, it should be
+  social proof. Tips land on a live feed with messages and reasons, supporters
+  get recognition, milestones unlock with confetti. Gratitude becomes
+  momentum.\r
+
+  \r
+
+  The hardest problem was the person who wants to tip but doesn't have Nimiq Pay
+  yet. Most crypto apps lose them at \"install a wallet first.\" TipWall saves
+  their tip intent and hands them a non-custodial claim link, so a moment of
+  generosity survives the onboarding gap and every recovered supporter is a new
+  Nimiq user."
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: natureloved
+submitted_at: 2026-07-12T19:32:51.491Z
