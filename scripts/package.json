@@ -1,0 +1,14 @@
+{
+  "name": "submission-ci",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "CI validation for competition submission PRs.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "yaml": "^2.5.1"
+  }
+}
