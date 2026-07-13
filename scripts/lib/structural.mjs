@@ -1,5 +1,6 @@
 import { parse as parseYaml } from 'yaml'
-import { SUBMISSION_DIR_RE, CATEGORIES, PRICING, MAX, EMAIL_RE, isHttpUrl } from './schema.mjs'
+import { SUBMISSION_DIR_RE, CATEGORIES, PRICING, MAX, EMAIL_RE, isHttpUrl, IMAGE, SAFE_FILENAME_RE } from './schema.mjs'
+import { sniffImageType } from './sniff.mjs'
 
 // Validates the parsed submission.yaml against the mirrored schema. Returns a
 // list of error strings (empty = valid). Mirrors validateSubmission() in the
@@ -131,6 +132,61 @@ function pathScopeFinding(r, changedPaths) {
   return finding('path-scope', LABELS['path-scope'], true)
 }
 
+// Verifies every referenced image exists, sniffs to an allowed type for its
+// slot, is within size caps, screenshot count is 3-5, total size is bounded,
+// and the folder contains no undeclared files. Mirrors images.ts rules.
+export function checkImages({ dir, value, readFile, listDir }) {
+  const details = []
+  const o = value && typeof value === 'object' ? value : {}
+
+  const icon = typeof o.icon === 'string' ? o.icon : null
+  const thumbnail = typeof o.thumbnail === 'string' ? o.thumbnail : null
+  const screenshots = Array.isArray(o.screenshots) ? o.screenshots.filter((s) => typeof s === 'string') : []
+
+  let total = 0
+  const referenced = new Set()
+
+  const checkOne = (name, allowed, label) => {
+    if (name == null) return // schema check already flagged the missing field
+    referenced.add(name)
+    if (!SAFE_FILENAME_RE.test(name)) {
+      details.push(`${label} filename "${name}" is not a plain safe filename.`)
+      return
+    }
+    const buf = readFile(`${dir}/${name}`)
+    if (!buf) {
+      details.push(`${label} "${name}" is referenced but not present in the folder.`)
+      return
+    }
+    total += buf.length
+    if (buf.length > IMAGE.maxBytes) details.push(`${label} "${name}" is larger than 2 MB.`)
+    const t = sniffImageType(buf)
+    if (!t || !allowed.includes(t)) {
+      details.push(`${label} "${name}" must be one of: ${allowed.join(', ')} (detected: ${t || 'unknown'}).`)
+    }
+  }
+
+  checkOne(icon, IMAGE.stillTypes, 'Icon')
+  checkOne(thumbnail, IMAGE.thumbTypes, 'Thumbnail')
+
+  if (screenshots.length < IMAGE.minScreens || screenshots.length > IMAGE.maxScreens) {
+    details.push(`There must be ${IMAGE.minScreens}-${IMAGE.maxScreens} screenshots (found ${screenshots.length}).`)
+  }
+  for (const s of screenshots) checkOne(s, IMAGE.stillTypes, 'Screenshot')
+
+  if (total > IMAGE.maxTotalBytes) details.push('The images add up to more than 14 MB in total.')
+
+  // Undeclared files: everything in the folder except submission.yaml and the
+  // referenced images.
+  const present = listDir(dir)
+  const allowedNames = new Set(['submission.yaml', ...referenced])
+  for (const name of present) {
+    if (!allowedNames.has(name)) details.push(`Undeclared file in folder: "${name}". Only submission.yaml and referenced images are allowed.`)
+  }
+
+  return { ok: details.length === 0, details }
+}
+
 const notEvaluated = (id) => finding(id, LABELS[id], false, ['Not evaluated until earlier checks pass.'])
 
 export function checkStructural({ changedPaths, readFile, listDir }) {
@@ -158,6 +214,7 @@ export function checkStructural({ changedPaths, readFile, listDir }) {
   const loginMatch = finding('login-match', LABELS['login-match'], loginOk,
     loginOk ? [] : [`github_login is "${r.value.github_login}" but the folder is "${r.login}". They must match.`])
 
-  const images = finding('images', LABELS.images, true) // real logic added in Task 5
+  const imageResult = checkImages({ dir: r.dir, value: r.value, readFile, listDir })
+  const images = finding('images', LABELS.images, imageResult.ok, imageResult.details)
   return [pathScope, yaml, schema, loginMatch, images]
 }
