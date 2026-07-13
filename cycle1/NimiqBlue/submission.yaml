@@ -1,0 +1,25 @@
+app_name: Nimiq Bazar
+category: Marketplaces
+tagline: A persistent point-of-sale inventory for all your items. Stored locally
+  in your device.
+description: Nimiq Bazar turns Nimiq Pay into a lightweight merchant POS.
+  Merchants can load a localized inventory preset or build their own, price
+  items in their preferred fiat currency, accept NIM or US
+pricing: Free
+repo_url: https://github.com/NimiqBlue/nimiq-bazar/
+demo_url: https://bazar.nimiq.fyi/
+video_url: https://www.youtube.com/shorts/_Me83woBW1s
+contact_email: angelofornasieri@gmail.com
+team_name: null
+team_members: null
+x_account: vpn4access
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: NimiqBlue
+submitted_at: 2026-07-11T11:26:58.040Z
