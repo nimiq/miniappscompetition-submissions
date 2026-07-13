@@ -1866,7 +1866,7 @@ git commit -m "docs(ci): fixtures readme + smoke-run notes"
 ## Task 12 (added post-plan): demo-video check + transient-retry hardening
 
 Added after the initial 11 tasks, per a requirement clarification that the demo video is
-**required** and must be a public YouTube/Loom/Vimeo link (see spec external check #10).
+**required** and must be a public YouTube/Loom/Vimeo link (see spec external check #11).
 
 - `scripts/lib/external.mjs` — new blocking `video-public` finding: `video_url` host must be
   YouTube (`youtube.com`/`youtu.be`/`m.youtube.com`/`youtube-nocookie.com`), Vimeo
@@ -1881,3 +1881,28 @@ Added after the initial 11 tasks, per a requirement clarification that the demo 
   deleted (404) fail, missing video, and 429-then-200 retry-to-pass for both demo and video.
 - Verified live against the 5 open PRs: the 3 YouTube-Shorts submissions pass; the placeholder
   (`ComingSoon.com`) and the X/Twitter video fail — as intended. Commits `0f7cbbf`, `6c12b6c`.
+
+---
+
+## Task 13 (added post-plan): require the rendered `README.md`
+
+The portal now renders each submission to a human-readable `README.md`, commits it beside
+`submission.yaml`, and links it from the PR body (`nimiq/miniappscompetition` PR #15). Without a
+matching change here, that file trips the undeclared-file rule in check #6 and every submission
+PR fails structural — so the rule has to learn about it, and once every submission has one, its
+absence is itself a signal.
+
+- `scripts/lib/structural.mjs` — `README.md` added to `allowedNames` in `checkImages` (no longer
+  "undeclared"), plus a new blocking `readme` finding ("README.md present") in `checkStructural`:
+  the folder must contain `README.md`. Presence only — the render is **not** re-derived and
+  compared, so `submission.yaml` stays the single source of truth and the two can't fight.
+  Evaluated off `listDir` alone, so it still reports when the manifest is missing/unparseable
+  (findings are now 6, not 5).
+- Tests: `structural-images.test.mjs` (a `README.md` in the folder is not undeclared) and
+  `structural-schema.test.mjs` (missing README fails; present README passes even when the YAML
+  is unparseable). The `valid/cycle1/foo` fixture gained a `README.md` — generated with the
+  portal's own `buildSubmissionReadme`, not hand-written.
+- The 5 open submission PRs predate the portal change, so their folders had no README. Each was
+  backfilled with a README rendered by the portal's own `buildSubmissionReadme()` (imported from
+  the sibling repo — no second renderer to drift), rebased onto this change, and its PR body
+  rebuilt with `buildPrBody()` so it links the README at the new commit SHA.
