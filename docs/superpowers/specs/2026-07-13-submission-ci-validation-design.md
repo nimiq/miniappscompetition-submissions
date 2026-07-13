@@ -120,9 +120,16 @@ CI can (github.com).
      so it emits a **non-blocking `notice`** ("license not auto-verified — reviewer must confirm
      MIT") rendered with ⚠️. Does not gate the merge.
 9. `demo_url` returns HTTP **200** (follow redirects; `GET`). **Blocking.**
-
-`video_url` is **not** checked for liveness (placeholders like `ComingSoon.com` are permitted
-by the portal; a demo/video liveness gate there would be too brittle and isn't required).
+10. **`video_url` is a public demo video on YouTube, Loom, or Vimeo. Blocking.** The submit page
+    requires a demo video. Two steps: (a) the URL host must be YouTube (`youtube.com`,
+    `youtu.be`, `m.youtube.com`, `youtube-nocookie.com`), Loom (`loom.com`), or Vimeo
+    (`vimeo.com`, `player.vimeo.com`) — `www.` is normalized off; (b) the platform's **oEmbed**
+    endpoint (no auth, bot-friendly) returns **200** for that URL, proving the video exists and
+    is publicly viewable. oEmbed by host: YouTube `https://www.youtube.com/oembed?url=…&format=json`,
+    Vimeo `https://vimeo.com/api/oembed.json?url=…`, Loom `https://www.loom.com/v1/oembed?url=…`.
+    A non-YouTube/Loom/Vimeo host, a placeholder, or an oEmbed non-200 (private/deleted) fails.
+    YouTube Shorts URLs are accepted by YouTube's oEmbed as-is. Retried like the other external
+    checks.
 
 ### Flakiness handling
 

@@ -1860,3 +1860,24 @@ git commit -m "docs(ci): fixtures readme + smoke-run notes"
 **2. Placeholder scan:** No `TBD`/`TODO`/"handle edge cases"/"similar to Task N". Every code step shows full code. ✓
 
 **3. Type consistency:** `Finding = { id, label, ok, details: string[], level: 'error' | 'notice' }` is used identically in `structural.mjs`, `external.mjs`, `report.mjs`, `comment.mjs`, and every test; both `finding()` helpers default `level` to `'error'`, and only the non-github license finding sets `'notice'`. `report.mjs` (icon + summary) and `validate.mjs` (exit gate) both branch on `level !== 'notice'`. `resolveSubmission` returns `{ folders, dir, login, outside, value, yamlError }` and is consumed with those exact names in `checkStructural` (Task 3) and `validate.mjs` (Task 8). `checkExternal({ value, ... })` matches its caller in `validate.mjs`. `buildAndPost({ structural, external, repo, pr, token, fetchImpl })` matches its test and CLI caller. ✓
+
+---
+
+## Task 12 (added post-plan): demo-video check + transient-retry hardening
+
+Added after the initial 11 tasks, per a requirement clarification that the demo video is
+**required** and must be a public YouTube/Loom/Vimeo link (see spec external check #10).
+
+- `scripts/lib/external.mjs` — new blocking `video-public` finding: `video_url` host must be
+  YouTube (`youtube.com`/`youtu.be`/`m.youtube.com`/`youtube-nocookie.com`), Vimeo
+  (`vimeo.com`/`player.vimeo.com`), or Loom (`loom.com`) — `www.` normalized off — AND the
+  platform's oEmbed endpoint returns 200 (proves public/exists; YouTube Shorts URLs work
+  as-is). Non-platform host, placeholder, or oEmbed non-200 → fail. Added to the null-value
+  early-return (now 4 findings).
+- Retry hardening: the demo-reachable and video-public fetches now retry on `>= 500`, **429**,
+  and **408** (transient rate-limit/timeout) — but NOT 403/404/401 (definitive; 403 on Vimeo
+  means private). This prevents false failures when a platform rate-limits (`429`) under load.
+- Tests in `scripts/test/external.test.mjs` cover host allowlist, oEmbed pass/fail, private/
+  deleted (404) fail, missing video, and 429-then-200 retry-to-pass for both demo and video.
+- Verified live against the 5 open PRs: the 3 YouTube-Shorts submissions pass; the placeholder
+  (`ComingSoon.com`) and the X/Twitter video fail — as intended. Commits `0f7cbbf`, `6c12b6c`.
