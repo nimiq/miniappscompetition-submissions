@@ -1,0 +1,100 @@
+name: Validate submission
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+# Least-privilege: read the code, write PR comments, set commit statuses.
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: read
+
+concurrency:
+  group: validate-submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  structural:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install script deps
+        working-directory: scripts
+        run: npm ci
+      - name: Compute changed files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate -q '.[].path' > changed.txt
+          echo "Changed files:"; cat changed.txt
+      - name: Run structural checks
+        run: |
+          CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs structural
+      - name: Upload findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: findings-structural
+          path: findings-structural.json
+          if-no-files-found: ignore
+
+  external:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install script deps
+        working-directory: scripts
+        run: npm ci
+      - name: Compute changed files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate -q '.[].path' > changed.txt
+      - name: Run external checks
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          CHANGED_PATHS="$(cat changed.txt)" node scripts/validate.mjs external
+      - name: Upload findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: findings-external
+          path: findings-external.json
+          if-no-files-found: ignore
+
+  summary:
+    needs: [structural, external]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Download structural findings
+        uses: actions/download-artifact@v4
+        with:
+          name: findings-structural
+        continue-on-error: true
+      - name: Download external findings
+        uses: actions/download-artifact@v4
+        with:
+          name: findings-external
+        continue-on-error: true
+      - name: Post/update PR comment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node scripts/comment.mjs
