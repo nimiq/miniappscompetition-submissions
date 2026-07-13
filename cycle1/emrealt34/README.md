@@ -1,0 +1,70 @@
+# NimJump
+
+> Solving one of web3 gaming's biggest problems — cheating — wrapped in a game actually worth playing.
+
+<img src="icon.png" alt="App icon" width="128">
+
+| Field | Value |
+| --- | --- |
+| Category | Games |
+| Pricing | Free |
+| Team name | _Not provided — optional_ |
+| Team members | _Not provided — optional_ |
+| X account | NimJump |
+| Contact email | emre34altinok@gmail.com |
+| GitHub login | @emrealt34 |
+| Submitted at | 2026-07-10T20:21:58.814Z |
+
+## Links
+
+| Link | URL |
+| --- | --- |
+| Repo | [https://github.com/nimjump/game](<https://github.com/nimjump/game>) |
+| Demo | [https://nimjump.zetashare.com](<https://nimjump.zetashare.com>) |
+| Video | [https://x.com/NimJump/status/2075644821327269907/video/1](<https://x.com/NimJump/status/2075644821327269907/video/1>) |
+
+## Description
+
+NimJump is an endless vertical platformer game for Nimiq — jump, dodge, and climb as high as you can with tap or gyro-tilt controls. Every run is verified server-side: the client only sends its inputs, the backend replays the match itself, and verify
+
+## Builder story
+
+What problem it solves
+
+I heard about this competition about a month ago and I've been building on NimJump nonstop since. I've been doing game development for a long time now, almost 3 years, and I genuinely love web3 games as a player too — I just hadn't worked on one myself until this project. That's actually what made the cheating problem stand out to me so much: playing "score = money" games from the other side and seeing how easy most of them are to cheat — the client claims a score, and the backend just takes its word for it. Building something genuinely, structurally resistant to that from the ground up was a real dream of mine, not a checkbox to tick, and it's the actual core of this project — everything else is built around it, not the other way around.
+NimJump closes that hole completely. The client never has authority — it only sends the raw inputs from the run. The server replays those inputs itself and only trusts its own recomputed result. If it doesn't match exactly, the run is rejected. The client has zero authority beyond recording what the player did — no score, no quest completion, nothing is ever taken at face value.
+
+Every reward — leaderboard rank, streak claims, quests, coin conversion — is granted purely off that server-side result.
+
+There's also a reward-farming problem this solves: on top of the score itself being unfakeable, every NIM claim is checked against a per-IP guard. At most 2 wallets can get paid from the same IP per day, so stacking throwaway accounts on one connection doesn't work either.
+
+Recording inputs instead of video turned out to have a huge bonus: a full minute of play compresses down to under 300 bytes, so under 1GB can hold more than 2 million complete, re-playable runs. That's efficient enough that I never have to throw anything away — every score on the public leaderboard has its actual replay sitting right behind it, Nothing on that leaderboard is ever just a trusted number with no way to check it.
+
+I also wanted the game to be technically sound, as well as really enjoy playing: tilt controls with touch or gyroscope are available in my game
+
+I also cared a lot about giving people a reason to come back the next day instead of playing once and forgetting about it — that's what the daily login streak, the daily/weekly leaderboard resets, and the daily quests are actually for, not just there to pad out the feature list.
+
+I've been working on NimJump since the day this competition was first announced — about a month now — and I ran it publicly for 1 weeks during that time, not just tested it privately. In that window, 15 different real users found and played the game. I've attached link of the stats and activity from that period — please take a look. 
+https://www.skool.com/miniappscompetition/nimjump-release
+
+https://www.skool.com/miniappscompetition/nimjump-update
+
+## Thumbnail
+
+![Thumbnail](thumbnail.png)
+
+## Screenshots
+
+![Screenshot 1](screenshot-1.jpg)
+
+![Screenshot 2](screenshot-2.png)
+
+![Screenshot 3](screenshot-3.png)
+
+![Screenshot 4](screenshot-4.png)
+
+![Screenshot 5](screenshot-5.png)
+
+---
+
+_Generated from the submission form. `submission.yaml` in this folder is the machine-readable source of truth._
