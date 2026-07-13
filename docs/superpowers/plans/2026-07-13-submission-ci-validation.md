@@ -371,7 +371,7 @@ Expected: FAIL — cannot find module `../lib/structural.mjs`.
 import { parse as parseYaml } from 'yaml'
 import { SUBMISSION_DIR_RE } from './schema.mjs'
 
-export const finding = (id, label, ok, details = []) => ({ id, label, ok, details })
+export const finding = (id, label, ok, details = [], level = 'error') => ({ id, label, ok, details, level })
 
 const LABELS = {
   'path-scope': 'Folder structure & path scoping',
@@ -843,18 +843,19 @@ git commit -m "feat(ci): image presence/type/size + undeclared-file checks"
 
 ---
 
-### Task 6: External checks — public GitHub repo, MIT license, reachable demo
+### Task 6: External checks — public git repo (any host), MIT license, reachable demo
 
 **Files:**
 - Create: `scripts/lib/external.mjs`
 - Test: `scripts/test/external.test.mjs`
 
 **Interfaces:**
-- Consumes: nothing from other lib files (self-contained).
+- Consumes: nothing from other lib files (self-contained). Uses `node:child_process` (`execFile`) for the default `git ls-remote` probe.
 - Produces:
-  - `parseGithubRepo(url: string): { owner, repo } | null`
+  - `parseGithubRepo(url: string): { owner, repo } | null` (github.com only — used to pick the license path)
   - `withRetry(attempt: ()=>Promise<T>, opts?: { retries?: number, sleep?: (ms)=>Promise<void> }): Promise<T>`
-  - `checkExternal({ value: object|null, fetchImpl?: typeof fetch, token?: string, retries?: number, sleep?: (ms)=>Promise<void> }): Promise<Finding[]>` — returns findings with ids `repo-public`, `repo-license`, `demo-reachable` (same `{id,label,ok,details}` shape as structural findings).
+  - `checkExternal({ value: object|null, fetchImpl?: typeof fetch, token?: string, retries?: number, sleep?: (ms)=>Promise<void>, gitLsRemote?: (url:string)=>Promise<{code:number}> }): Promise<Finding[]>` — returns findings with ids `repo-public`, `repo-license`, `demo-reachable`.
+- **Finding shape gains an optional `level`:** `{ id, label, ok, details: string[], level: 'error' | 'notice' }` (defaults to `'error'`). `repo-public` is host-agnostic (anonymous `git ls-remote`). `repo-license` is `level:'error'` (blocking) for github.com repos and `level:'notice'` (non-blocking, ⚠️) for every other host, because CI can't auto-verify a license off GitHub. `gitLsRemote` is injected so tests never shell out.
 
 - [ ] **Step 1: Write the failing test `scripts/test/external.test.mjs`**
 
@@ -864,6 +865,8 @@ import assert from 'node:assert/strict'
 import { parseGithubRepo, checkExternal } from '../lib/external.mjs'
 
 const noSleep = async () => {}
+const publicRepo = async () => ({ code: 0 })   // git ls-remote stub: reachable/public
+const privateRepo = async () => ({ code: 1 })  // git ls-remote stub: not public
 function find(fs, id) { return fs.find((f) => f.id === id) }
 
 // A fake fetch driven by a route map: url-substring → { status, json } or a
@@ -891,79 +894,103 @@ test('parseGithubRepo', () => {
   assert.equal(parseGithubRepo('not a url'), null)
 })
 
-test('all external checks pass for a public MIT repo + live demo', async () => {
-  const fetchImpl = fakeFetch({
-    '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
-    '/repos/a/b': { status: 200, body: { private: false } },
-    'https://demo.test': { status: 200 },
-  })
+test('github repo: public + MIT + live demo all pass (license is error-level)', async () => {
   const findings = await checkExternal({
     value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
-    fetchImpl, token: 't', sleep: noSleep,
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
+      'https://demo.test': { status: 200 },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
   assert.equal(find(findings, 'repo-public').ok, true)
   assert.equal(find(findings, 'repo-license').ok, true)
+  assert.equal(find(findings, 'repo-license').level, 'error')
   assert.equal(find(findings, 'demo-reachable').ok, true)
 })
 
-test('private/404 repo fails public + license', async () => {
-  const fetchImpl = fakeFetch({
-    '/repos/a/b/license': { status: 404, body: null },
-    '/repos/a/b': { status: 404, body: null },
-    'https://demo.test': { status: 200 },
-  })
+test('private/unreachable github repo fails public (ls-remote != 0) + license 404', async () => {
   const findings = await checkExternal({
     value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
-    fetchImpl, token: 't', sleep: noSleep,
+    fetchImpl: fakeFetch({ '/repos/a/b/license': { status: 404, body: null }, 'https://demo.test': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: privateRepo,
   })
   assert.equal(find(findings, 'repo-public').ok, false)
   assert.equal(find(findings, 'repo-license').ok, false)
 })
 
-test('non-MIT license fails license check only', async () => {
-  const fetchImpl = fakeFetch({
-    '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'Apache-2.0' } } },
-    '/repos/a/b': { status: 200, body: { private: false } },
-    'https://demo.test': { status: 200 },
-  })
+test('github repo with non-MIT license: public ok, license is a BLOCKING fail', async () => {
   const findings = await checkExternal({
     value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
-    fetchImpl, token: 't', sleep: noSleep,
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'Apache-2.0' } } },
+      'https://demo.test': { status: 200 },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
   assert.equal(find(findings, 'repo-public').ok, true)
   assert.equal(find(findings, 'repo-license').ok, false)
+  assert.equal(find(findings, 'repo-license').level, 'error')
   assert.match(find(findings, 'repo-license').details.join(' '), /Apache-2\.0/)
 })
 
-test('non-github repo_url fails repo checks', async () => {
+test('non-github public repo: public ok, license is a non-blocking NOTICE', async () => {
   const findings = await checkExternal({
     value: { repo_url: 'https://gitlab.com/a/b', demo_url: 'https://demo.test' },
-    fetchImpl: fakeFetch({ 'https://demo.test': { status: 200 } }), token: 't', sleep: noSleep,
+    // No GitHub API route needed — the license path for non-github is a notice.
+    fetchImpl: fakeFetch({ 'https://demo.test': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'repo-public').ok, true)
+  const lic = find(findings, 'repo-license')
+  assert.equal(lic.level, 'notice')
+  assert.match(lic.details.join(' '), /reviewer|confirm|not on github/i)
+})
+
+test('non-github private repo fails public', async () => {
+  const findings = await checkExternal({
+    value: { repo_url: 'https://gitlab.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({ 'https://demo.test': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: privateRepo,
   })
   assert.equal(find(findings, 'repo-public').ok, false)
-  assert.match(find(findings, 'repo-public').details.join(' '), /github\.com/)
+})
+
+test('ls-remote retries a transient error then succeeds', async () => {
+  let n = 0
+  const flakyGit = async () => { n += 1; if (n < 2) throw new Error('transient'); return { code: 0 } }
+  const findings = await checkExternal({
+    value: { repo_url: 'https://gitlab.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({ 'https://demo.test': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: flakyGit,
+  })
+  assert.equal(find(findings, 'repo-public').ok, true)
 })
 
 test('demo non-200 fails after retries; transient 503 then 200 passes', async () => {
-  const down = fakeFetch({
-    '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
-    '/repos/a/b': { status: 200, body: { private: false } },
-    'https://demo.test': { status: 404 },
+  const down = await checkExternal({
+    value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
+      'https://demo.test': { status: 404 },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
-  const f1 = await checkExternal({ value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' }, fetchImpl: down, token: 't', sleep: noSleep })
-  assert.equal(find(f1, 'demo-reachable').ok, false)
+  assert.equal(find(down, 'demo-reachable').ok, false)
 
-  const flaky = fakeFetch({
-    '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
-    '/repos/a/b': { status: 200, body: { private: false } },
-    'https://demo.test': (n) => (n < 2 ? { status: 503 } : { status: 200 }),
+  const flaky = await checkExternal({
+    value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
+      'https://demo.test': (n) => (n < 2 ? { status: 503 } : { status: 200 }),
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
-  const f2 = await checkExternal({ value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' }, fetchImpl: flaky, token: 't', sleep: noSleep })
-  assert.equal(find(f2, 'demo-reachable').ok, true)
+  assert.equal(find(flaky, 'demo-reachable').ok, true)
 })
 
-test('null value (unresolved submission) fails all three', async () => {
-  const findings = await checkExternal({ value: null, fetchImpl: fakeFetch({}), token: 't', sleep: noSleep })
+test('null value (unresolved submission) fails all three at error level', async () => {
+  const findings = await checkExternal({ value: null, fetchImpl: fakeFetch({}), token: 't', sleep: noSleep, gitLsRemote: publicRepo })
   assert.equal(findings.length, 3)
   assert.ok(findings.every((f) => !f.ok))
 })
@@ -977,19 +1004,38 @@ Expected: FAIL — cannot find module `../lib/external.mjs`.
 - [ ] **Step 3: Create `scripts/lib/external.mjs`**
 
 ```js
-// External liveness checks: repo is a public github.com repo, its license is
-// strictly MIT (GitHub SPDX), and the demo URL returns 200. Retries transient
-// failures (network errors / HTTP 5xx) before giving up.
+// External liveness checks:
+//   repo-public    — repo_url is an anonymously-cloneable public git repo on ANY
+//                    host (git ls-remote). Blocking.
+//   repo-license   — github.com repos: strict SPDX == MIT via the GitHub API
+//                    (blocking). Other hosts: a non-blocking 'notice' — CI can't
+//                    auto-verify a license off GitHub, so a reviewer must confirm.
+//   demo-reachable — demo_url returns 200. Blocking.
+// Transient failures (network / HTTP 5xx / ls-remote error) retry before giving up.
+import { execFile } from 'node:child_process'
 
-const finding = (id, label, ok, details = []) => ({ id, label, ok, details })
+const finding = (id, label, ok, details = [], level = 'error') => ({ id, label, ok, details, level })
 const LABELS = {
-  'repo-public': 'Repo is public on GitHub',
+  'repo-public': 'Repo is a public git repo',
   'repo-license': 'Repo license is MIT',
   'demo-reachable': 'Demo reachable (HTTP 200)',
 }
 
 const defaultSleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
+// Anonymous public-repo probe that works on any git host. Resolves { code }
+// (0 = reachable/public). GIT_TERMINAL_PROMPT=0 + an echo askpass make a private
+// repo fail fast instead of blocking on a credential prompt.
+const defaultGitLsRemote = (url) => new Promise((resolve) => {
+  execFile('git', ['ls-remote', url], {
+    timeout: 20000,
+    maxBuffer: 4 * 1024 * 1024,
+    env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GIT_ASKPASS: '/bin/echo' },
+  }, (err) => resolve({ code: err ? 1 : 0 }))
+})
+
+// github.com only — used to decide the license path. Returns null for any other
+// host (those go down the non-blocking notice branch).
 export function parseGithubRepo(url) {
   let u
   try { u = new URL(url) } catch { return null }
@@ -1028,33 +1074,38 @@ async function ghGet(path, token, fetchImpl) {
   return { status: res.status, body }
 }
 
-export async function checkExternal({ value, fetchImpl = fetch, token, retries = 3, sleep = defaultSleep }) {
+export async function checkExternal({ value, fetchImpl = fetch, token, retries = 3, sleep = defaultSleep, gitLsRemote = defaultGitLsRemote }) {
   if (!value || typeof value !== 'object') {
     return ['repo-public', 'repo-license', 'demo-reachable'].map((id) =>
       finding(id, LABELS[id], false, ['Not evaluated — submission.yaml could not be read/parsed.']))
   }
 
-  const repoUrl = typeof value.repo_url === 'string' ? value.repo_url : ''
-  const demoUrl = typeof value.demo_url === 'string' ? value.demo_url : ''
-  const repo = parseGithubRepo(repoUrl)
+  const repoUrl = typeof value.repo_url === 'string' ? value.repo_url.trim() : ''
+  const demoUrl = typeof value.demo_url === 'string' ? value.demo_url.trim() : ''
 
-  // repo-public + repo-license
-  let repoPublic, repoLicense
-  if (!repo) {
-    repoPublic = finding('repo-public', LABELS['repo-public'], false, [`repo_url must be a public github.com repository URL (got "${repoUrl}").`])
-    repoLicense = finding('repo-license', LABELS['repo-license'], false, ['Not evaluated — repo_url is not a valid github.com URL.'])
+  // repo-public — host-agnostic anonymous git ls-remote.
+  let repoPublic
+  if (!repoUrl) {
+    repoPublic = finding('repo-public', LABELS['repo-public'], false, ['repo_url is missing.'])
   } else {
     try {
-      const r = await withRetry(() => ghGet(`/repos/${repo.owner}/${repo.repo}`, token, fetchImpl), { retries, sleep })
-      repoPublic = r.status === 200
-        ? finding('repo-public', LABELS['repo-public'], true)
-        : finding('repo-public', LABELS['repo-public'], false, [`GitHub returned ${r.status} for ${repo.owner}/${repo.repo} — it must be public and exist.`])
+      await withRetry(async () => {
+        const { code } = await gitLsRemote(repoUrl)
+        if (code !== 0) throw new Error(`git ls-remote exited ${code}`)
+      }, { retries, sleep })
+      repoPublic = finding('repo-public', LABELS['repo-public'], true)
     } catch (err) {
-      repoPublic = finding('repo-public', LABELS['repo-public'], false, [`Could not reach the GitHub API: ${String(err.message || err)}`])
+      repoPublic = finding('repo-public', LABELS['repo-public'], false,
+        [`repo_url is not an anonymously-cloneable public git repo (${String(err.message || err)}).`])
     }
+  }
 
+  // repo-license — github.com: strict SPDX (blocking). Other hosts: notice.
+  let repoLicense
+  const gh = parseGithubRepo(repoUrl)
+  if (gh) {
     try {
-      const r = await withRetry(() => ghGet(`/repos/${repo.owner}/${repo.repo}/license`, token, fetchImpl), { retries, sleep })
+      const r = await withRetry(() => ghGet(`/repos/${gh.owner}/${gh.repo}/license`, token, fetchImpl), { retries, sleep })
       if (r.status === 200 && r.body?.license?.spdx_id === 'MIT') {
         repoLicense = finding('repo-license', LABELS['repo-license'], true)
       } else if (r.status === 404) {
@@ -1066,6 +1117,12 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
     } catch (err) {
       repoLicense = finding('repo-license', LABELS['repo-license'], false, [`Could not read the repo license: ${String(err.message || err)}`])
     }
+  } else if (repoUrl) {
+    repoLicense = finding('repo-license', LABELS['repo-license'], false,
+      ['Repo is not on github.com — the MIT license could not be auto-verified. A reviewer must confirm the repo is MIT-licensed.'],
+      'notice')
+  } else {
+    repoLicense = finding('repo-license', LABELS['repo-license'], false, ['Not evaluated — repo_url is missing.'])
   }
 
   // demo-reachable
@@ -1140,6 +1197,17 @@ test('all-pass shows a success line', () => {
   const md = renderComment({ dir: 'cycle1/foo', findings: [{ id: 'x', label: 'X', ok: true, details: [] }] })
   assert.match(md, /All automated checks passed/i)
 })
+
+test('a notice renders ⚠️ + a manual-review line and never says blocked', () => {
+  const md = renderComment({ dir: 'cycle2/x', findings: [
+    { id: 'repo-public', label: 'Repo is a public git repo', ok: true, details: [], level: 'error' },
+    { id: 'repo-license', label: 'Repo license is MIT', ok: false, level: 'notice', details: ['reviewer must confirm'] },
+  ] })
+  assert.match(md, /⚠️ Repo license is MIT/)
+  assert.match(md, /reviewer must confirm/)
+  assert.match(md, /confirm manually/i)
+  assert.doesNotMatch(md, /blocked/i)
+})
 ```
 
 - [ ] **Step 2: Run test to verify it fails**
@@ -1151,8 +1219,14 @@ Expected: FAIL — cannot find module `../lib/report.mjs`.
 
 ```js
 // Renders the sticky PR checklist comment from the combined findings.
+// A finding is { id, label, ok, details, level }. level 'notice' (⚠️) never
+// blocks — it flags something a human reviewer must confirm (e.g. the MIT
+// license on a non-github.com host). Everything else is a blocking gate.
 
 export const COMMENT_MARKER = '<!-- nimiq-submission-check -->'
+
+const iconFor = (f) => (f.level === 'notice' ? '⚠️' : (f.ok ? '✅' : '❌'))
+const isBlocking = (f) => f.level !== 'notice'
 
 export function renderComment({ dir, findings }) {
   const lines = [
@@ -1161,14 +1235,20 @@ export function renderComment({ dir, findings }) {
     '',
   ]
   for (const f of findings) {
-    lines.push(`${f.ok ? '✅' : '❌'} ${f.label}`)
+    lines.push(`${iconFor(f)} ${f.label}`)
     if (!f.ok) for (const d of f.details) lines.push(`  - ${d}`)
   }
-  const allOk = findings.length > 0 && findings.every((f) => f.ok)
+
+  const blockingFailed = findings.some((f) => isBlocking(f) && !f.ok)
+  const hasNotice = findings.some((f) => f.level === 'notice')
   lines.push('')
-  lines.push(allOk
-    ? '**All automated checks passed.**'
-    : '**Some automated checks failed — see above. This PR is blocked until they pass.**')
+  if (blockingFailed) {
+    lines.push('**Some automated checks failed — see above. This PR is blocked until they pass.**')
+  } else if (hasNotice) {
+    lines.push('**Automated checks passed. Items marked ⚠️ need a reviewer to confirm manually.**')
+  } else {
+    lines.push('**All automated checks passed.**')
+  }
   return lines.join('\n')
 }
 ```
@@ -1197,7 +1277,7 @@ git commit -m "feat(ci): render PR checklist comment"
 
 **Interfaces:**
 - Consumes: `checkStructural`, `resolveSubmission` from `lib/structural.mjs`; `checkExternal` from `lib/external.mjs`.
-- Produces: a CLI: `node validate.mjs <structural|external>`. Reads changed paths from `CHANGED_PATHS` env (newline-separated) or falls back to `git diff --name-only origin/$BASE_REF...HEAD`. Reads files relative to `cwd`. Writes `findings-<phase>.json` = `{ dir, findings }`. Prints a per-check PASS/FAIL log. Exits `1` if any finding failed, `0` otherwise, `2` on bad usage.
+- Produces: a CLI: `node validate.mjs <structural|external>`. Reads changed paths from `CHANGED_PATHS` env (newline-separated) or falls back to `git diff --name-only origin/$BASE_REF...HEAD`. Reads files relative to `cwd`. Writes `findings-<phase>.json` = `{ dir, findings }`. Prints a per-check PASS/FAIL/NOTE log. Exits `1` if any **blocking** finding failed (a `notice` never fails the job), `0` otherwise, `2` on bad usage.
 
 - [ ] **Step 1: Create the valid fixture manifest `scripts/test/fixtures/valid/cycle1/foo/submission.yaml`**
 
@@ -1375,11 +1455,15 @@ if (phase === 'structural') {
 writeFileSync(`findings-${phase}.json`, JSON.stringify({ dir: resolved.dir, findings }, null, 2))
 
 for (const f of findings) {
-  console.log(`${f.ok ? 'PASS' : 'FAIL'}  ${f.label}`)
+  const tag = f.level === 'notice' ? 'NOTE' : (f.ok ? 'PASS' : 'FAIL')
+  console.log(`${tag}  ${f.label}`)
   if (!f.ok) for (const d of f.details) console.log(`        - ${d}`)
 }
 
-process.exit(findings.some((f) => !f.ok) ? 1 : 0)
+// Only blocking findings gate the job — a 'notice' (e.g. non-github license)
+// is reported but never fails the check.
+const blockingFailed = findings.some((f) => f.level !== 'notice' && !f.ok)
+process.exit(blockingFailed ? 1 : 0)
 ```
 
 - [ ] **Step 6: Run test to verify it passes**
@@ -1718,7 +1802,7 @@ CHANGED_PATHS="$(git diff --name-only main...HEAD)" GITHUB_TOKEN="$(gh auth toke
 git checkout main
 ```
 
-Expected: PASS/FAIL per repo/license/demo. Expect some real failures (e.g. `video_url: https://ComingSoon.com` is fine since video isn't checked, but a repo lacking an MIT license or a demo that's down will fail — that is the gate working).
+Expected: PASS/FAIL/NOTE per repo-public / repo-license / demo-reachable. The 5 current PRs are all github.com repos, so their license is auto-checked (strict MIT) — expect real failures where a repo lacks an MIT license or a demo is down (that is the gate working). `video_url: https://ComingSoon.com` is fine (video isn't checked). If a future submission links a non-github host, its license will show a ⚠️ NOTE (non-blocking) instead of PASS/FAIL — confirm that renders as expected.
 
 - [ ] **Step 3: Write `scripts/test/fixtures/README.md`**
 
@@ -1754,8 +1838,10 @@ git commit -m "docs(ci): fixtures readme + smoke-run notes"
 **1. Spec coverage** (checked against `docs/superpowers/specs/2026-07-13-submission-ci-validation-design.md`):
 
 - Structural checks 1–6 → Tasks 3 (path-scope, yaml), 4 (schema, login-match), 5 (images, undeclared files). ✓
-- External checks 7–9 → Task 6 (repo-public, repo-license strict MIT, demo-reachable). ✓
-- Retry/backoff on external → Task 6 `withRetry` + tests (flaky-503-then-200). ✓
+- External checks 7–9 → Task 6: repo-public via host-agnostic `git ls-remote`; repo-license = strict SPDX MIT on github.com (blocking) / `notice` on other hosts (non-blocking); demo-reachable. ✓
+- Any-host public repos accepted (not github-only) → Task 6 `git ls-remote` + non-github tests. ✓
+- Non-github license is a non-blocking reviewer notice → Task 6 (`level:'notice'`), rendered ⚠️ in Task 7, ignored by the exit gate in Task 8. ✓
+- Retry/backoff on external (ls-remote, GitHub API, demo) → Task 6 `withRetry` + tests (flaky-503-then-200, ls-remote-retry). ✓
 - Three jobs, two required + reporter, artifacts → Task 10. ✓
 - One sticky comment → Tasks 7 + 9 + 10 summary job. ✓
 - Node + `yaml` + `node:test` → Task 1. ✓
@@ -1770,4 +1856,4 @@ git commit -m "docs(ci): fixtures readme + smoke-run notes"
 
 **2. Placeholder scan:** No `TBD`/`TODO`/"handle edge cases"/"similar to Task N". Every code step shows full code. ✓
 
-**3. Type consistency:** `Finding = { id, label, ok, details: string[] }` is used identically in `structural.mjs`, `external.mjs`, `report.mjs`, `comment.mjs`, and every test. `resolveSubmission` returns `{ folders, dir, login, outside, value, yamlError }` and is consumed with those exact names in `checkStructural` (Task 3) and `validate.mjs` (Task 8). `checkExternal({ value, ... })` matches its caller in `validate.mjs`. `buildAndPost({ structural, external, repo, pr, token, fetchImpl })` matches its test and CLI caller. ✓
+**3. Type consistency:** `Finding = { id, label, ok, details: string[], level: 'error' | 'notice' }` is used identically in `structural.mjs`, `external.mjs`, `report.mjs`, `comment.mjs`, and every test; both `finding()` helpers default `level` to `'error'`, and only the non-github license finding sets `'notice'`. `report.mjs` (icon + summary) and `validate.mjs` (exit gate) both branch on `level !== 'notice'`. `resolveSubmission` returns `{ folders, dir, login, outside, value, yamlError }` and is consumed with those exact names in `checkStructural` (Task 3) and `validate.mjs` (Task 8). `checkExternal({ value, ... })` matches its caller in `validate.mjs`. `buildAndPost({ structural, external, repo, pr, token, fetchImpl })` matches its test and CLI caller. ✓

@@ -81,8 +81,15 @@ marketing copy. Flagged here so the discrepancy is a conscious decision, not an 
 
 ## Scope of checks (decided)
 
-**Structural + external liveness. Every failed check blocks merge.** No override label —
-resilience comes from retries + native "Re-run failed jobs" only.
+**Structural + external liveness. Every failed check blocks merge — with one deliberate
+exception:** the MIT-license check on **non-GitHub** hosts is a *non-blocking reviewer notice*,
+because CI cannot auto-verify a license there without host-specific APIs or cloning (out of
+scope). No override label — resilience otherwise comes from retries + native "Re-run failed
+jobs" only.
+
+Public git repos on **any** host are accepted (not github.com only). Public-ness is proven
+host-agnostically with anonymous `git ls-remote`; the MIT license is auto-verified only where
+CI can (github.com).
 
 ### Structural checks (job `structural`, no network)
 
@@ -102,21 +109,29 @@ resilience comes from retries + native "Re-run failed jobs" only.
 
 ### External liveness checks (job `external`, network, retried)
 
-7. `repo_url` host is `github.com`, parses to `owner/repo`, the repo is **public** (GitHub API
-   `GET /repos/{owner}/{repo}` returns 200 with `GITHUB_TOKEN`).
-8. That repo's license SPDX id is exactly **`MIT`** (GitHub API `GET /repos/{owner}/{repo}/license`
-   → `license.spdx_id === "MIT"`). Strict — no LICENSE-text fallback.
-9. `demo_url` returns HTTP **200** (follow redirects; `GET`, fall back to `HEAD` if needed).
+7. **`repo_url` is a public, anonymously-cloneable git repo on any host** — verified with
+   `git ls-remote <repo_url>` (run with `GIT_TERMINAL_PROMPT=0` so a private repo fails fast
+   instead of prompting for credentials). Exit 0 → public. Host-agnostic; **blocking**.
+8. **MIT license:**
+   - If `repo_url` is a `github.com` repo → license SPDX id must be exactly **`MIT`** (GitHub API
+     `GET /repos/{owner}/{repo}/license` → `license.spdx_id === "MIT"`). Strict, no LICENSE-text
+     fallback. **Blocking.**
+   - Otherwise (GitLab, Bitbucket, Codeberg, self-hosted, …) → CI cannot auto-verify the license,
+     so it emits a **non-blocking `notice`** ("license not auto-verified — reviewer must confirm
+     MIT") rendered with ⚠️. Does not gate the merge.
+9. `demo_url` returns HTTP **200** (follow redirects; `GET`). **Blocking.**
 
 `video_url` is **not** checked for liveness (placeholders like `ComingSoon.com` are permitted
 by the portal; a demo/video liveness gate there would be too brittle and isn't required).
 
 ### Flakiness handling
 
-External checks (7–9) **retry 3× with exponential backoff** before declaring failure. A
-persistently-down demo or non-MIT/private repo blocks the PR until the submitter fixes it —
-that is intended. Transient outages are cleared by GitHub's native **Re-run failed jobs**
-button (preserves the PR context); no new commit required.
+External checks (7–9) **retry 3× with exponential backoff** before declaring failure (the
+`git ls-remote`, the GitHub API call, and the demo fetch each retry). A persistently-down demo,
+a private/unreachable repo, or a GitHub repo that isn't MIT blocks the PR until fixed — that is
+intended. The non-GitHub license `notice` never blocks. Transient outages are cleared by
+GitHub's native **Re-run failed jobs** button (preserves the PR context); no new commit
+required.
 
 The `structural` and `external` jobs each write a `findings-<phase>.json` and upload it as an
 artifact (`if: always()`); the `summary` job downloads both and renders one comment. Each gate
@@ -173,7 +188,7 @@ scripts/
                           competition repo's submission.ts / images.ts, with a header comment
                           naming that source of truth to fight drift
     structural.mjs        checks 1–6 (pure; takes file contents/paths, returns findings)
-    external.mjs          checks 7–9 (GitHub API + demo fetch, with retry/backoff)
+    external.mjs          checks 7–9 (git ls-remote + GitHub license API + demo fetch, retried)
     sniff.mjs             magic-byte image sniffing (ported from images.ts)
     report.mjs            findings → checklist markdown + pass/fail rollup
   test/
@@ -188,10 +203,12 @@ injectable client so tests can mock them. The workflow YAML is a thin shell: ins
 
 ## Findings & reporting
 
-Each check yields a finding `{ id, ok, level: 'error', message }`. `structural` and `external`
-each exit non-zero if any of their findings failed (→ red required check). The `summary` job
-renders a single sticky PR comment (created once, updated in place via a stable marker) — a
-checklist of ✅/❌ per check with the failing messages inline, e.g.:
+Each check yields a finding `{ id, label, ok, details: string[], level: 'error' | 'notice' }`
+(`level` defaults to `'error'`). A job exits non-zero when any **blocking** finding failed —
+i.e. `level !== 'notice' && !ok` — so a `notice` (the non-GitHub license case) is rendered but
+never fails the gate. The `summary` job renders a single sticky PR comment (created once,
+updated in place via a stable marker) — a checklist of ✅ (pass) / ❌ (blocking fail) / ⚠️
+(notice) per check with messages inline, e.g. a GitHub repo with the wrong license:
 
 ```
 ### Submission check: cycle1/harmssam
@@ -199,8 +216,18 @@ checklist of ✅/❌ per check with the failing messages inline, e.g.:
 ✅ Manifest schema
 ✅ github_login matches folder
 ✅ Images present & valid
-❌ Repo license is MIT — got "NOASSERTION" for github.com/harmssam/verilock
-✅ Demo reachable (200)
+✅ Repo is public on GitHub
+❌ Repo license is MIT — GitHub detected: NOASSERTION
+✅ Demo reachable (HTTP 200)
+```
+
+…and a non-GitHub repo, where the license is a manual-review notice:
+
+```
+### Submission check: cycle2/someone
+✅ Repo is a public git repo
+⚠️ Repo license is MIT — not on github.com; a reviewer must confirm the repo is MIT-licensed
+✅ Demo reachable (HTTP 200)
 ```
 
 ## Testing
