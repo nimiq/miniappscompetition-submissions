@@ -212,3 +212,55 @@ test('video-public: transient 503 then 200 on oEmbed passes', async () => {
   })
   assert.equal(find(findings, 'video-public').ok, true)
 })
+
+test('demo-reachable: transient 429 then 200 retries to pass', async () => {
+  const findings = await checkExternal({
+    value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
+      'https://demo.test': (n) => (n < 2 ? { status: 429 } : { status: 200 }),
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'demo-reachable').ok, true)
+})
+
+test('video-public: transient 429 then 200 on oEmbed retries to pass', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.youtube.com/watch?v=x' },
+    fetchImpl: fakeFetch({ 'youtube.com/oembed': (n) => (n < 2 ? { status: 429 } : { status: 200 }) }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('demo-reachable: transient 408 then 200 retries to pass', async () => {
+  const findings = await checkExternal({
+    value: { repo_url: 'https://github.com/a/b', demo_url: 'https://demo.test' },
+    fetchImpl: fakeFetch({
+      '/repos/a/b/license': { status: 200, body: { license: { spdx_id: 'MIT' } } },
+      'https://demo.test': (n) => (n < 2 ? { status: 408 } : { status: 200 }),
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'demo-reachable').ok, true)
+})
+
+test('video-public: transient 408 then 200 on oEmbed retries to pass', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://vimeo.com/123' },
+    fetchImpl: fakeFetch({ 'vimeo.com/api/oembed': (n) => (n < 2 ? { status: 408 } : { status: 200 }) }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: definitive 404 on oEmbed still FAILS (not retried)', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.youtube.com/watch?v=deleted' },
+    fetchImpl: fakeFetch({ 'youtube.com/oembed': { status: 404 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, false)
+  assert.match(find(findings, 'video-public').details.join(' '), /404/)
+})

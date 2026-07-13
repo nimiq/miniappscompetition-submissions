@@ -151,7 +151,7 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
     try {
       const res = await withRetry(async () => {
         const r = await fetchImpl(demoUrl, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(15000) })
-        if (r.status >= 500) throw new Error(`status ${r.status}`)
+        if (r.status >= 500 || r.status === 429 || r.status === 408) throw new Error(`status ${r.status}`)
         return r
       }, { retries, sleep })
       demoReachable = res.status === 200
@@ -181,7 +181,7 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
             signal: AbortSignal.timeout(15000),
             headers: { 'User-Agent': 'nimiq-submissions-ci' },
           })
-          if (r.status >= 500) throw new Error(`status ${r.status}`)
+          if (r.status >= 500 || r.status === 429 || r.status === 408) throw new Error(`status ${r.status}`)
           return r
         }, { retries, sleep })
         videoPublic = res.status === 200
