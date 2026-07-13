@@ -5,6 +5,8 @@
 //                    (blocking). Other hosts: a non-blocking 'notice' — CI can't
 //                    auto-verify a license off GitHub, so a reviewer must confirm.
 //   demo-reachable — demo_url returns 200. Blocking.
+//   video-public   — video_url is a public demo video on YouTube, Loom, or
+//                    Vimeo, verified via the platform's oEmbed API. Blocking.
 // Transient failures (network / HTTP 5xx / ls-remote error) retry before giving up.
 import { execFile } from 'node:child_process'
 
@@ -13,6 +15,7 @@ const LABELS = {
   'repo-public': 'Repo is a public git repo',
   'repo-license': 'Repo license is MIT',
   'demo-reachable': 'Demo reachable (HTTP 200)',
+  'video-public': 'Demo video is a public YouTube/Loom/Vimeo video',
 }
 
 const defaultSleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -38,6 +41,25 @@ export function parseGithubRepo(url) {
   const segs = u.pathname.split('/').filter(Boolean)
   if (segs.length < 2) return null
   return { owner: segs[0], repo: segs[1].replace(/\.git$/i, '') }
+}
+
+// Resolves rawUrl to its platform oEmbed endpoint (YouTube / Vimeo / Loom).
+// Returns null if the URL doesn't parse or the host isn't an allowed platform.
+export function videoOembedUrl(rawUrl) {
+  let u
+  try { u = new URL(rawUrl) } catch { return null }
+  const host = u.hostname.toLowerCase().replace(/^www\./, '')
+  const enc = encodeURIComponent(rawUrl)
+  if (['youtube.com', 'm.youtube.com', 'youtu.be', 'youtube-nocookie.com'].includes(host)) {
+    return `https://www.youtube.com/oembed?url=${enc}&format=json`
+  }
+  if (['vimeo.com', 'player.vimeo.com'].includes(host)) {
+    return `https://vimeo.com/api/oembed.json?url=${enc}`
+  }
+  if (host === 'loom.com') {
+    return `https://www.loom.com/v1/oembed?url=${enc}`
+  }
+  return null
 }
 
 export async function withRetry(attempt, { retries = 3, sleep = defaultSleep } = {}) {
@@ -71,12 +93,13 @@ async function ghGet(path, token, fetchImpl) {
 
 export async function checkExternal({ value, fetchImpl = fetch, token, retries = 3, sleep = defaultSleep, gitLsRemote = defaultGitLsRemote }) {
   if (!value || typeof value !== 'object') {
-    return ['repo-public', 'repo-license', 'demo-reachable'].map((id) =>
+    return ['repo-public', 'repo-license', 'demo-reachable', 'video-public'].map((id) =>
       finding(id, LABELS[id], false, ['Not evaluated — submission.yaml could not be read/parsed.']))
   }
 
   const repoUrl = typeof value.repo_url === 'string' ? value.repo_url.trim() : ''
   const demoUrl = typeof value.demo_url === 'string' ? value.demo_url.trim() : ''
+  const videoUrl = typeof value.video_url === 'string' ? value.video_url.trim() : ''
 
   // repo-public — host-agnostic anonymous git ls-remote.
   let repoPublic
@@ -139,5 +162,38 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
     }
   }
 
-  return [repoPublic, repoLicense, demoReachable]
+  // video-public — video_url must be a public YouTube/Loom/Vimeo demo video,
+  // verified via the platform's oEmbed API.
+  let videoPublic
+  if (!videoUrl) {
+    videoPublic = finding('video-public', LABELS['video-public'], false, ['video_url is missing.'])
+  } else {
+    const oembedUrl = videoOembedUrl(videoUrl)
+    if (!oembedUrl) {
+      videoPublic = finding('video-public', LABELS['video-public'], false,
+        [`Demo video must be a public YouTube, Loom, or Vimeo link (got "${videoUrl}").`])
+    } else {
+      try {
+        const res = await withRetry(async () => {
+          const r = await fetchImpl(oembedUrl, {
+            method: 'GET',
+            redirect: 'follow',
+            signal: AbortSignal.timeout(15000),
+            headers: { 'User-Agent': 'nimiq-submissions-ci' },
+          })
+          if (r.status >= 500) throw new Error(`status ${r.status}`)
+          return r
+        }, { retries, sleep })
+        videoPublic = res.status === 200
+          ? finding('video-public', LABELS['video-public'], true)
+          : finding('video-public', LABELS['video-public'], false,
+            [`The video isn't publicly viewable (the platform's oEmbed API returned HTTP ${res.status}). Make sure it's public or unlisted, not private or deleted.`])
+      } catch (err) {
+        videoPublic = finding('video-public', LABELS['video-public'], false,
+          [`Could not verify the video via the platform's oEmbed API: ${String(err.message || err)}`])
+      }
+    }
+  }
+
+  return [repoPublic, repoLicense, demoReachable, videoPublic]
 }

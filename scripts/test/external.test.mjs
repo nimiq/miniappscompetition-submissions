@@ -127,8 +127,88 @@ test('demo non-200 fails after retries; transient 503 then 200 passes', async ()
   assert.equal(find(flaky, 'demo-reachable').ok, true)
 })
 
-test('null value (unresolved submission) fails all three at error level', async () => {
+test('null value (unresolved submission) fails all four at error level', async () => {
   const findings = await checkExternal({ value: null, fetchImpl: fakeFetch({}), token: 't', sleep: noSleep, gitLsRemote: publicRepo })
-  assert.equal(findings.length, 3)
+  assert.equal(findings.length, 4)
   assert.ok(findings.every((f) => !f.ok))
+})
+
+test('video-public: YouTube Shorts public video passes via oEmbed', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://youtube.com/shorts/abc' },
+    fetchImpl: fakeFetch({ 'youtube.com/oembed': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, true)
+  assert.equal(vp.level, 'error')
+})
+
+test('video-public: non-platform host (e.g. X/Twitter) fails without any fetch', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://x.com/foo/status/1/video/1' },
+    fetchImpl: fakeFetch({}),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /YouTube|Loom|Vimeo/)
+})
+
+test('video-public: placeholder URL fails (host rejected)', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://ComingSoon.com' },
+    fetchImpl: fakeFetch({}),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, false)
+})
+
+test('video-public: YouTube private/deleted video fails (oEmbed 404)', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.youtube.com/watch?v=x' },
+    fetchImpl: fakeFetch({ 'youtube.com/oembed': { status: 404 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /404|publicly/)
+})
+
+test('video-public: Loom video passes via oEmbed', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.loom.com/share/xyz' },
+    fetchImpl: fakeFetch({ 'loom.com/v1/oembed': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: Vimeo video passes via oEmbed', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://vimeo.com/123' },
+    fetchImpl: fakeFetch({ 'vimeo.com/api/oembed': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: missing video_url fails', async () => {
+  const findings = await checkExternal({
+    value: {},
+    fetchImpl: fakeFetch({}),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /missing/i)
+})
+
+test('video-public: transient 503 then 200 on oEmbed passes', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://vimeo.com/123' },
+    fetchImpl: fakeFetch({ 'vimeo.com/api/oembed': (n) => (n < 2 ? { status: 503 } : { status: 200 }) }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
 })
