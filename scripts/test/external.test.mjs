@@ -144,15 +144,15 @@ test('video-public: YouTube Shorts public video passes via oEmbed', async () => 
   assert.equal(vp.level, 'error')
 })
 
-test('video-public: non-platform host (e.g. X/Twitter) fails without any fetch', async () => {
+test('video-public: non-platform host (e.g. TikTok) fails without any fetch', async () => {
   const findings = await checkExternal({
-    value: { video_url: 'https://x.com/foo/status/1/video/1' },
+    value: { video_url: 'https://www.tiktok.com/@foo/video/123' },
     fetchImpl: fakeFetch({}),
     token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
   const vp = find(findings, 'video-public')
   assert.equal(vp.ok, false)
-  assert.match(vp.details.join(' '), /YouTube|Loom|Vimeo/)
+  assert.match(vp.details.join(' '), /YouTube|Loom|Vimeo|X post/)
 })
 
 test('video-public: placeholder URL fails (host rejected)', async () => {
@@ -191,6 +191,46 @@ test('video-public: Vimeo video passes via oEmbed', async () => {
     token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
   assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: X post passes via oEmbed', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://x.com/foo/status/1900000000000000000' },
+    fetchImpl: fakeFetch({ 'publish.x.com/oembed': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: legacy twitter.com post passes via oEmbed', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://twitter.com/foo/status/123/video/1' },
+    fetchImpl: fakeFetch({ 'publish.x.com/oembed': { status: 200 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  assert.equal(find(findings, 'video-public').ok, true)
+})
+
+test('video-public: X profile link (not a post) fails without any fetch', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://x.com/foo' },
+    fetchImpl: fakeFetch({}),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /X post/)
+})
+
+test('video-public: private/deleted X post fails (oEmbed 404)', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://x.com/foo/status/123' },
+    fetchImpl: fakeFetch({ 'publish.x.com/oembed': { status: 404 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /404|publicly/)
 })
 
 test('video-public: missing video_url fails', async () => {

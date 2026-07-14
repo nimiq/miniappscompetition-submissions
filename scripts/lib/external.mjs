@@ -5,8 +5,8 @@
 //                    (blocking). Other hosts: a non-blocking 'notice' — CI can't
 //                    auto-verify a license off GitHub, so a reviewer must confirm.
 //   demo-reachable — demo_url returns 200. Blocking.
-//   video-public   — video_url is a public demo video on YouTube, Loom, or
-//                    Vimeo, verified via the platform's oEmbed API. Blocking.
+//   video-public   — video_url is a public demo video on YouTube, Loom, Vimeo,
+//                    or X, verified via the platform's oEmbed API. Blocking.
 // Transient failures (network / HTTP 5xx / ls-remote error) retry before giving up.
 import { execFile } from 'node:child_process'
 
@@ -15,7 +15,7 @@ const LABELS = {
   'repo-public': 'Repo is a public git repo',
   'repo-license': 'Repo license is MIT',
   'demo-reachable': 'Demo reachable (HTTP 200)',
-  'video-public': 'Demo video is a public YouTube/Loom/Vimeo video',
+  'video-public': 'Demo video is a public YouTube/Loom/Vimeo/X video',
 }
 
 const defaultSleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -43,7 +43,7 @@ export function parseGithubRepo(url) {
   return { owner: segs[0], repo: segs[1].replace(/\.git$/i, '') }
 }
 
-// Resolves rawUrl to its platform oEmbed endpoint (YouTube / Vimeo / Loom).
+// Resolves rawUrl to its platform oEmbed endpoint (YouTube / Vimeo / Loom / X).
 // Returns null if the URL doesn't parse or the host isn't an allowed platform.
 export function videoOembedUrl(rawUrl) {
   let u
@@ -58,6 +58,12 @@ export function videoOembedUrl(rawUrl) {
   }
   if (host === 'loom.com') {
     return `https://www.loom.com/v1/oembed?url=${enc}`
+  }
+  // X: must be a link to a post (/…/status/<id>), the only thing X's oEmbed
+  // resolves. Accepts the legacy twitter.com domain and the /i/status/<id> form.
+  if (['x.com', 'mobile.x.com', 'twitter.com', 'mobile.twitter.com'].includes(host)) {
+    if (!/\/status(?:es)?\/\d+/.test(u.pathname)) return null
+    return `https://publish.x.com/oembed?url=${enc}&format=json`
   }
   return null
 }
@@ -162,7 +168,7 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
     }
   }
 
-  // video-public — video_url must be a public YouTube/Loom/Vimeo demo video,
+  // video-public — video_url must be a public YouTube/Loom/Vimeo/X demo video,
   // verified via the platform's oEmbed API.
   let videoPublic
   if (!videoUrl) {
@@ -171,7 +177,7 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
     const oembedUrl = videoOembedUrl(videoUrl)
     if (!oembedUrl) {
       videoPublic = finding('video-public', LABELS['video-public'], false,
-        [`Demo video must be a public YouTube, Loom, or Vimeo link (got "${videoUrl}").`])
+        [`Demo video must be a public YouTube, Loom, or Vimeo link, or a link to an X post (got "${videoUrl}").`])
     } else {
       try {
         const res = await withRetry(async () => {
