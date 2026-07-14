@@ -1,0 +1,62 @@
+name: Publish app feed
+
+# Builds the public feed the Pay app reads to list competition apps, and
+# deploys it to GitHub Pages:
+#
+#   https://nimiq.github.io/miniappscompetition-submissions/apps.json
+#
+# Anonymous, CDN-backed, CORS-open. Nothing is committed back to the repo, so
+# there is no risk of a push loop.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cycle*/**'
+      - 'scripts/build-index.mjs'
+      - 'scripts/lib/feed.mjs'
+      - '.github/workflows/publish-apps.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race for the single Pages site. In-flight runs finish
+# rather than being cancelled, so an older commit can't clobber a newer feed.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install script deps
+        working-directory: scripts
+        run: npm ci
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build feed
+        env:
+          # The live site origin — hardcoding it would break the icon URLs the
+          # day a custom domain is attached to Pages.
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: node scripts/build-index.mjs dist
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+      - id: deploy
+        uses: actions/deploy-pages@v5
