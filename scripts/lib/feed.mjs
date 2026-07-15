@@ -1,5 +1,5 @@
 import { parse as parseYaml } from 'yaml'
-import { SAFE_FILENAME_RE, isHttpUrl } from './schema.mjs'
+import { CATEGORIES, SAFE_FILENAME_RE, isHttpUrl } from './schema.mjs'
 
 const CYCLE_RE = /^cycle(\d+)$/
 
@@ -11,9 +11,9 @@ const joinUrl = (base, path) => `${base.replace(/\/+$/, '')}/${path}`
 // repo. Pure: filesystem access is injected, so the whole thing is testable
 // without a fixture tree.
 //
-// Only what the Pay app needs to list an app is published — name, live URL,
-// icon. Everything else in the manifest (contact_email above all) stays out of
-// the feed.
+// Only what the Pay app needs to list an app is published — name, category,
+// live URL, icon. Everything else in the manifest (contact_email above all)
+// stays out of the feed.
 //
 // Returns { feed, assets, errors }. `assets` are the icon files to copy into
 // the published site, at the same repo-relative path the icon URLs point to.
@@ -48,10 +48,14 @@ export function buildFeed({ listDirs, readFile, baseUrl, commit, generatedAt }) 
         continue
       }
 
-      const { app_name: appName, demo_url: demoUrl, icon } = value
+      const { app_name: appName, category, demo_url: demoUrl, icon } = value
 
       if (typeof appName !== 'string' || appName.trim() === '') {
         errors.push(`${dir}: app_name is missing.`)
+        continue
+      }
+      if (typeof category !== 'string' || !CATEGORIES.includes(category)) {
+        errors.push(`${dir}: category is missing or not one of the known categories.`)
         continue
       }
       if (typeof demoUrl !== 'string' || !isHttpUrl(demoUrl)) {
@@ -67,7 +71,7 @@ export function buildFeed({ listDirs, readFile, baseUrl, commit, generatedAt }) 
         continue
       }
 
-      apps.push({ cycle, app_name: appName, url: demoUrl, icon: joinUrl(baseUrl, `${dir}/${icon}`) })
+      apps.push({ cycle, app_name: appName, category, url: demoUrl, icon: joinUrl(baseUrl, `${dir}/${icon}`) })
       assets.push(`${dir}/${icon}`)
     }
   }

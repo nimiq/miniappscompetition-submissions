@@ -6,6 +6,7 @@ const BASE = 'https://nimiq.github.io/miniappscompetition-submissions'
 
 const manifest = (over = {}) => Object.entries({
   app_name: 'Nimiq Bazar',
+  category: 'Marketplaces',
   demo_url: 'https://bazar.nimiq.fyi/',
   icon: 'icon.png',
   contact_email: 'someone@example.com',
@@ -40,7 +41,7 @@ const build = (files, over = {}) => buildFeed({
   ...over,
 })
 
-test('emits name, url and an absolute same-origin icon URL', () => {
+test('emits name, category, url and an absolute same-origin icon URL', () => {
   const { feed, assets, errors } = build({
     'cycle1/NimiqBlue/submission.yaml': manifest(),
     'cycle1/NimiqBlue/icon.png': 'PNG',
@@ -50,6 +51,7 @@ test('emits name, url and an absolute same-origin icon URL', () => {
   assert.deepEqual(feed.apps, [{
     cycle: 'cycle1',
     app_name: 'Nimiq Bazar',
+    category: 'Marketplaces',
     url: 'https://bazar.nimiq.fyi/',
     icon: `${BASE}/cycle1/NimiqBlue/icon.png`,
   }])
@@ -58,12 +60,12 @@ test('emits name, url and an absolute same-origin icon URL', () => {
   assert.deepEqual(feed.commit, 'abc1234')
 })
 
-test('never leaks fields beyond cycle, name, url and icon', () => {
+test('never leaks fields beyond cycle, name, category, url and icon', () => {
   const { feed } = build({
     'cycle1/NimiqBlue/submission.yaml': manifest({ builder_story: 'secret', x_account: 'someone' }),
     'cycle1/NimiqBlue/icon.png': 'PNG',
   })
-  assert.deepEqual(Object.keys(feed.apps[0]), ['cycle', 'app_name', 'url', 'icon'])
+  assert.deepEqual(Object.keys(feed.apps[0]), ['cycle', 'app_name', 'category', 'url', 'icon'])
   assert.doesNotMatch(JSON.stringify(feed), /someone@example\.com/)
 })
 
@@ -126,6 +128,20 @@ test('reports a missing app_name', () => {
     'cycle1/foo/icon.png': 'PNG',
   })
   assert.match(errors[0], /app_name is missing/)
+})
+
+test('reports a category that is missing or unknown', () => {
+  const { errors: missing } = build({
+    'cycle1/foo/submission.yaml': manifest({ category: null }),
+    'cycle1/foo/icon.png': 'PNG',
+  })
+  assert.match(missing[0], /category is missing or not one of the known categories/)
+
+  const { errors: unknown } = build({
+    'cycle1/foo/submission.yaml': manifest({ category: 'Wizardry' }),
+    'cycle1/foo/icon.png': 'PNG',
+  })
+  assert.match(unknown[0], /category is missing or not one of the known categories/)
 })
 
 test('reports a demo_url that is not http(s)', () => {
