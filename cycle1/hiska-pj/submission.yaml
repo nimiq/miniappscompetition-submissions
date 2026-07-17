@@ -1,0 +1,23 @@
+app_name: Nimiq Invoice Pay
+category: Creator tools
+tagline: Create invoices and get paid directly from your Nimiq wallet.
+description: Self-custodial invoicing tool for freelancers and businesses. Sign
+  in with your Nimiq wallet, create an invoice in 30 seconds, share a hosted
+  payment page, and get paid on-chain — no banks or middlemen needed.
+pricing: Free
+repo_url: https://github.com/hiska-pj/nimip
+demo_url: https://nimip.space
+video_url: https://youtu.be/v7BAeNhp8C4
+contact_email: hiska4520@gmail.com
+team_name: null
+team_members: null
+x_account: nimipdotspace
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: hiska-pj
+submitted_at: 2026-07-16T12:22:42.270Z
