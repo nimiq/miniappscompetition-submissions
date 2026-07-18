@@ -1,0 +1,22 @@
+app_name: NimiqStake
+category: Earning
+tagline: Stake NIM, earn rewards, climb the leaderboard.
+description: A staking platform for the Nimiq blockchain where users stake NIM
+  to earn 2.5% APY and compete on a ranked leaderboard.
+pricing: Free
+repo_url: https://github.com/lvrojhan/nimiqstake/tree/master
+demo_url: https://nimiqstake.xyz/
+video_url: https://youtu.be/_cFANkQiu4g
+contact_email: lvrojhan@gmail.com
+team_name: null
+team_members: null
+x_account: nimiqstake
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: lvrojhan
+submitted_at: 2026-07-18T09:08:05.599Z
