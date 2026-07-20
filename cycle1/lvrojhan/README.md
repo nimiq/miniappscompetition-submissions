@@ -19,7 +19,7 @@
 
 | Link | URL |
 | --- | --- |
-| Repo | [https://github.com/lvrojhan/nimiqstake/tree/master](<https://github.com/lvrojhan/nimiqstake/tree/master>) |
+| Repo | [https://github.com/lvrojhan/nimiqstake](<https://github.com/lvrojhan/nimiqstake>) |
 | Demo | [https://nimiqstake.xyz/](<https://nimiqstake.xyz/>) |
 | Video | [https://youtu.be/_cFANkQiu4g](<https://youtu.be/_cFANkQiu4g>) |
 
