@@ -2,9 +2,9 @@
 // Builds the public app feed published to GitHub Pages:
 //
 //   <out>/apps.json                     the feed
-//   <out>/cycleN/<login>/<icon>         icons, same-origin with the feed
+//   <out>/cycleN/<login>/<image>        media, same-origin with the feed
 //
-// Icon URLs are derived from PAGES_BASE_URL (the base_url output of
+// Media URLs are derived from PAGES_BASE_URL (the base_url output of
 // actions/configure-pages) rather than hardcoded, so attaching a custom domain
 // to Pages later regenerates correct URLs with no code change.
 //
@@ -58,5 +58,5 @@ for (const asset of assets) {
 }
 writeFileSync(join(outDir, 'apps.json'), `${JSON.stringify(feed, null, 2)}\n`)
 
-console.log(`Built ${feed.apps.length} app(s) and ${assets.length} icon(s) into ${outDir}/`)
+console.log(`Built ${feed.apps.length} app(s) and ${assets.length} image asset(s) into ${outDir}/`)
 for (const app of feed.apps) console.log(`  • ${app.cycle}  ${app.app_name} — ${app.url}`)
