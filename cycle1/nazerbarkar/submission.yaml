@@ -1,0 +1,29 @@
+app_name: nimga
+category: Creator tools
+tagline: Turn your dreams into images with your Nimiq wallet.
+description: NIMGA is an AI image generator that lets anyone create stunning
+  images using just their Nimiq wallet. Connect, type a prompt, and get a
+  beautiful AI-generated image in seconds — no emails, no passwords, no
+  tracking.
+pricing: Free
+repo_url: https://github.com/nazerbarkar/nimga
+demo_url: https://nimga.pics/
+video_url: https://youtu.be/GFFY2ADMD1g
+contact_email: nazerbarkar@gmail.com
+team_name: null
+team_members: null
+x_account: nimga_pics
+builder_story: I built NIMGA to prove that Nimiq can power real consumer apps
+  beyond payments. In 72 hours, I created a full AI image generation platform
+  using Nimiq Hub for wallet auth and on-chain payments, Cloudflare Workers AI
+  for image generation, and a community gallery with voting. The entire frontend
+  is built with vanilla JavaScript — no frameworks, no bloat. Every single user
+  is a real Nimiq wallet, making this a true on-chain community experience.
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: nazerbarkar
+submitted_at: 2026-07-24T13:33:40.439Z
