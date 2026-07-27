@@ -6,7 +6,7 @@ description: Ergon is a mobile-first marketplace where users post short, paid
   contributor accepts the request, submits the evidence, and the payment is
   released according to the selected verification rule.
 pricing: Free
-repo_url: https://github.com/0xNexuz/ergon/tree/main
+repo_url: https://github.com/0xNexuz/ergon.git
 demo_url: https://ergonapp.vercel.app/
 video_url: https://youtu.be/21TELkOH6vs?si=sNIHp5BPbzgw_eov
 contact_email: elllbest7@gmail.com
