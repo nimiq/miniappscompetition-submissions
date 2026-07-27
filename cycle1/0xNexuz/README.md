@@ -19,7 +19,7 @@
 
 | Link | URL |
 | --- | --- |
-| Repo | [https://github.com/0xNexuz/ergon/tree/main](<https://github.com/0xNexuz/ergon/tree/main>) |
+| Repo | [https://github.com/0xNexuz/ergon.git](<https://github.com/0xNexuz/ergon.git>) |
 | Demo | [https://ergonapp.vercel.app/](<https://ergonapp.vercel.app/>) |
 | Video | [https://youtu.be/21TELkOH6vs?si=sNIHp5BPbzgw_eov](<https://youtu.be/21TELkOH6vs?si=sNIHp5BPbzgw_eov>) |
 
