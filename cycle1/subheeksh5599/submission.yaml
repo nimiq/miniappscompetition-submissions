@@ -1,0 +1,24 @@
+app_name: Dropn
+category: Social
+tagline: Send NIM like a gift. Claim it like a surprise
+description: DropN creates random-payout NIM drops with one link. You set the
+  total, the recipient count, and a message. The stick-breaking algorithm
+  generates uneven random shares — some people get more, some get less. That's
+  the fun. That's the virality. One link
+pricing: Free
+repo_url: https://github.com/subheeksh5599/dropn
+demo_url: https://dropn.vercel.app/
+video_url: https://drive.google.com/drive/folders/10jombWJKHgaP5k8rhEjzdk01fHp9IOeR
+contact_email: komasubheeksh@gmail.com
+team_name: null
+team_members: null
+x_account: https://x.com/KomariS18774
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: subheeksh5599
+submitted_at: 2026-07-29T14:38:10.159Z
