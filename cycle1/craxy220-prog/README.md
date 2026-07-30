@@ -19,7 +19,7 @@
 
 | Link | URL |
 | --- | --- |
-| Repo | [https://github.com/yourusername/Trustpay-app.git](<https://github.com/yourusername/Trustpay-app.git>) |
+| Repo | https://github.com/craxy220-prog/Trustpay-app.git <https://github.com/craxy220-prog/Trustpay-app.git|
 | Demo | [https://trustpay-1.netlify.app](<https://trustpay-1.netlify.app>) |
 | Video | [https://youtube.com/shorts/fOg4_-K5-Ic?si=VaI8VkRGS4TwEYZQ](<https://youtube.com/shorts/fOg4_-K5-Ic?si=VaI8VkRGS4TwEYZQ>) |
 
