@@ -1,0 +1,26 @@
+app_name: NimiQ Roadtrip
+category: Social
+tagline: Easy expense-splitting among friends and family
+description: Nimiq Roadtrip is a Nimiq Pay Mini App built for groups. Create an
+  event, invite the people who are chipping in, add expenses as they happen, and
+  let the app figure out the fairest way for everyone to settle up. Payments can
+  be made directly in NIM through the Nimiq Pay wallet.
+pricing: Free
+repo_url: https://github.com/rattadan/Nimiq_Roadtrip
+demo_url: https://github.com/rattadan/Nimiq_Roadtrip
+video_url: https://youtu.be/ZK6eBHrtxsI
+contact_email: rattadan@riseup.net
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: rattadan
+submitted_at: 2026-07-31T12:50:42.952Z
