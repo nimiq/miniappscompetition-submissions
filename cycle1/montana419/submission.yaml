@@ -1,0 +1,27 @@
+app_name: NorTA AI
+category: Productivity
+tagline: An AI enabled  task manager and Personal assistant.
+description: A task manager for startups and individual. Can be used for task
+  scheduling,  saving employee data, founder wellness routines and payroll
+  overview.
+pricing: Free
+repo_url: https://github.com/montana419/norta
+demo_url: https://norta-ai.vercel.app/
+video_url: https://www.youtube.com/watch?v=Hyj2I86X6kY
+contact_email: chukwukafranciis@gmail.com
+team_name: null
+team_members: null
+x_account: thedeafEYE
+builder_story: As an individual and  start up founder ,i realized that events
+  could happen so fast without my realization , due to my busy schedules. I
+  decided to build a virtual diary integrated with gemini and chat GPT
+  capabilities, i get to record task in real-time and also onboard employees and
+  their personal data. this workflow has greatly improved my productivity.
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: montana419
+submitted_at: 2026-07-31T10:40:44.748Z
