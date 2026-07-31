@@ -1,0 +1,22 @@
+app_name: React Arcade
+category: Games
+tagline: Think fast with your fingers
+description: A simple game that users click the object on screen to react to,
+  the more users react the faster the object appears quickly
+pricing: Freemium
+repo_url: https://github.com/aoki-non/react-arcade
+demo_url: https://react-arcade.lovable.app/
+video_url: https://x.com/oja_market/status/2083338283484864637?s=46
+contact_email: aoki91460@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: aoki-non
+submitted_at: 2026-07-31T23:51:11.661Z
