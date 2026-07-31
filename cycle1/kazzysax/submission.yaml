@@ -1,0 +1,32 @@
+app_name: PREDTUBE
+category: Social
+tagline: Prediction decision layer that runs socially
+description: PredTUBE is a social app that allows users to see people opinions
+  and convictions placed on markets by public posts, with users marked by
+  reputation giving them higher effects on affecting feed.
+pricing: Free
+repo_url: https://github.com/kazzysax/predtube
+demo_url: https://predtube-production.up.railway.app
+video_url: https://x.com/i/status/2083307938010046873
+contact_email: projectskazzy@gmail.com
+team_name: Kazzy
+team_members: null
+x_account: saxxyweb3
+builder_story: "I FOUND IT REALLY FUN BUILDING THIS INNOVATION AND THE DOCS FOR
+  NIMIQ WERE EASY TO UNDERSTAND AND IMPLEMENT. I BELIEVE WITH MORE TIME AND
+  RESURCES I CAN UPGRADE PREDTUBE TO BECOME BETTER AND MORE SOCIALLY ATTRACTIVE.
+  THIS IS A YOUNG IDEA I BELIEVE CAN GROW INTO SOMETHING GREAT AND ATTRACT LOTS
+  OF USERS.\r
+
+  \r
+
+  TIP USERS WITH THEIR USERNAMES ON PRED TUBE"
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: kazzysax
+submitted_at: 2026-07-31T22:24:16.567Z
