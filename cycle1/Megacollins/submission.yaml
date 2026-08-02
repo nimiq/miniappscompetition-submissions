@@ -1,0 +1,80 @@
+app_name: NimRide NG
+category: Marketplaces
+tagline: Share rides. Deliver parcels. Across Nigeria
+description: NimRide NG lets Nigerians travelling between states share the cost
+  of trips that are already happening. book a seat in a car going your way, or
+  send a parcel with someone already driving there. Payment is held in escrow
+  and released only when the passenger confirms arrival.
+pricing: Free
+repo_url: https://github.com/Megacollins/nimride-ng
+demo_url: https://nimride.vercel.app
+video_url: https://youtu.be/aL1XPzFqGV8
+contact_email: paulchristian1800@gmail.com
+team_name: Megacollins
+team_members: null
+x_account: Megacollins
+builder_story: "Millions of Nigerians cannot afford to travel. Not \"would
+  rather not\" cannot.\r
+
+  Transport is one of the first things people cut when money is tight, and since
+  fuel subsidy removal it has climbed past what a lot of households can
+  absorb.\r
+
+  \r
+
+  I know that one personally. As a student I barely went home for celebrations.
+  Not\r
+
+  because I didn't want to be there, but because the fare was more than I had.
+  You tell people you're busy, or that you have exams. The real reason is that
+  you\r
+
+  counted what was in your account and the number didn't work. Christmas,
+  weddings, burials, you follow them from a phone screen while everyone else is
+  in the room.\r
+
+  \r
+
+  What always got to me is that the cars were going anyway.\r
+
+  \r
+
+  On any given morning there are vehicles running Lagos to Abuja with three
+  empty seats in them. A car burns the same fuel whether one person is inside it
+  or four same petrol, same tolls, same wear. So one person carries the entire
+  cost of a journey and uses a quarter of the space, while someone else, who is
+  going to the exact same place, stays home.\r
+
+  \r
+
+  That gap is the whole product. NimRide NG doesn't create new journeys or put
+  more.vehicles on the road. It fills seats and boot space that were already
+  travelling empty, so the cost lands on four people instead of one.\r
+
+  \r
+
+  The hard part was never the booking screen. It was trust why would you get
+  into a stranger's car, or hand them your parcel, or pay before you have moved?
+  So verification is a checklist rather than a score, both sides sign the trip
+  terms\r
+
+  from their own wallets, and the money is held rather than handed over: a
+  six-digit code that only the passenger has is the only thing that releases
+  payment on arrival. No cash at the park.\r
+
+  \r
+
+  I built the thing I needed as a student, for the millions of people still in
+  that\r
+
+  position."
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Megacollins
+submitted_at: 2026-07-30T20:38:12.426Z
