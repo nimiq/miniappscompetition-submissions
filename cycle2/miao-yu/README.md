@@ -21,7 +21,7 @@
 | --- | --- |
 | Repo | [https://github.com/miao-yu/nimiq-reef](<https://github.com/miao-yu/nimiq-reef>) |
 | Demo | [https://reef.nimiq.cafe/](<https://reef.nimiq.cafe/>) |
-| Video | [https://reef.nimiq.cafe/](<https://reef.nimiq.cafe/>) |
+| Video | [https://x.com/Nimiq_Cafe/status/2095657569368879279](<https://x.com/Nimiq_Cafe/status/2095657569368879279>) |
 
 ## Description
 
