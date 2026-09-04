@@ -1,0 +1,33 @@
+app_name: TeTe on Nimiq
+category: Games
+tagline: Challenge for stakes, or just play the arcade, skill decides both.
+description: "TeTe is a Nimiq Pay Mini App for peer-to-peer skill challenges:
+  two players stake equal amounts of NIM, compete at something they’re actually
+  good at, chess, trivia, mobile esports, or a custom contest and the winner
+  takes the pot. \r
+
+  \r
+
+  Arcade games for earning NIM"
+pricing: Free
+repo_url: https://github.com/TeevincsCrypt/TeTe
+demo_url: https://www.teteonnimiq.site/
+video_url: https://youtu.be/Ym72THbIxR8?si=BKO4xPKBDfC79bCa
+contact_email: teevincs@gmail.com
+team_name: null
+team_members: null
+x_account: fwteevincs
+builder_story: null
+skool_post_url: null
+social_post_url: https://x.com/fwteevincs/status/2095819449840332912?s=46
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: TeevincsCrypt
+submitted_at: 2026-09-04T13:29:49.790Z
