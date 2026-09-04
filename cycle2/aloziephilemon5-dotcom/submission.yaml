@@ -1,0 +1,47 @@
+app_name: NIM Invoice
+category: Productivity
+tagline: Create a NIM invoice and get paid with a link.
+description: NIM Invoice is for freelancers and anyone who needs to request a
+  NIM payment. Enter an amount and memo, share the link, and the payer sends NIM
+  in Nimiq Pay.
+pricing: Free
+repo_url: https://github.com/aloziephilemon5-dotcom/nim-invoice
+demo_url: https://cool-smakager-67f33b.netlify.app
+video_url: https://x.com/ByphilemonHQ/status/2095224946276614377?s=20
+contact_email: philemonalozie29@gmail.com
+team_name: De-Blephi
+team_members: null
+x_account: ByphilemonHQ
+builder_story: "I kept seeing the same problem: someone wants to get paid in
+  NIM, so they paste a long wallet address into chat and hope the other person
+  sends the right amount.\r
+
+  \r
+
+  That is easy to mess up. The payer has no memo, no amount, and no simple “open
+  this and pay” step.\r
+
+  \r
+
+  I built NIM Invoice for freelancers, friends, and small sellers who need a
+  clear payment request. You enter an amount and a short memo, copy the link,
+  and send it. The payer opens it in Nimiq Pay and sends NIM to the address on
+  the invoice. You can mark it paid after.\r
+
+  \r
+
+  I shipped a small working Mini App instead of a big unfinished one. The first
+  version stores invoices on the device and puts the payment details in the
+  shared link. Next I want payment confirmation and a cleaner share flow."
+skool_post_url: null
+social_post_url: https://x.com/ByphilemonHQ/status/2095224946276614377?s=20
+heard_about: twitter
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: aloziephilemon5-dotcom
+submitted_at: 2026-09-03T00:56:01.947Z
