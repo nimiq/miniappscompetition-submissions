@@ -1,0 +1,38 @@
+app_name: asknim
+category: Productivity
+tagline: Your pocket AI, inside Nimiq Pay
+description: AskNim is a pocket AI assistant built natively inside Nimiq Pay
+  that delivers fast, private streaming answers with zero signup. It's designed
+  for anyone who wants quick AI on the go, powered by feeless pay-per-question
+  NIM micropayments instead of expensive monthly subscriptions.
+pricing: Freemium
+repo_url: https://github.com/mateojkk/AskNimi
+demo_url: https://ask-nim.vercel.app/
+video_url: https://youtube.com/shorts/Ug9BeKl26zY?si=EZaCv2LmqlWIBLY1
+contact_email: thesaintszn@gmail.com
+team_name: null
+team_members: null
+x_account: mateojk_
+builder_story: "Every AI tool today demands a $20/month subscription or credit
+  card signup, even if you just need a few quick answers a week. Charging
+  fractions of a cent per query has always been impossible on other chains due
+  to gas fees.\r
+
+  \r
+
+  I built AskNim to leverage Nimiq's feeless, 1-second block rails to make real
+  AI micropayments viable. With zero signup and native Nimiq Pay integration,
+  users get instant, privacy-first answers on their phone, paying only for what
+  they actually use. It’s an everyday utility built to showcase the true
+  superpower of Nimiq."
+skool_post_url: null
+social_post_url: https://x.com/mateojk_/status/2095939845117902999?s=46
+heard_about: X/twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: mateojkk
+submitted_at: 2026-09-04T18:23:43.918Z
