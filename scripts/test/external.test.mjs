@@ -16,7 +16,7 @@ function fakeFetch(routes) {
       if (url.includes(key)) {
         calls[key] = (calls[key] || 0) + 1
         const r = typeof resp === 'function' ? resp(calls[key]) : resp
-        return { status: r.status, json: async () => r.body }
+        return { status: r.status, json: async () => r.body, text: async () => r.text ?? '' }
       }
     }
     throw new Error(`unrouted ${url}`)
@@ -182,6 +182,64 @@ test('video-public: Loom video passes via oEmbed', async () => {
     token: 't', sleep: noSleep, gitLsRemote: publicRepo,
   })
   assert.equal(find(findings, 'video-public').ok, true)
+})
+
+// Loom's legacy oEmbed 404s for public videos served off its newer media backend,
+// so a Loom oEmbed miss falls back to the share page instead of failing outright.
+const LOOM_SHARE_HTML = '<script type="application/ld+json">{"@type": "videoObject","name":"x"}</script>'
+
+test('video-public: Loom oEmbed 404 + live share page becomes a non-blocking notice', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.loom.com/share/xyz' },
+    fetchImpl: fakeFetch({
+      'loom.com/v1/oembed': { status: 404 },
+      'loom.com/share/xyz': { status: 200, text: LOOM_SHARE_HTML },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.level, 'notice')
+  assert.equal(vp.ok, false)
+  assert.match(vp.details.join(' '), /reviewer/i)
+})
+
+test('video-public: Loom oEmbed 404 + share page 404 stays a blocking fail', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.loom.com/share/xyz' },
+    fetchImpl: fakeFetch({
+      'loom.com/v1/oembed': { status: 404 },
+      'loom.com/share/xyz': { status: 404 },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.notEqual(vp.level, 'notice')
+})
+
+test('video-public: Loom oEmbed 404 + share page without a videoObject stays blocking', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.loom.com/share/xyz' },
+    fetchImpl: fakeFetch({
+      'loom.com/v1/oembed': { status: 404 },
+      'loom.com/share/xyz': { status: 200, text: '<html><body>You need access to view this video</body></html>' },
+    }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.notEqual(vp.level, 'notice')
+})
+
+test('video-public: the share-page fallback is Loom-only (YouTube 404 stays blocking)', async () => {
+  const findings = await checkExternal({
+    value: { video_url: 'https://www.youtube.com/watch?v=x' },
+    fetchImpl: fakeFetch({ 'youtube.com/oembed': { status: 404 } }),
+    token: 't', sleep: noSleep, gitLsRemote: publicRepo,
+  })
+  const vp = find(findings, 'video-public')
+  assert.equal(vp.ok, false)
+  assert.notEqual(vp.level, 'notice')
 })
 
 test('video-public: Vimeo video passes via oEmbed', async () => {

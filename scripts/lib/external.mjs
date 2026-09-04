@@ -6,7 +6,9 @@
 //                    auto-verify a license off GitHub, so a reviewer must confirm.
 //   demo-reachable — demo_url returns 200. Blocking.
 //   video-public   — video_url is a public demo video on YouTube, Loom, Vimeo,
-//                    or X, verified via the platform's oEmbed API. Blocking.
+//                    or X, verified via the platform's oEmbed API. Blocking,
+//                    except for the Loom share-page fallback below, which
+//                    downgrades to a reviewer-confirmed 'notice'.
 // Transient failures (network / HTTP 5xx / ls-remote error) retry before giving up.
 import { execFile } from 'node:child_process'
 
@@ -95,6 +97,52 @@ async function ghGet(path, token, fetchImpl) {
   if (res.status >= 500) throw new Error(`GitHub API ${res.status}`)
   const body = res.status === 200 ? await res.json() : null
   return { status: res.status, body }
+}
+
+// True for a loom.com video URL — the host set videoOembedUrl routes to Loom.
+export function isLoomUrl(rawUrl) {
+  try { return new URL(rawUrl).hostname.toLowerCase().replace(/^www\./, '') === 'loom.com' }
+  catch { return false }
+}
+
+// Loom-only fallback for an oEmbed miss.
+//
+// Loom's legacy /v1/oembed 404s for videos served off its newer (Atlassian)
+// media backend — thumbnails under cdn.loom.com/os/loom-media-content/ rather
+// than cdn.loom.com/sessions/ — even when the video is public and embeddable.
+// Observed on a submission whose share page plays fine for a logged-out
+// visitor while every request shape (both hosts, json + xml, /share/ and
+// /embed/ forms) 404s. So a Loom oEmbed miss is NOT evidence the video is
+// private, and failing the gate on it is a false negative.
+//
+// The share page server-renders a schema.org videoObject for a video that
+// resolves (an unknown id 404s instead). That proves the video EXISTS, but not
+// that an anonymous visitor can watch it — Loom's response for a restricted
+// video is unverified. So this downgrades to a 'notice' for a reviewer to
+// confirm by hand rather than passing the gate outright.
+async function loomShareFallback({ videoUrl, fetchImpl, oembedStatus, retries, sleep }) {
+  const blocking = finding('video-public', LABELS['video-public'], false,
+    [`The video isn't publicly viewable (the platform's oEmbed API returned HTTP ${oembedStatus}). Make sure it's public or unlisted, not private or deleted.`])
+  try {
+    const res = await withRetry(async () => {
+      const r = await fetchImpl(videoUrl, {
+        method: 'GET',
+        redirect: 'follow',
+        signal: AbortSignal.timeout(15000),
+        headers: { 'User-Agent': 'nimiq-submissions-ci' },
+      })
+      if (r.status >= 500 || r.status === 429 || r.status === 408) throw new Error(`status ${r.status}`)
+      return r
+    }, { retries, sleep })
+    if (res.status !== 200) return blocking
+    const html = typeof res.text === 'function' ? await res.text() : ''
+    if (!/"@type"\s*:\s*"videoObject"/i.test(html)) return blocking
+    return finding('video-public', LABELS['video-public'], false,
+      [`Loom's oEmbed API returned HTTP ${oembedStatus}, but the share page still resolves to a video — Loom's oEmbed misses videos on its newer media backend. A reviewer must open ${videoUrl} in a logged-out window to confirm it plays.`],
+      'notice')
+  } catch {
+    return blocking
+  }
 }
 
 export async function checkExternal({ value, fetchImpl = fetch, token, retries = 3, sleep = defaultSleep, gitLsRemote = defaultGitLsRemote }) {
@@ -190,10 +238,14 @@ export async function checkExternal({ value, fetchImpl = fetch, token, retries =
           if (r.status >= 500 || r.status === 429 || r.status === 408) throw new Error(`status ${r.status}`)
           return r
         }, { retries, sleep })
-        videoPublic = res.status === 200
-          ? finding('video-public', LABELS['video-public'], true)
-          : finding('video-public', LABELS['video-public'], false,
+        if (res.status === 200) {
+          videoPublic = finding('video-public', LABELS['video-public'], true)
+        } else if (isLoomUrl(videoUrl)) {
+          videoPublic = await loomShareFallback({ videoUrl, fetchImpl, oembedStatus: res.status, retries, sleep })
+        } else {
+          videoPublic = finding('video-public', LABELS['video-public'], false,
             [`The video isn't publicly viewable (the platform's oEmbed API returned HTTP ${res.status}). Make sure it's public or unlisted, not private or deleted.`])
+        }
       } catch (err) {
         videoPublic = finding('video-public', LABELS['video-public'], false,
           [`Could not verify the video via the platform's oEmbed API: ${String(err.message || err)}`])
