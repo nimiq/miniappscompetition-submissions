@@ -1,21 +1,31 @@
-app_name: NimBooks
-category: Productivity
-tagline: The books for your Nimiq wallet.
-description: NimBooks is the accounting layer for Nimiq Pay — track NIM balances
-  and history with fiat values, export accountant-ready CSV statements, and
-  issue signed proof-of-payment receipts anyone can verify publicly, no backend
-  required.
-pricing: Free
-repo_url: https://github.com/subimpact/nimbooks
-demo_url: https://nimbooks.pages.dev
-video_url: https://youtu.be/vGzH31NnVOk
+app_name: Darkfall
+category: Games
+tagline: A pixel action RPG with a player-run NIM marketplace
+description: A top-down pixel action RPG — three classes, 8 procedurally
+  generated dungeon depths, 15 monster types, two bosses, randomized loot — with
+  a player-run Trading Post where heroes buy and sell items for NIM, plus a
+  wallet-bound Ledger of Heroes leaderboard. Built for people who wan
+pricing: Freemium
+repo_url: https://github.com/subimpact/darkfall
+demo_url: https://darkfall.pages.dev
+video_url: https://youtube.com/shorts/ONxKTcFNz2Y
 contact_email: me@subimpact.net
 team_name: null
 team_members: null
 x_account: subimpact
-builder_story: null
-skool_post_url: null
-social_post_url: https://x.com/subimpact/status/2096703159674814882
+builder_story: "I entered the Nimiq Mini Apps Competition to answer one
+  question: what does a real game look like inside a wallet? Cycle I had 91
+  apps, most of them utilities and demos. I built Darkfall as a full game — 8
+  depths, 15 monster types, bosses, randomized loot, three classes — then asked
+  the harder question: what should the wallet actually *do* in a game? The
+  answer became the Trading Post: players list dropped items and buy each
+  other's for NIM, with the seller paid wallet-to-wallet and a 5% commission —
+  no escrow, no custodial wallet, on-chain checks before item delivery. It's the
+  first player-run economy inside Nimiq Pay. Every part of the game is free:
+  payments buy only conveniences. The game, market, and leaderboard are open
+  source and MIT licensed."
+skool_post_url: https://www.skool.com/miniappscompetition/darkfall-a-real-action-rpg-with-a-player-run-economy-inside-nimiq-pay
+social_post_url: https://x.com/subimpact/status/2097069443008585918
 heard_about: nimiq official website
 icon: icon.png
 thumbnail: thumbnail.png
@@ -26,4 +36,4 @@ screenshots:
   - screenshot-4.png
   - screenshot-5.png
 github_login: subimpact
-submitted_at: 2026-09-06T21:09:37.867Z
+submitted_at: 2026-09-07T21:08:22.943Z
