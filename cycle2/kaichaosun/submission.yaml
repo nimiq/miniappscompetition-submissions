@@ -1,0 +1,55 @@
+app_name: Knock
+category: Social
+tagline: Chat on Nimiq. For friends, family and community - not for spam.
+description: "Knock Chat lets you:\r
+
+  💰 Set a connection cost for strangers\r
+
+  💬 Send encrypted direct messages\r
+
+  👥 Create and join public group chats\r
+
+  💸 Send and receive NIM directly in chat\r
+
+  🎁 Gift NIM to other community members\r
+
+  ❤️ Reply to messages and react with emojis"
+pricing: Free
+repo_url: https://github.com/kaichaosun/knock-chat
+demo_url: http://knockchat.org/
+video_url: https://youtu.be/DSgO3qT8pIU
+contact_email: kaichaosuna@gmail.com
+team_name: Keyring
+team_members:
+  - "2"
+x_account: kaichaosun
+builder_story: "1. Spam Protection\r
+
+  \r
+
+  We’ve all had enough of spam, random messages, and unwanted requests. Knock
+  Chat gives you a simple way to take back control: set a small cost to connect,
+  such as 1 NIM, or keep it free at 0 NIM. Communities can do the same by
+  setting a cost to join and keeping bad actors out.\r
+
+  \r
+
+  2. A Creator Economy Without Ads\r
+
+  \r
+
+  Creators shouldn’t have to rely on ads to make money from their communities.
+  With Knock Chat, value can flow directly between people through NIM. Users can
+  pay to connect, join communities, send and receive NIM, or support others
+  through gifts — creating a more direct and meaningful creator economy."
+skool_post_url: https://www.skool.com/miniappscompetition/feedback-for-knock-chat-miniapp
+social_post_url: https://x.com/keyringso/status/2094736637284548693
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: kaichaosun
+submitted_at: 2026-09-08T08:07:52.299Z
