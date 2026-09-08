@@ -1,6 +1,6 @@
-# Quick proof nim tip jar
+# QuickProof
 
-> Tip the tools you use every day — one tap, one NIM.
+> Snap it, prove it, send it."
 
 <img src="icon.png" alt="App icon" width="128">
 
@@ -11,29 +11,30 @@
 | Team name | _Not provided — optional_ |
 | Team members | _Not provided — optional_ |
 | X account | _Not provided — optional_ |
-| Contact email | f.bradette@outlook.com |
+| Heard about it via | google |
+| Contact email | xcoder@outlook.fr |
 | GitHub login | @xcoder2088 |
-| Submitted at | 2026-08-24T18:34:56.160Z |
+| Submitted at | 2026-09-08T21:31:05.996Z |
 
 ## Links
 
 | Link | URL |
 | --- | --- |
 | Repo | [https://github.com/xcoder2088/nimiq-quick-proof-tips-jar](<https://github.com/xcoder2088/nimiq-quick-proof-tips-jar>) |
-| Demo | [https://shipping.quickquotetool.ca/](<https://shipping.quickquotetool.ca/>) |
-| Video | [https://youtube.com/shorts/S_-yqUt2PhM?si=sT_SjDs40Wtr_Zzt](<https://youtube.com/shorts/S_-yqUt2PhM?si=sT_SjDs40Wtr_Zzt>) |
+| Demo | [https://quickquotetool.ca/static/Quick-Shipping-Tool-QR-FR-EN-Description.pdf](<https://quickquotetool.ca/static/Quick-Shipping-Tool-QR-FR-EN-Description.pdf>) |
+| Video | [https://youtube.com/shorts/PcpCcX2yg_A?feature=share](<https://youtube.com/shorts/PcpCcX2yg_A?feature=share>) |
+| Skool post | [https://www.skool.com/miniappscompetition/new-in-quickproof?p=6476e23f](<https://www.skool.com/miniappscompetition/new-in-quickproof?p=6476e23f>) |
+| Social post | [https://www.linkedin.com/posts/activity-7502103289442746368-vUl6?utm_source=share&utm_medium=member_ios&rcm=ACoAAD8zwykBfzENVFhHUpgJ7EPvyRe7dMSQuXg](<https://www.linkedin.com/posts/activity-7502103289442746368-vUl6?utm_source=share&utm_medium=member_ios&rcm=ACoAAD8zwykBfzENVFhHUpgJ7EPvyRe7dMSQuXg>) |
 
 ## Description
 
-NIM Tip Jar lets users of QuickProof — a free shipment-photo tool for logistics teams — send a small NIM tip to support the developer, right from the app they already use daily.
+quick-proof-tips-jar is part of QuickProof lets shipping and logistics photograph packages at delivery and instantly email that proof — organized by customer and shipment number. Built for drivers and warehouse staff who need a fast, no-clutter way to document deliveries."
 
 ## Builder story
 
-I run QuickQuoteTool.ca, a FedEx shipping rate tool, and kept running into the same problem: shipment disputes and "where's my package" questions that a simple photo at drop-off would have solved instantly. So I built QuickProof — a fast way for logistics teams to snap a photo and send it straight to email, no app clutter, no friction.
+"QuickProof came out of a real problem: packages were arriving damaged at our customers' doors, and they assumed we'd shipped them in bad condition to begin with. Without a photo taken at shipping time, there was no way to prove the package was intact when it left our hands — every case turned into a back-and-forth dispute with no clear answer.
 
-It's used daily by people with zero interest in crypto, which made adding NIM an interesting challenge: how do you bring it into a product without making it feel like a "crypto app" bolted on? The answer was to keep it quiet. The tip jar only shows up at meaningful moments — the first successful shipment, then every 10th one after that — and PayPal sits right next to NIM so the feature works whether someone's into Nimiq or not. Settings always has both options too, for anyone who wants to come back later.
-
-Building the Mini App as its own open-source repo, separate from QuickProof's private codebase, meant thinking through a real integration: actual transactions, real UI, a real fallback for people opening it outside Nimiq Pay. It's been a good way to see what it actually takes to bring Nimiq into a product that already has daily users, not a demo built from scratch.
+QuickProof fixes that in one step: a photo at pickup or delivery, emailed instantly with the date, customer, and PO number. No more scrambling to prove the damage happened in transit, not on our end. Built to be fast enough to actually use on every shipment, not just the ones that go wrong."
 
 ## Thumbnail
 
