@@ -1,22 +1,12 @@
 app_name: Knock
 category: Social
 tagline: Chat on Nimiq. For friends, family and community - not for spam.
-description: "Knock Chat lets you:\r
-
-  💰 Set a connection cost for strangers\r
-
-  💬 Send encrypted direct messages\r
-
-  👥 Create and join public group chats\r
-
-  💸 Send and receive NIM directly in chat\r
-
-  🎁 Gift NIM to other community members\r
-
-  ❤️ Reply to messages and react with emojis"
+description: "Knock Chat lets you: set a connection cost for strangers, send encrypted direct messages,
+  create and join public group chats, send and receive NIM directly in chat,
+  gift NIM to other community members, reply to messages and react with emojis."
 pricing: Free
 repo_url: https://github.com/kaichaosun/knock-chat
-demo_url: http://knockchat.org/
+demo_url: https://knockchat.org/
 video_url: https://youtu.be/DSgO3qT8pIU
 contact_email: kaichaosuna@gmail.com
 team_name: Keyring

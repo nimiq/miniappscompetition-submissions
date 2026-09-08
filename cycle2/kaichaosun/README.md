@@ -21,7 +21,7 @@
 | Link | URL |
 | --- | --- |
 | Repo | [https://github.com/kaichaosun/knock-chat](<https://github.com/kaichaosun/knock-chat>) |
-| Demo | [http://knockchat.org/](<http://knockchat.org/>) |
+| Demo | [https://knockchat.org/](<https://knockchat.org/>) |
 | Video | [https://youtu.be/DSgO3qT8pIU](<https://youtu.be/DSgO3qT8pIU>) |
 | Skool post | [https://www.skool.com/miniappscompetition/feedback-for-knock-chat-miniapp](<https://www.skool.com/miniappscompetition/feedback-for-knock-chat-miniapp>) |
 | Social post | [https://x.com/keyringso/status/2094736637284548693](<https://x.com/keyringso/status/2094736637284548693>) |
@@ -29,12 +29,12 @@
 ## Description
 
 Knock Chat lets you:
-💰 Set a connection cost for strangers
-💬 Send encrypted direct messages
-👥 Create and join public group chats
-💸 Send and receive NIM directly in chat
-🎁 Gift NIM to other community members
-❤️ Reply to messages and react with emojis
+- 💰 Set a connection cost for strangers
+- 💬 Send encrypted direct messages
+- 👥 Create and join public group chats
+- 💸 Send and receive NIM directly in chat
+- 🎁 Gift NIM to other community members
+- ❤️ Reply to messages and react with emojis
 
 ## Builder story
 
