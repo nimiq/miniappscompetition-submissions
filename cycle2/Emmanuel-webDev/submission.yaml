@@ -1,0 +1,64 @@
+app_name: Stash
+category: Lifestyle
+tagline: Save when you spend. Catch up when you miss.
+description: Stash helps Nimiq users build a consistent savings habit by linking
+  saving to everyday payments. Users create a savings goal and rule, then Pay &
+  Stash guides them through paying someone and moving a small amount into a
+  savings address they control. If they skip the savings step.
+pricing: Free
+repo_url: https://github.com/Emmanuel-webDev/Pay-Stash-Nimiq-
+demo_url: https://stash-web-scsg.onrender.com/
+video_url: https://youtube.com/shorts/lWMIXxbfHWE?feature=share
+contact_email: ceothedev18@gmail.com
+team_name: null
+team_members: null
+x_account: Ceo_TheWebDev
+builder_story: "Stash was inspired by a simple problem: people often want to
+  save, but saving is easy to postpone.\r
+
+  \r
+
+  I wanted to make saving happen closer to the moment money is already moving.
+  Instead of asking users to remember to transfer funds later, Stash connects
+  saving to everyday NIM payments. You choose a goal and a rule, then Pay &
+  Stash guides you through paying someone and saving a small amount in the same
+  flow.\r
+
+  \r
+
+  The second inspiration was what happens when people miss a saving opportunity.
+  Most habit tools simply break the streak or leave the user feeling like they
+  failed. Stash uses **Catch-up** instead. If the savings step is skipped, the
+  amount is remembered and can be cleared later.\r
+
+  \r
+
+  That led to the core idea:\r
+
+  \r
+
+  **Save when you spend. Catch up when you miss.**\r
+
+  \r
+
+  I also wanted Stash to feel motivating without becoming a game about spending
+  more, so streaks, milestones, and rewards are tied to **saving consistency**,
+  not purchase volume.\r
+
+  \r
+
+  The result is a non-custodial Nimiq Pay Mini App built around one goal: make
+  saving a repeatable habit instead of something users have to remember to do."
+skool_post_url: null
+social_post_url: https://x.com/Ceo_TheWebDev/status/2096916241638158485?s=20
+heard_about: Through X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Emmanuel-webDev
+submitted_at: 2026-09-08T14:19:50.963Z
