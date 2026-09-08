@@ -1,0 +1,69 @@
+app_name: Terreno
+category: Games
+tagline: OWN THE WORLD, ONE PIXEL AT A TIME.
+description: One map of the real world, cut into 5,622 plots of land. Every plot
+  is owned by somebody, priced by the market, and permanently for sale — whether
+  its owner likes it or not. You buy land for cents, somebody takes it from you
+  at double the price and you get paid, and land nobody w
+pricing: Free
+repo_url: https://github.com/crackedstudio/Terreno
+demo_url: https://www.terreno.world/
+video_url: https://youtube.com/shorts/xZGo0xl5PSU?feature=share
+contact_email: eagle@crackedstudios.xzy
+team_name: Cracked Studios
+team_members:
+  - Otaiki Sadiq
+x_account: https://x.com/PlayTerreno
+builder_story: "Why we built Terreno\r
+
+  \r
+
+  \r
+
+  So Terreno came out of Blokaz and Nukku. Those were games but honestly they
+  were us figuring things out. 101,112 transactions. 24,415 players who made
+  wallets and actually showed up. We got to watch where people quit, where they
+  got stuck, what brought them back.\r
+
+  \r
+
+  \r
+
+  Main thing we took from it: nobody wants to be told ownership means something.
+  They want to see it.\r
+
+  \r
+
+  \r
+
+  So that's Terreno. One map, 5,622 plots on a 170x100 grid, live on Base. Every
+  plot has an owner, a color, and a price, and all the prices are public. You
+  open it, and you're looking at what's actually happening: who owns what, which
+  corners people are fighting over, which land is just sitting there because
+  nobody wants it.\r
+
+  \r
+
+  \r
+
+  Same approach as before really. Watch what players do instead of guessing. Cut
+  the friction that isn't fun. Keep the chain part quiet until it's the reason
+  the thing works and not the reason people leave.\r
+
+  \r
+
+  \r
+
+  101K transactions and 24K players got us here. One world map, priced in cents,
+  fought over in real time, that's the next thing."
+skool_post_url: https://www.skool.com/miniappscompetition/terreno-community-update?p=72ac05c4
+social_post_url: https://x.com/PlayTerreno/status/2092637139888410997?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: Samuel1-ona
+submitted_at: 2026-09-08T20:57:31.933Z
