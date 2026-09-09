@@ -1,40 +1,33 @@
-app_name: Quick proof nim tip jar
+app_name: QuickProof
 category: Productivity
-tagline: Tip the tools you use every day — one tap, one NIM.
-description: NIM Tip Jar lets users of QuickProof — a free shipment-photo tool
-  for logistics teams — send a small NIM tip to support the developer, right
-  from the app they already use daily.
+tagline: Snap it, prove it, send it."
+description: quick-proof-tips-jar is part of QuickProof lets shipping and
+  logistics photograph packages at delivery and instantly email that proof —
+  organized by customer and shipment number. Built for drivers and warehouse
+  staff who need a fast, no-clutter way to document deliveries."
 pricing: Free
 repo_url: https://github.com/xcoder2088/nimiq-quick-proof-tips-jar
-demo_url: https://shipping.quickquotetool.ca/
-video_url: https://youtube.com/shorts/S_-yqUt2PhM?si=sT_SjDs40Wtr_Zzt
-contact_email: f.bradette@outlook.com
+demo_url: https://quickquotetool.ca/static/Quick-Shipping-Tool-QR-FR-EN-Description.pdf
+video_url: https://youtube.com/shorts/PcpCcX2yg_A?feature=share
+contact_email: xcoder@outlook.fr
 team_name: null
 team_members: null
 x_account: null
-builder_story: "I run QuickQuoteTool.ca, a FedEx shipping rate tool, and kept
-  running into the same problem: shipment disputes and \"where's my package\"
-  questions that a simple photo at drop-off would have solved instantly. So I
-  built QuickProof — a fast way for logistics teams to snap a photo and send it
-  straight to email, no app clutter, no friction.\r
+builder_story: "\"QuickProof came out of a real problem: packages were arriving
+  damaged at our customers' doors, and they assumed we'd shipped them in bad
+  condition to begin with. Without a photo taken at shipping time, there was no
+  way to prove the package was intact when it left our hands — every case turned
+  into a back-and-forth dispute with no clear answer.\r
 
   \r
 
-  It's used daily by people with zero interest in crypto, which made adding NIM
-  an interesting challenge: how do you bring it into a product without making it
-  feel like a \"crypto app\" bolted on? The answer was to keep it quiet. The tip
-  jar only shows up at meaningful moments — the first successful shipment, then
-  every 10th one after that — and PayPal sits right next to NIM so the feature
-  works whether someone's into Nimiq or not. Settings always has both options
-  too, for anyone who wants to come back later.\r
-
-  \r
-
-  Building the Mini App as its own open-source repo, separate from QuickProof's
-  private codebase, meant thinking through a real integration: actual
-  transactions, real UI, a real fallback for people opening it outside Nimiq
-  Pay. It's been a good way to see what it actually takes to bring Nimiq into a
-  product that already has daily users, not a demo built from scratch."
+  QuickProof fixes that in one step: a photo at pickup or delivery, emailed
+  instantly with the date, customer, and PO number. No more scrambling to prove
+  the damage happened in transit, not on our end. Built to be fast enough to
+  actually use on every shipment, not just the ones that go wrong.\""
+skool_post_url: https://www.skool.com/miniappscompetition/new-in-quickproof?p=6476e23f
+social_post_url: https://www.linkedin.com/posts/activity-7502103289442746368-vUl6?utm_source=share&utm_medium=member_ios&rcm=ACoAAD8zwykBfzENVFhHUpgJ7EPvyRe7dMSQuXg
+heard_about: google
 icon: icon.png
 thumbnail: thumbnail.png
 screenshots:
@@ -44,4 +37,4 @@ screenshots:
   - screenshot-4.png
   - screenshot-5.png
 github_login: xcoder2088
-submitted_at: 2026-08-24T18:34:56.160Z
+submitted_at: 2026-09-08T21:31:05.996Z
