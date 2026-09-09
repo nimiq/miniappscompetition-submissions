@@ -21,8 +21,8 @@
 | Link | URL |
 | --- | --- |
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
-| Demo | [https://nimbooks.pages.dev](<https://nimbooks.pages.dev>) |
-| Video | [https://youtu.be/vGzH31NnVOk](<https://youtu.be/vGzH31NnVOk>) |
+| Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
+| Video | [https://nimbooks.subimpact.net/nimbooks-demo.mp4](<https://nimbooks.subimpact.net/nimbooks-demo.mp4>) |
 | Skool post | _Not provided — optional_ |
 | Social post | [https://x.com/subimpact/status/2096703159674814882](<https://x.com/subimpact/status/2096703159674814882>) |
 
