@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
 | Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
-| Video | [https://nimbooks.subimpact.net/nimbooks-demo.mp4](<https://nimbooks.subimpact.net/nimbooks-demo.mp4>) |
+| Video | [https://youtube.com/shorts/y6ZInV49tMc](<https://youtube.com/shorts/y6ZInV49tMc>) |
 | Skool post | _Not provided — optional_ |
 | Social post | [https://x.com/subimpact/status/2096703159674814882](<https://x.com/subimpact/status/2096703159674814882>) |
 
