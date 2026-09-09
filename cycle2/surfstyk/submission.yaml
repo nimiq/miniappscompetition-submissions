@@ -1,0 +1,32 @@
+app_name: Stakes
+category: Lifestyle
+tagline: Win your moment. Bank the day.
+description: "Stakes is a daily commitment app in Nimiq Pay: put a little of
+  your own NIM on a goal, keep the day, and get it back with a bonus when you
+  follow through. The dot shows up for the weak moment and keeps no score."
+pricing: Free
+repo_url: https://github.com/surfstyk/stakes
+demo_url: https://stakes.day
+video_url: https://youtu.be/IhR93SCj6rg
+contact_email: hendrik@surfstyk.com
+team_name: surfstyk
+team_members: null
+x_account: surfstyk
+builder_story: "Stakes came from one observation: you don't lose a goal across a
+  year, you lose it in a single weak moment, the ten seconds where the easy
+  thing wins. So I built for that moment. You put a little of your own money on
+  your word, keep the day, and get it back with a bonus. The dot shows up for
+  the weak moment and keeps no score. It runs in Nimiq Pay, and every check-in
+  is signed from your own wallet, on the chain for anyone to read."
+skool_post_url: https://www.skool.com/miniappscompetition/keep-one-day-thats-my-whole-ask-stakesday
+social_post_url: https://x.com/surfstyk/status/2097743725023613037
+heard_about: Nimiq X post
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: surfstyk
+submitted_at: 2026-09-09T18:10:20.688Z
