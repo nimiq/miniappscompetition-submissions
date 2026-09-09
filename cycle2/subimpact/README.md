@@ -23,7 +23,7 @@
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
 | Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
 | Video | [https://youtube.com/shorts/y6ZInV49tMc](<https://youtube.com/shorts/y6ZInV49tMc>) |
-| Skool post | _Not provided — optional_ |
+| Skool post | [https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet](<https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet>) |
 | Social post | [https://x.com/subimpact/status/2096703159674814882](<https://x.com/subimpact/status/2096703159674814882>) |
 
 ## Description
