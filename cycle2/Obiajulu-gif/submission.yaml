@@ -1,0 +1,33 @@
+app_name: NimSeal
+category: Shopping & deals
+tagline: Confidential invoices and protected payments, inside Nimiq Pay.
+description: nimSeal is a Nimiq Pay Mini App for confidential invoicing. Sellers
+  create invoices whose line items stay private, seal them with their Nimiq
+  wallet so buyers can verify the origin client‑side, and get paid in USDT
+  through a protected escrow on Polygon — no extension, no seed phr
+pricing: Free
+repo_url: https://github.com/Obiajulu-gif/nimseal
+demo_url: https://nimseal.vercel.app
+video_url: https://youtu.be/blK4gK4tsWo
+contact_email: okoyeemmanuelobiajulu@gmail.com
+team_name: Nimseal
+team_members: null
+x_account: okoye_emma_obi
+builder_story: "nimSeal grew out of a simple frustration: getting paid in crypto
+  meant either exposing an entire invoice on a public ledger or accepting a bare
+  transfer with no protection. I rebuilt an earlier confidential‑escrow
+  experiment as a Nimiq Pay Mini App — keeping terms encrypted off‑chain, adding
+  a Nimiq‑wallet seal that buyers verify client‑side, and settling in USDT
+  through an on‑chain escrow. Mobile‑first, no extension, no seed phrase."
+skool_post_url: null
+social_post_url: https://x.com/okoye_emma_obi/status/2097747260897382844?s=20
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: Obiajulu-gif
+submitted_at: 2026-09-09T18:02:24.580Z
