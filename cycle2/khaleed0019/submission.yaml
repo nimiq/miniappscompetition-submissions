@@ -1,0 +1,44 @@
+app_name: Pact
+category: Productivity
+tagline: Don't just send money. Send certainty.
+description: PACT turns an informal deal, "I'll pay when you finish," "half
+  upfront", into terms both sides sign with their Nimiq wallet. Every agreement
+  gets a Seal, a visual fingerprint of its exact terms that changes the instant
+  anything is edited. Payments go straight from wallet to wal
+pricing: Free
+repo_url: https://github.com/khaleed0019/pact
+demo_url: https://pact-nimiq.vercel.app
+video_url: https://www.youtube.com/watch?v=PtVJbNk9AOo
+contact_email: adelekekhaleed105@gmail.com
+team_name: null
+team_members: null
+x_account: makeclipbag
+builder_story: "I built PACT because informal deals fall apart in a specific,
+  avoidable way:\r
+
+  nobody wrote down what was actually agreed. The Nimiq wallet already sits\r
+
+  between two people who trust each other enough to work together, PACT just\r
+
+  makes that trust legible. Every agreement gets a Seal: a visual fingerprint\r
+
+  of its exact terms, derived from the same digest both sides sign. Change one\r
+
+  word and it visibly changes shape, so nobody can quietly redraft what was\r
+
+  promised. No escrow, because the framework gives no way to hold funds\r
+
+  honestly, so PACT says exactly that instead of pretending otherwise."
+skool_post_url: null
+social_post_url: https://x.com/makeclipbag/status/2097783680533971414
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: khaleed0019
+submitted_at: 2026-09-09T20:28:39.837Z
