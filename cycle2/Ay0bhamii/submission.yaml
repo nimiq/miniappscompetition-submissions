@@ -1,0 +1,35 @@
+app_name: OPERATOR
+category: Games
+tagline: Don't just play. Prove it.
+description: OPERATOR is a competitive skill platform powered by Nimiq where
+  scores are cryptographically authenticated and server-verified. Players
+  practice as guests or connect a Nimiq wallet for ranked runs on fast memory,
+  timing, sequence, and precision challenges.
+pricing: Freemium
+repo_url: https://github.com/Ay0bhamii/Operator
+demo_url: https://operator-nimiq.vercel.app
+video_url: https://www.loom.com/share/2426596c304041b895baf4f5743f348c
+contact_email: ABASSABDULMOJEED@GMAIL.COM
+team_name: OPERATOR
+team_members: null
+x_account: Letsmakeit0
+builder_story: "Most Web3 skill games and leaderboards still trust the client.
+  Players can easily cheat by modifying scores or replaying runs, which destroys
+  competition and rewards.I built OPERATOR because I wanted skill challenges
+  where the score is actually proven — not just claimed.  Nimiq gives every
+  player a portable cryptographic identity without passwords or seed phrases in
+  the app. The server issues a unique seed and run ID, the player only sends
+  input events, and the server replays everything to calculate a verified
+  score.  The result is simple: don’t just play. Prove it"
+skool_post_url: https://www.skool.com/miniappscompetition/the-operator?p=720b5196
+social_post_url: https://x.com/Letsmakeit0/status/2097813218089382129?s=20
+heard_about: on X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: Ay0bhamii
+submitted_at: 2026-09-10T12:59:13.978Z
