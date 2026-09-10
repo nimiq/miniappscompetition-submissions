@@ -1,0 +1,56 @@
+app_name: Tandem
+category: Games
+tagline: One thumb. Two orbs. Sixty seconds.
+description: A sixty second arcade heat where one thumb drives two mirrored orbs
+  at once, so every gap you steer into for one is a gap you steer the other out
+  of. Everyone plays the same course each day and the server replays your inputs
+  to settle the score, so the ladder is skill rather than
+pricing: Free
+repo_url: https://github.com/Spagero763/tandem
+demo_url: https://tandem-six-snowy.vercel.app
+video_url: https://www.youtube.com/watch?v=kBOvGyk4ixE
+contact_email: afolabispagero71@gmail.com
+team_name: null
+team_members: null
+x_account: Spagero71
+builder_story: "Every web game leaderboard I have seen works the same way: the
+  browser posts a number and the server writes it down. That is an honour system
+  with extra steps, and one person with the network tab open ruins it for
+  everybody else.\r
+
+  \r
+
+  So Tandem does not accept numbers. Your phone sends the inputs, one thumb
+  position per tick, about nine kilobytes for a full heat, and the server
+  re-runs the same simulation to work the score out itself. The client's own
+  claim is kept for exactly one purpose: if it disagrees with the replay, the
+  run is flagged and the replayed score is the one that counts. The simulation
+  lives in a single module that both the browser and the server import, so there
+  is no second implementation to drift apart.\r
+
+  \r
+
+  The part I care about most is that you can check this yourself. Every run has
+  a public receipt that re-scores it from the stored inputs on every request and
+  shows the stored and replayed numbers side by side, with the course seed and
+  the replay size. Tap any row on the ladder and you land on it.\r
+
+  \r
+
+  The other decision worth naming is that playing is free and stays free.
+  Backers fund the daily pot and cannot win it, staking makes you a Patron, and
+  the Founder pack is two USDT on Polygon. Not one of them touches the ladder. A
+  paid advantage in a scored game makes every score above yours ambiguous, and
+  that is the one thing this design cannot afford."
+skool_post_url: null
+social_post_url: https://x.com/Spagero71/status/2097869156225782103
+heard_about: x
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: Spagero763
+submitted_at: 2026-09-10T08:35:02.477Z
