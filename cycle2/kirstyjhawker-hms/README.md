@@ -22,10 +22,12 @@
 | Repo | [https://github.com/kirstyjhawker-hms/pay-it-sideways](<https://github.com/kirstyjhawker-hms/pay-it-sideways>) |
 | Demo | [https://pay-it-sideways.grand-sugar.workers.dev](<https://pay-it-sideways.grand-sugar.workers.dev>) |
 | Video | [https://youtu.be/qk53Jla9X5g](<https://youtu.be/qk53Jla9X5g>) |
+| Skool post | [Competition community post](<https://www.skool.com/miniappscompetition/we-talk-about-paying-it-forward-but-what-about-paying-it-sideways?p=0efb3e0f>) |
+| Social post | [Public X launch post](<https://x.com/KHDigitalStudio/status/2095202596390678874/photo/1>) |
 
 ## Description
 
-Pay It Sideways sends a private thank-you with optional NIM—without asking for a wallet address. The recipient can keep it or relay that exact gift into a new private link with their own message. Words-only kindness is complete; Pay It Sideways never holds funds.
+Pay It Sideways sends a private note with optional NIM—no wallet address needed. The recipient can keep it or relay the exact gift into a fresh one-use link. Private acknowledgements, anonymous trails, sender recovery and on-chain checks make each chain safe and meaningful.
 
 ## Builder story
 
