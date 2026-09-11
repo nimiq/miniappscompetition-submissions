@@ -50,8 +50,6 @@ _Not provided — optional_
 
 ![Screenshot 5](screenshot-5.png)
 
-![Screenshot 6](screenshot-6.png)
-
 ---
 
 _Generated from the submission form. `submission.yaml` in this folder is the machine-readable source of truth._
