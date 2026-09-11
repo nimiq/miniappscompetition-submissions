@@ -21,7 +21,7 @@
 | Link | URL |
 | --- | --- |
 | Repo | [https://github.com/nftkingiii/nimchess](<https://github.com/nftkingiii/nimchess>) |
-| Demo | [https://nimchess-production.up.railway.app](<https://nimchess-production.up.railway.app>) |
+| Demo | [https://nimchess-game.up.railway.app/](<https://nimchess-game.up.railway.app/>) |
 | Video | [https://youtube.com/shorts/ZrOGbZGlCUY?feature=share](<https://youtube.com/shorts/ZrOGbZGlCUY?feature=share>) |
 | Skool post | [https://www.skool.com/miniappscompetition/nimchess-is-live?p=41e3de1a](<https://www.skool.com/miniappscompetition/nimchess-is-live?p=41e3de1a>) |
 | Social post | [https://x.com/NFTKINGIII/status/2098500588527141291?s=20](<https://x.com/NFTKINGIII/status/2098500588527141291?s=20>) |
