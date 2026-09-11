@@ -1,0 +1,32 @@
+app_name: NimChess
+category: Games
+tagline: Play sharp. Earn your NimRank. Celebrate with NIM.
+description: NimChess is a mobile-first chess club inside Nimiq Pay for players
+  to challenge friends, practice with bots, solve puzzles, build NimRank, and
+  connect their Nimiq wallet.
+pricing: Free
+repo_url: https://github.com/nftkingiii/nimchess
+demo_url: https://nimchess-production.up.railway.app
+video_url: https://youtube.com/shorts/ZrOGbZGlCUY?feature=share
+contact_email: onlyonenftking@gmail.com
+team_name: null
+team_members: null
+x_account: NFTKINGIII
+builder_story: "Had a lot of ideas on what to build for a miniapp, some were
+  built and abandoned, I realized that the whole purpose was just to build
+  something that users can have fun using.\r
+
+  I like Chess and i know that there are people who love chess too, so i built
+  NimChess for you."
+skool_post_url: https://www.skool.com/miniappscompetition/nimchess-is-live?p=41e3de1a
+social_post_url: https://x.com/NFTKINGIII/status/2098500588527141291?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: nftkingiii
+submitted_at: 2026-09-11T20:44:06.782Z
