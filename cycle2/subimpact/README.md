@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
 | Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
-| Video | [https://youtube.com/shorts/7UG5FxW46a0](<https://youtube.com/shorts/7UG5FxW46a0>) |
+| Video | [https://youtube.com/watch?v=hp1MCJyDVwo](<https://youtube.com/watch?v=hp1MCJyDVwo>) |
 | Skool post | [https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet](<https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet>) |
 | Social post | [https://x.com/subimpact/status/2096703159674814882](<https://x.com/subimpact/status/2096703159674814882>) |
 
@@ -49,6 +49,8 @@ _Not provided — optional_
 ![Screenshot 4](screenshot-4.png)
 
 ![Screenshot 5](screenshot-5.png)
+
+![Screenshot 6](screenshot-6.png)
 
 ---
 

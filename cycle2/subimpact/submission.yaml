@@ -8,7 +8,7 @@ description: NimBooks is the accounting layer for Nimiq Pay — track NIM balanc
 pricing: Free
 repo_url: https://github.com/subimpact/nimbooks
 demo_url: https://nimbooks.subimpact.net
-video_url: https://youtube.com/shorts/7UG5FxW46a0
+video_url: https://youtube.com/watch?v=hp1MCJyDVwo
 contact_email: me@subimpact.net
 team_name: null
 team_members: null
@@ -25,5 +25,6 @@ screenshots:
   - screenshot-3.png
   - screenshot-4.png
   - screenshot-5.png
+  - screenshot-6.png
 github_login: subimpact
 submitted_at: 2026-09-06T21:09:37.867Z
