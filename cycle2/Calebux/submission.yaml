@@ -1,0 +1,31 @@
+app_name: MiniRush
+category: Games
+tagline: Arcade street racing in Nimiq Pay, with real NIM on the line.
+description: "MiniRush is a free 3D arcade racer that runs inside Nimiq Pay: 10
+  race modes across 19 world cities, from Grand Prix to a police chase where the
+  cops box you in. It's for anyone with a phone and five minutes. Buy hypercars
+  with NIM, build your own car, and write your best runs to"
+pricing: Freemium
+repo_url: https://github.com/Calebux/Mini-Rush
+demo_url: https://minirush.site
+video_url: https://youtu.be/IpopeQEQQpw
+contact_email: Petersoncaleb275@gmail.com
+team_name: Calbridge
+team_members:
+  - Grace
+  - Grace
+x_account: Real_sweetone
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/minirush-a-3d-arcade-racer-built-for-nimiq-pay
+social_post_url: https://x.com/CalAgentkit/status/2098364061284970908
+heard_about: A friend
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Calebux
+submitted_at: 2026-09-11T11:54:57.345Z
