@@ -1,0 +1,32 @@
+app_name: Polytico
+category: Marketplaces
+tagline: Trade the future with Nimiq micro-credits.
+description: Polytico is a public forecasting market for global news, politics,
+  and technology. Users can place trades on real-world outcomes using Nimiq
+  micro-credits, tracking live consensus and portfolio performance in real time.
+pricing: Free
+repo_url: https://github.com/patriceTalon1/polytico⁠
+demo_url: https://conversational-ai-ten.vercel.app⁠
+video_url: https://youtube.com/shorts/DxK1_joEBjY?si=AvzgOvkxafh4uZVQ
+contact_email: polyticomarket@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: Driven by a deep fascination with geopolitics, I built Polytico
+  to serve as a digital recorder of humanity's collective sentiment. It acts as
+  a live, decentralized archive where real-world events and global outcomes are
+  continuously forecasted and recorded through Nimiq micro-transactions,
+  capturing how society evaluates history as it happens.
+skool_post_url: null
+social_post_url: null
+heard_about: Instagram ads
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: patriceTalon1
+submitted_at: 2026-09-12T16:58:24.111Z
