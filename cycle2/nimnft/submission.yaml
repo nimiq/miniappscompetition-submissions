@@ -1,0 +1,30 @@
+app_name: Nimiq NFT Marketplace
+category: Marketplaces
+tagline: Discover, buy, and sell NFTs powered by Nimiq.
+description: A decentralized NFT marketplace built on Nimiq where users can
+  discover, buy, and sell digital collectibles. Designed to make NFT trading
+  simple and accessible for the Nimiq community.
+pricing: Free
+repo_url: https://github.com/nimnft/nimiq-nft-marketplace/tree/master
+demo_url: https://nimnft.netlify.app/
+video_url: https://youtu.be/IvkthztqUCc
+contact_email: esinoob1@gmail.com
+team_name: null
+team_members: null
+x_account: nimiq_nft
+builder_story: I built this project to explore the possibilities of NFTs and
+  decentralized marketplaces on Nimiq. My goal was to create a simple and
+  accessible place where the Nimiq community can discover, buy, and sell digital
+  collectibles while experiencing how Nimiq can power Web3 applications.
+skool_post_url: https://www.skool.com/miniappscompetition/nimiq-nft-marketplace?p=f0fea4c8
+social_post_url: https://x.com/nimiq_nft/status/2098793914631168013
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: nimnft
+submitted_at: 2026-09-12T17:17:43.466Z
