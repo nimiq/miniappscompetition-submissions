@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
 | Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
-| Video | [https://youtube.com/shorts/y6ZInV49tMc](<https://youtube.com/shorts/y6ZInV49tMc>) |
+| Video | [https://youtube.com/watch?v=hp1MCJyDVwo](<https://youtube.com/watch?v=hp1MCJyDVwo>) |
 | Skool post | [https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet](<https://www.skool.com/miniappscompetition/nimbooks-the-books-for-your-nimiq-wallet>) |
 | Social post | [https://x.com/subimpact/status/2096703159674814882](<https://x.com/subimpact/status/2096703159674814882>) |
 
@@ -32,7 +32,11 @@ NimBooks is the accounting layer for Nimiq Pay — track NIM balances and histor
 
 ## Builder story
 
-_Not provided — optional_
+I run an independent Nimiq validator, so I spend a lot of time watching NIM move around: rewards landing, payments going out, stakes changing. The chain remembers everything, but a wallet shows it as a feed of transactions. When tax season came, making sense of it meant spreadsheets and guesswork.
+
+So I built NimBooks: the books Nimiq Pay was missing. Balances and day-by-day history with live fiat values, and a tax-ready statement an accountant will actually accept. Then the parts I couldn't find anywhere else: signed, verifiable receipts for payments (no backend, the signature is the proof), payment requests that settle as on-chain invoices, and the first staking and unstaking flow built into Nimiq Pay itself.
+
+Everything runs client-side in the Pay WebView: your keys never leave your wallet, and your books never leave your device. I built it for my own NIM, and I hope it's useful for yours.
 
 ## Thumbnail
 
