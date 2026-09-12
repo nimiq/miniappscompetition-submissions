@@ -1,0 +1,71 @@
+app_name: Cinima
+category: Games
+tagline: CINIMA is social taste discovery for movies and TV.
+description: Favorite what you love. Recommend what stands out. See what people
+  like you picked. Save what you want to watch next.
+pricing: Free
+repo_url: https://github.com/harlski/cinima
+demo_url: https://cinima.app
+video_url: https://www.youtube.com/watch?v=NTltmhMOg88
+contact_email: cinima.app@gmail.com
+team_name: null
+team_members: null
+x_account: cinima_app
+builder_story: "I keep recommending a show to a friend, and five minutes later
+  they have already forgotten the name. \r
+
+  \r
+
+  I do the same thing to myself. I finally have an evening free, sit down, and
+  cannot remember a single title I had been meaning to watch. \r
+
+  \r
+
+  Bonding over a series is one of the easiest ways I know to build connection
+  with people. Who else still quotes The Simpsons daily?\r
+
+  \r
+
+  I wanted that habit inside Nimiq Pay, in two parts.\r
+
+  \r
+
+  The first is a disposable share link. \r
+
+  You send someone a title. They open it in a browser. No pressure to install
+  Nimiq Pay. \r
+
+  Try one: https://cinima.app/s/e0jmxk14\r
+
+  \r
+
+  The second is the Mini App itself. \r
+
+  \r
+
+  Favorite what you love. \r
+
+  Recommend what stands out. \r
+
+  Save what you want to watch next. \r
+
+  Find titles through taste overlap with people like you. \r
+
+  \r
+
+  This is the part I built for myself. Finding a night to actually watch
+  something is hard enough. When that night comes, the queue should already be
+  there."
+skool_post_url: https://www.skool.com/miniappscompetition/explore-cinimaapp
+social_post_url: https://x.com/cinima_app/status/2098750348886495543
+heard_about: Community Member :)
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Harlski
+submitted_at: 2026-09-12T12:37:14.194Z
