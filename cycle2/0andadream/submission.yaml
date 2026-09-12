@@ -1,0 +1,27 @@
+app_name: BountyBoard
+category: Earning
+tagline: Get things done. Get paid in NIM.
+description: Bounty Board turns small tasks into open earning opportunities.
+  Post what you need done with a NIM reward, or find a bounty, complete the task
+  and get paid directly through Nimiq.
+pricing: Free
+repo_url: https://github.com/0andadream/Bounty-Board
+demo_url: https://bounty-board.xyz/
+video_url: https://youtu.be/c0JHg3cYtkA
+contact_email: societyhatesmatt@gmail.com
+team_name: null
+team_members: null
+x_account: mattdreams
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/bounty-board?p=09518b78
+social_post_url: https://x.com/mattdreams/status/2097967519143252251
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: 0andadream
+submitted_at: 2026-09-12T05:10:26.245Z
