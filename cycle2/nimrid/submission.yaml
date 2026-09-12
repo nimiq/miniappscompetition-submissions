@@ -1,0 +1,28 @@
+app_name: Teach it back
+category: Education
+tagline: Master what you know by teaching it back
+description: Teach It Back is a Nimiq Pay Mini App that turns the Feynman
+  Technique into an earn-as-you-learn flywheel. It’s for crypto learners who
+  prove their understanding by teaching topics simply, and community backers who
+  micro-fund the clearest explanations with instant NIM tips.
+pricing: Free
+repo_url: https://github.com/nimrid/Teach-It-Back
+demo_url: https://teach-it-back-89eq.onrender.com
+video_url: https://youtube.com/shorts/3UZ2h-Nu0hs?si=ZmKU9jr3WyqIvhBU
+contact_email: 1captaineddy@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: nimrid
+submitted_at: 2026-09-12T02:19:25.003Z
