@@ -1,44 +1,46 @@
-# Reef
+# NimiqCafe
 
-> An aquarium that fills from your Nimiq staking.
+> Everything your NIM is doing, in one place.
 
 <img src="icon.png" alt="App icon" width="128">
 
 | Field | Value |
 | --- | --- |
-| Category | Games |
+| Category | Earning |
 | Pricing | Free |
 | Team name | _Not provided — optional_ |
 | Team members | _Not provided — optional_ |
 | X account | Nimiq_Cafe |
+| Heard about it via | X |
 | Contact email | miaoyu319@gmail.com |
 | GitHub login | @miao-yu |
-| Submitted at | 2026-08-31T14:31:58.370Z |
+| Submitted at | 2026-09-12T01:33:58.776Z |
 
 ## Links
 
 | Link | URL |
 | --- | --- |
-| Repo | [https://github.com/miao-yu/nimiq-reef](<https://github.com/miao-yu/nimiq-reef>) |
-| Demo | [https://reef.nimiq.cafe/](<https://reef.nimiq.cafe/>) |
-| Video | [https://x.com/Nimiq_Cafe/status/2095657569368879279](<https://x.com/Nimiq_Cafe/status/2095657569368879279>) |
+| Repo | [https://github.com/miao-yu/nimiq-cafe](<https://github.com/miao-yu/nimiq-cafe>) |
+| Demo | [https://nimiq.cafe](<https://nimiq.cafe>) |
+| Video | [https://x.com/Nimiq_Cafe/status/2098566542493720979](<https://x.com/Nimiq_Cafe/status/2098566542493720979>) |
+| Skool post | [https://www.skool.com/miniappscompetition/nimiqcafe-now-has-a-portfolio?p=fe9523a4](<https://www.skool.com/miniappscompetition/nimiqcafe-now-has-a-portfolio?p=fe9523a4>) |
+| Social post | [https://x.com/Nimiq_Cafe/status/2098566542493720979](<https://x.com/Nimiq_Cafe/status/2098566542493720979>) |
 
 ## Description
 
-Reef turns Nimiq staking into a living aquarium: cast a line each epoch and pull out one of seventeen species, whose rarity you earn by staking steadily rather than heavily. For anyone holding NIM who'd rather watch something grow
-than watch a number.
+NimiqCafe shows your full NIM position - liquid and staked balances, value over time, and daily rewards - whichever validator you stake with. It also bundles live network stats, a staking calculator, a NIM converter and a block explorer.
 
 ## Builder story
 
-I run a Nimiq staking pool, so I've watched what happens after somebody
-delegates: nothing. The transaction confirms and the experience ends.
+I run a staking pool and explorer at nimiq.cafe and kept failing to answer the
+simplest question people asked: what is my NIM actually doing? Balances are easy
+to look up; what it has been worth, and what it has earned, is not - and if you
+staked elsewhere, my records knew nothing about you.
 
-Reef makes the waiting visible - an aquarium that fills from your real staking,
-one cast per epoch, seventeen species with over a thousand looks each. The rule
-I care about is that rarity comes from how long you've staked, never how much.
-Stake size buys room; the rare creatures only come to people who stayed.
-
-Reef is totally free.
+So the Portfolio works whoever you stake with, reading rewards from the chain
+rather than from my own pool's books. And because the chain cannot tell you what
+you held last month, it reconstructs your past balances from on-chain activity,
+so the history is there the moment you sign in instead of a year later.
 
 ## Thumbnail
 
@@ -53,6 +55,8 @@ Reef is totally free.
 ![Screenshot 3](screenshot-3.png)
 
 ![Screenshot 4](screenshot-4.png)
+
+![Screenshot 5](screenshot-5.png)
 
 ---
 
