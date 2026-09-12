@@ -1,0 +1,54 @@
+app_name: KashLink
+category: Social
+tagline: Send NIM to anyone with a link — no wallet address needed.
+description: KashLink is a Cash Link mini app for Nimiq Pay. Pick an amount,
+  approve once, and get a link you can share on WhatsApp, Telegram, SMS or
+  anywhere. Whoever opens it taps Claim and the NIM lands in their wallet — zero
+  fees, no sign-up. Unclaimed? Revert it back to your wallet easy.
+pricing: Free
+repo_url: https://github.com/crackedstudio/kashlink
+demo_url: https://kashlink.live
+video_url: https://youtu.be/zPt4rpi2HR4
+contact_email: otaikisadiq2804@gmail.com
+team_name: KashLink
+team_members:
+  - Samuel Chisom
+x_account: otaikisadiq
+builder_story: "Every time I tried to send crypto to a friend, the conversation
+  started the same way: \"what's your wallet address?\" Then a long string gets
+  pasted around, someone copies it wrong, or the friend doesn't have a wallet
+  yet and the whole thing dies there.\r
+
+  \r
+
+  The fix is obvious once you see it: send a link instead of an address, and let
+  whoever opens it claim the money. I wanted that for NIM inside Nimiq Pay, and
+  Nimiq is a natural fit for it: transactions are free, so the link never needs
+  gas, and the browser-native light client means the recipient's phone can sign
+  and broadcast the sweep itself with no backend in between.\r
+
+  \r
+
+  KashLink generates a throwaway key pair, puts the private key in the link's
+  URL fragment (which is never sent to any server), and funds it with a single
+  Nimiq Pay approval. The claim screen sweeps the balance to the recipient's
+  wallet; Revert sweeps it back to yours. Links use the same encoding as the
+  Nimiq Hub, so even someone without Nimiq Pay can claim.\r
+
+  \r
+
+  The goal is simple: make sending NIM as easy as sending a meme. Build a link,
+  drop it in a chat, done."
+skool_post_url: https://www.skool.com/miniappscompetition/kashlink
+social_post_url: https://x.com/otaikisadiq/status/2098547456254333228?s=20
+heard_about: Twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Otaiki1
+submitted_at: 2026-09-12T09:13:24.928Z
