@@ -5,7 +5,7 @@ description: A decentralized NFT marketplace built on Nimiq where users can
   discover, buy, and sell digital collectibles. Designed to make NFT trading
   simple and accessible for the Nimiq community.
 pricing: Free
-repo_url: https://github.com/nimnft/nimiq-nft-marketplace/tree/master
+repo_url: https://github.com/nimnft/nimiq-nft-marketplace
 demo_url: https://nimnft.netlify.app/
 video_url: https://youtu.be/IvkthztqUCc
 contact_email: esinoob1@gmail.com
