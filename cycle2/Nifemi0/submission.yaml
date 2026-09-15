@@ -1,0 +1,28 @@
+app_name: Minute Alibi
+category: Productivity
+tagline: Prove you were there. Sign the second. Keep the proof.
+description: Minute Alibi turns a live moment into a portable, verifiable
+  receipt. An organizer opens a 60-second challenge, a participant signs it in
+  Nimiq Pay, and anyone can verify the replay-safe proof.
+pricing: Free
+repo_url: https://github.com/Nifemi0/minute-alibi
+demo_url: https://minute-alibi.vercel.app/
+video_url: https://youtu.be/SBogfdinvs4
+contact_email: aderogbaa94@gmail.com
+team_name: null
+team_members: null
+x_account: love_light_11
+builder_story: I built Minute Alibi to turn a fleeting moment into a portable,
+  verifiable receipt. The challenge opens for one minute, Nimiq Pay signs the
+  live moment, and anyone can verify the result without trusting a screenshot.
+skool_post_url: https://www.skool.com/miniappscompetition/minute-alibi?p=be44ca92
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Nifemi0
+submitted_at: 2026-09-15T18:28:22.989Z
