@@ -1,0 +1,45 @@
+app_name: NimCatch
+category: Games
+tagline: Catch NIM. Build combos. Beat your high score
+description: NimCatch is a fast, lightweight Nimiq mini-game where players catch
+  falling NIM coins, build combos, increase their score, and compete against
+  their high score. Built as a simple, mobile-friendly experience for the Nimiq
+  Mini Apps ecosystem.
+pricing: Free
+repo_url: https://github.com/Arief0299/my-mini-app
+demo_url: https://my-mini-app-gules.vercel.app/
+video_url: https://youtube.com/shorts/_ViTpfsdUaM?si=95zybhgrvaISiJrD
+contact_email: rapariezie@gmail.com
+team_name: Arief Labs
+team_members:
+  - Solo Builder
+x_account: fauzi5121998
+builder_story: "I built NimCatch as a simple experiment to explore what a fun
+  and lightweight game could look like inside the Nimiq Mini Apps ecosystem.\r
+
+  \r
+
+  The idea was to turn NIM into something interactive rather than only something
+  users see as a balance or payment asset. I wanted the first version to be easy
+  to understand: open the app, start playing, catch the falling coins, build
+  combos, and try to beat your high score.\r
+
+  \r
+
+  I built the app from scratch and focused on keeping the experience fast,
+  simple, and mobile-friendly. NimCatch is also a starting point for exploring
+  future gameplay mechanics, rewards, and deeper integration with the Nimiq
+  ecosystem."
+skool_post_url: https://www.skool.com/miniappscompetition/i-built-nimcatch-for-the-nimiq-mini-apps-competition?p=a709298e
+social_post_url: https://x.com/fauzi5121998/status/2099155599535845820?s=20
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Arief0299
+submitted_at: 2026-09-13T15:24:56.053Z
