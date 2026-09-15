@@ -1,0 +1,61 @@
+app_name: NimStamp
+category: Shopping & deals
+tagline: Loyalty stamp cards for any merchant, inside Nimiq Pay
+description: A self-serve loyalty stamp card inside Nimiq Pay. Merchants set up
+  in 60 seconds; customers earn a stamp automatically every time they pay in
+  NIM, verified on chain. For coffee shops, barbers, market stalls and anyone
+  who takes NIM.
+pricing: Free
+repo_url: https://github.com/big14way/nimstamp
+demo_url: https://nimpay.app/miniapps/open/nimstamp.vercel.app
+video_url: https://youtu.be/_u_yXShSigw
+contact_email: idolorgodswilleseteru@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: "Small businesses want repeat customers, but loyalty programmes
+  are built for chains: apps, POS integrations, printed cards that get lost.
+  Nimiq's built-in rewards work at curated partner locations; NimStamp lets any
+  merchant anywhere set up loyalty in 60 seconds.\r
+
+  \r
+
+  NimStamp is a digital stamp card that lives inside Nimiq Pay. A merchant signs
+  in with the wallet that receives their payments, fills one form, and gets a
+  link and a printable QR table tent. Customers open the link, tap Pay, and earn
+  a stamp automatically every time they pay in NIM. When the card is full they
+  redeem with one tap and show the cashier a four-letter code.\r
+
+  \r
+
+  It uses Nimiq Pay end to end: sendBasicTransactionWithData attaches a tagged
+  memo so the server can match each payment on the Nimiq blockchain, sign()
+  proves wallet ownership for merchant login and reward redemption,
+  requestDeviceIdentifier limits cards per phone, and the language API switches
+  the interface between English, Spanish, German and French. The server is the
+  only authority: it verifies every payment and signature on chain and never
+  holds funds.\r
+
+  \r
+
+  Everything is public and verifiable. The stats page
+  (nimstamp.vercel.app/stats) lists every business, stamp and redemption with
+  links to nimiq.watch — 6 stamps for 1 customer at 1 business at the time of
+  submission.\r
+
+  \r
+
+  For coffee shops, barbers, market stalls and anyone else who takes NIM."
+skool_post_url: https://www.skool.com/miniappscompetition/nimstamp-loyalty-stamp-cards-for-any-merchant-inside-nimiq-pay
+social_post_url: https://x.com/blobis_yobo/status/2099877926510670263
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: big14way
+submitted_at: 2026-09-15T15:20:41.637Z
