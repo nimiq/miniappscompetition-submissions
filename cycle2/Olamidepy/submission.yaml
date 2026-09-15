@@ -1,0 +1,40 @@
+app_name: Dynamio
+category: Games
+tagline: Power in Motion
+description: Dynamio is a fast paced 3D arcade game for players who enjoy
+  precision, timing, and chain reaction gameplay. Defend the central vortex by
+  matching incoming chains, mastering handcrafted stages, and taking on daily
+  challenges, all within Nimiq Pay.
+pricing: Freemium
+repo_url: https://github.com/Olamidepy/dynamio
+demo_url: https://dynamioxyz.vercel.app/
+video_url: https://youtube.com/shorts/dsuq64uvT-A
+contact_email: inertia.stdio@gmail.com
+team_name: null
+team_members: null
+x_account: Inertiastudiong
+builder_story: "Growing up, I watched kids play **Zuma’s Revenge** almost every
+  day, but I could not afford to play it myself. I remember wondering what it
+  would feel like to have a game like that on my phone, something I could access
+  and enjoy on my own.\r
+
+  \r
+
+  That memory inspired **Dynamio**. I wanted to recreate the excitement of chain
+  reaction gameplay in a modern 3D experience while giving players a game that
+  feels accessible, rewarding, and built for today’s devices. Dynamio is my way
+  of turning a childhood experience of watching from the sidelines into
+  something I could finally build and share."
+skool_post_url: https://www.skool.com/miniappscompetition/dynamio?p=3c9fc903
+social_post_url: https://x.com/inertiastudiong/status/2099923045833986101?s=46
+heard_about: I saw it on X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Olamidepy
+submitted_at: 2026-09-15T18:18:12.117Z
