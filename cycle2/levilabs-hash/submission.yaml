@@ -1,0 +1,31 @@
+app_name: Nimiquette
+category: Social
+tagline: Payments with meaning.
+description: Nimiquette adds social meaning to Nimiq payments. Users choose why
+  they're sending a payment, attach context, and create a shared receipt that
+  the recipient can acknowledge through Nimiq Pay.
+pricing: Free
+repo_url: https://github.com/levilabs-hash/nimiquette
+demo_url: https://nimiquette.vercel.app
+video_url: https://vimeo.com/1227544757?share=copy&fl=sv&fe=ci
+contact_email: eyoobot@gmail.com
+team_name: null
+team_members: null
+x_account: larimcloud
+builder_story: "I built Nimiquette around a simple idea: crypto payments record
+  transactions, but often lose the human reason behind them. I wanted to create
+  a lightweight social layer for Nimiq that lets people attach intent and
+  context to payments, then gives recipients a way to acknowledge that meaning."
+skool_post_url: null
+social_post_url: https://x.com/larimcloud/status/2099290548733358144
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.jpg
+github_login: levilabs-hash
+submitted_at: 2026-09-16T23:54:21.775Z
