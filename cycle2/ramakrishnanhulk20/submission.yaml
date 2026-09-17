@@ -1,0 +1,32 @@
+app_name: Vettai
+category: Games
+tagline: The hunt pays in NIM.
+description: Hunt bounty drones, finish today's quests, sign once, and real NIM
+  lands in your wallet with the block number on screen. It is for anyone with
+  the Pay app who wants to earn their first NIM by playing rather than paying.
+pricing: Free
+repo_url: https://github.com/ramakrishnanhulk20/vettai
+demo_url: https://vettai-web.vercel.app
+video_url: https://youtube.com/shorts/ONsEKMDy9I8?si=Oy9HwsLUJRKFHJIM
+contact_email: ramakrishnanhulk20@gmail.com
+team_name: null
+team_members: null
+x_account: ram_krish2000
+builder_story: "Every mini app I saw paid the wallet. I wanted one where the
+  wallet gets paid. The server runs the world and decides every hit, so nobody
+  can send it a score. Nimiq made the rest easy: no accounts, no gas, a memo on
+  every payout, and a two hour transaction window that shaped how the treasury
+  pays."
+skool_post_url: null
+social_post_url: https://x.com/ram_krish2000/status/2100580710587457801?s=20
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: ramakrishnanhulk20
+submitted_at: 2026-09-17T13:53:33.697Z
