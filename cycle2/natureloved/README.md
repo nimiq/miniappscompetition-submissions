@@ -14,7 +14,7 @@
 | Heard about it via | X |
 | Contact email | akinolaa769@gmail.com |
 | GitHub login | @natureloved |
-| Submitted at | 2026-09-16T15:21:57.751Z |
+| Submitted at | 2026-09-17T11:05:41.534Z |
 
 ## Links
 
@@ -32,22 +32,15 @@ TipWall is a public support platform where you can tip creators, projects, and c
 
 ## Builder story
 
-TipWall exists so that supporting someone costs nothing but the support itself, no platform in the middle, no percentage skimmed, no account to make first.
-
-The friction was doing the talking.
+The friction was doing the talking
 Every time I wanted to send someone money for something they made, something got in the way. A fee that made a small amount pointless. An account I had to create first. A minimum. A wait. A form.
 
 I would read a post that saved me an afternoon, or use a tool someone clearly poured weekends into, and there was no way to say thank you that felt worth the effort. So I did not say it. That is the part that stuck with me: not that I could not pay, but that the friction quietly talked me out of it, and nobody ever noticed.
 
-The moment I decided to build it.
+The moment I decided to build it
 I was looking at a payout statement from a platform I used to tip a developer whose library I had relied on for months. The number that reached them was not the number I sent. The gap was not hidden, it was the business model. I sent what felt like a meaningful amount; they received what felt like a rounding error.
 
 That was the moment. Not anger, just clarity. If the act of saying thank you is taxed, fewer people say it. And the people who do say it are sending a smaller signal than they think. Every percent is a person.
-
-Why Nimiq.
-I stumbled upon the Nimiq ecosystem one day and I liked that it was designed for payments first, not speculation. NIM settles in seconds, moves wallet-to-wallet, and the fees are small enough that a tip of a few NIM still makes sense. That is rare.
-
-What it buys TipWall is simple. The money moves straight from supporter to creator. TipWall never holds anyone’s money, so it never has a reason to take a cut of it and a fee-free product is only credible when the architecture makes the fee impossible rather than generous.
 
 ## Thumbnail
 
