@@ -1,0 +1,29 @@
+app_name: Nimiq Names
+category: On-chain services
+tagline: One name to pay them all on Nimiq
+description: Register a human-readable name on Nimiq and get paid at "rico"
+  instead of a 36-character address. On-chain, held by your key, with no smart
+  contract, no custodian with every lookup attaching a proof.
+pricing: Paid
+repo_url: https://github.com/selfcrypto/nns
+demo_url: https://nimiqnames.com
+video_url: https://youtu.be/lVhPkgVjzYc
+contact_email: enrique.ferrater@selfcrypto.io
+team_name: null
+team_members:
+  - "@RicoMaverick"
+x_account: https://x.com/nimiqnames
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/nimiqnamescom-one-name-to-pay-them-all-on-nimiq?p=e7b4531b
+social_post_url: https://x.com/nimiqnames/status/2100400633215889869
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: selfcrypto
+submitted_at: 2026-09-17T01:47:37.625Z
