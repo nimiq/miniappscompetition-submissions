@@ -1,0 +1,33 @@
+app_name: Skillswap
+category: Productivity
+tagline: Trade what you know. Learn what you don't.
+description: SkillSwap connects people who want to learn skills with people who
+  can teach them, allowing users to exchange knowledge through matched skill
+  swaps, messaging, and live sessions. It’s built for students, creators,
+  professionals, and anyone who wants to learn something new.
+pricing: Freemium
+repo_url: https://github.com/Ayomide-fc/nimble-skill-flow.git
+demo_url: https://nimble-skill-flow.vercel.app/
+video_url: https://www.mediafire.com/file/3ora9110muwcfdi/VID_20260917_161800.mp4/file
+contact_email: ayomideabiodun.com2009@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: I was inspired by how much knowledge people have that often goes
+  unused. I wanted to create a simple way for people to connect with others who
+  want to learn what they know, while they learn something they need in return
+  turning skill-sharing into a mutual exchange rather than a one-way
+  transaction.
+skool_post_url: null
+social_post_url: null
+heard_about: Nimiq community
+icon: icon.jpg
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.png
+github_login: Ayomide-fc
+submitted_at: 2026-09-17T15:23:58.304Z
