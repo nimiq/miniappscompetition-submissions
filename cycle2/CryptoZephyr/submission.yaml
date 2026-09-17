@@ -1,0 +1,31 @@
+app_name: NimFuel
+category: On-chain services
+tagline: Use NIM to cover Polygon gas for USDT
+description: NimFuel helps Nimiq Pay users complete Polygon USDT actions when
+  their wallet has USDT but lacks POL for gas. It calculates the required NIM
+  payment, verifies it, relays the signed action, and confirms the Polygon
+  receipt
+pricing: Free
+repo_url: https://github.com/CryptoZephyr/NimFuel
+demo_url: https://nimfuel-app.onrender.com/
+video_url: https://youtu.be/2L5OR3LHh_U
+contact_email: adepojutomiwa9@gmail.com
+team_name: N\A
+team_members:
+  - N\A
+x_account: Zephyr_cryt
+builder_story: "I built NimFuel around a simple onboarding problem: a wallet can
+  hold the asset it wants to use and still be blocked by a missing gas token.
+  NimFuel lets users keep control of their USDT authorization while a paid and
+  verified NIM order covers the Polygon gas step"
+skool_post_url: null
+social_post_url: https://x.com/Zephyr_cryt/status/2100733676560527805
+heard_about: twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: CryptoZephyr
+submitted_at: 2026-09-17T23:57:25.482Z
