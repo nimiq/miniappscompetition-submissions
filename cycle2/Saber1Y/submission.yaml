@@ -1,0 +1,35 @@
+app_name: NimDares
+category: Games
+tagline: Stake the promise. Prove the work. Get your NIM back
+description: NimDares turns personal commitments into Nimiq-powered dares. Users
+  stake NIM on measurable goals, submit screenshot or API-based proof, and
+  receive an adjudicated refund or settlement when the dare resolves.
+pricing: Free
+repo_url: https://github.com/Saber1Y/NimDares
+demo_url: https://nimdares.vercel.app
+video_url: https://youtu.be/1uijncjvNTQ
+contact_email: ayodejiakintobi1@gmail.com
+team_name: Team NiDa
+team_members:
+  - Knowledge
+x_account: Sabercodes123
+builder_story: "Most productivity tools track intentions but do not create
+  consequences for abandoning them. NimDares makes a commitment tangible by
+  putting a NIM stake behind a measurable goal.\r
+
+  \r
+
+  I built it as a Nimiq Pay Mini App so wallet signing, escrow funding, proof
+  submission, adjudication, and settlement can happen in one focused flow. The
+  current demo runs on Nimiq TestAlbatross testnet."
+skool_post_url: https://www.skool.com/miniappscompetition/nimdares?p=f2fa8c92
+social_post_url: https://x.com/Sabercodes123/status/2100619807271883041?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Saber1Y
+submitted_at: 2026-09-17T16:16:18.629Z
