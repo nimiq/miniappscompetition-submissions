@@ -1,0 +1,30 @@
+app_name: NimTrace
+category: On-chain services
+tagline: Payment-backed, transferable product ownership and warranty passports
+  inside Nimiq Pay.
+description: NimTrace is a Nimiq Pay Mini App that turns a NIM purchase into a
+  transferable, wallet-owned product and warranty passport.
+pricing: Free
+repo_url: https://github.com/EcstaceeLOR/NimTrace
+demo_url: https://nimtrace.vercel.app
+video_url: https://youtu.be/DstBuoHRK4Q?si=XVMLuf0p3HmvcUnr
+contact_email: abdulmuizademola9@gmail.com
+team_name: TechNova
+team_members:
+  - Abdulmuiz Ademola Abdulkabir
+x_account: dems_thepenlord
+builder_story: I was motivated to build NimTrace because I believe every product
+  deserves a proof that is verifiable, a proof that outlives the product itself.
+skool_post_url: https://www.skool.com/miniappscompetition/nimtrace?p=9c27ba8e
+social_post_url: https://x.com/dems_thepenlord/status/2100415439918526691?s=46
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: EcstaceeLOR
+submitted_at: 2026-09-17T11:02:05.837Z
