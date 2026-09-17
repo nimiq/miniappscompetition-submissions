@@ -1,0 +1,33 @@
+app_name: MergeEarn
+category: Earning
+tagline: Fund issues. Reward merges.
+description: MergeEarn turns real GitHub issues into funded NIM bounties and
+  pays contributors only after the expected pull request is merged and
+  independently verified.
+pricing: Free
+repo_url: https://github.com/Saidur-droid/MergeEarn
+demo_url: https://mergeearn.vercel.app
+video_url: https://youtube.com/shorts/xf0TRhqKeUE
+contact_email: rifat77info@gmail.com
+team_name: non
+team_members: null
+x_account: Rifatncr7
+builder_story: I built MergeEarn to make open-source bounties verifiable end to
+  end. GitHub is the source of truth for the work, while Nimiq is the source of
+  truth for the money. Maintainers can fund real GitHub issues with NIM,
+  contributors submit real pull requests, and payment is released only after the
+  expected merge is verified. The goal is to remove screenshots, manual status
+  updates, and payout spreadsheets from small open-source contributions.
+skool_post_url: https://www.skool.com/miniappscompetition/built-mergeearn-github-issue-bounties-paid-with-nim
+social_post_url: https://x.com/Rifatncr7/status/2100430329886745073
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Saidur-droid
+submitted_at: 2026-09-17T04:14:41.310Z
