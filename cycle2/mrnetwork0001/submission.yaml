@@ -1,0 +1,53 @@
+app_name: NimSnap
+category: Creator tools
+tagline: Studio photos for ten cents a shot.
+description: Upload a photo, pick one of eight styles, and pay $0.10 in NIM to
+  get a studio-grade portrait, avatar, product shot or restored print back in
+  seconds. For anyone who needs a good photo a few times a year and shouldn't
+  have to buy a $30/month subscription to get one.
+pricing: Paid
+repo_url: https://github.com/mrnetwork0001/NimSnap
+demo_url: https://nimsnap.xyz
+video_url: https://youtu.be/l5hAyWUBn1Y
+contact_email: mrnetwork0001@gmail.com
+team_name: NetLayer Labs
+team_members:
+  - N/A
+x_account: encrypt_wizard
+builder_story: "Every AI photo tool is a subscription. I needed about three
+  headshots a year, and the maths never worked: pay for eleven months you don't
+  use, or go without.\r
+
+  \r
+
+  So I priced the actual unit of value; one finished photo, at ten cents. That
+  only works on a rail where ten cents survives the fee, which is the whole
+  reason NimSnap is a Nimiq Mini App rather than a website with a card form. \r
+
+  \r
+
+  The business model and the technology are the same decision.\r
+
+  \r
+
+  The part I cared most about was not taking anyone's word for a payment. The
+  order id rides inside the transaction, so the server reads the chain itself
+  and confirms the money landed before spending anything on the model and the
+  finished shot links back to that transaction so the user can check it too. \r
+
+  \r
+
+  Sixteen payments have settled on mainnet so far."
+skool_post_url: https://www.skool.com/miniappscompetition/built-nimsnap-pay-per-shot-ai-photos-010-in-nim-no-account-plus-2-gotchas-that-cost-me-a-day?p=94c8a649
+social_post_url: https://x.com/encrypt_wizard/status/2100313360571183196
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: mrnetwork0001
+submitted_at: 2026-09-17T05:10:36.402Z
