@@ -1,0 +1,88 @@
+app_name: Ralli
+category: Social
+tagline: Start something. Join something. Pass it on.
+description: Ralli is a social Mini App on Nimiq Pay where people start
+  challenges, respond with photos or videos, and pass them to friends to build
+  chains of participation. Communities can join Daily Rallis, react to
+  responses, and use NIM to boost challenges they want to see or tip response
+pricing: Free
+repo_url: https://github.com/JamesVictor-O/Ralli
+demo_url: https://ralli-mu.vercel.app
+video_url: https://youtu.be/El4pCm2UQ9E
+contact_email: victorjames408@gmail.com
+team_name: Ralli
+team_members: null
+x_account: https://x.com/codeX_james
+builder_story: "Ralli came from a simple series of questions.\r
+
+  \r
+
+  The first was: why Mini Apps on Nimiq Pay?\r
+
+  \r
+
+  When I started researching, one description stuck with me: Nimiq was turning
+  its payment app into a platform where developers could build Mini Apps that
+  extend what the app can do.\r
+
+  \r
+
+  As a frontend developer, that immediately interested me. A lot of what I enjoy
+  building is focused on making blockchain infrastructure disappear into the
+  background, so normal users can use a product without first needing to
+  understand wallets, networks or how crypto works.\r
+
+  \r
+
+  That led to a more personal question:\r
+
+  \r
+
+  What could I build inside Nimiq Pay that I would genuinely send to my friends
+  who know nothing about Nimiq — and they would have a reason to open it?\r
+
+  \r
+
+  I didn't want the answer to be another financial tool. I wanted something they
+  could open because it was fun, because a friend sent them something, or
+  because other people were doing something they wanted to join.\r
+
+  \r
+
+  That's where the idea of a social Mini App started.\r
+
+  \r
+
+  Ralli became an experiment around a simple idea: give people things to do
+  together, then let Nimiq provide a native value layer underneath those
+  interactions.\r
+
+  \r
+
+  A friend can pass you a Ralli. You respond with a photo or video. Someone else
+  joins. A chain starts growing. If people really want to see a Ralli happen,
+  they can Boost it with NIM. If someone's response makes you laugh or genuinely
+  impresses you, you can Tip them directly.\r
+
+  \r
+
+  The social interaction comes first; the blockchain stays underneath.\r
+
+  \r
+
+  Ultimately, I built Ralli because I wanted to explore a different reason for
+  someone to discover Nimiq Pay: not because they were looking for a crypto
+  wallet, but because someone or something they cared about brought them there."
+skool_post_url: https://x.com/codeX_james/status/2100374339170324956?s=20
+social_post_url: https://www.skool.com/miniappscompetition/ralli-a-social-network-on-nimiq?p=1cf023a2
+heard_about: Nimiq community and X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: JamesVictor-O
+submitted_at: 2026-09-17T00:48:48.357Z
