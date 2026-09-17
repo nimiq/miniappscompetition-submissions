@@ -3,17 +3,17 @@ category: Social
 tagline: Chat on Nimiq. For friends, family and community - not for spam.
 description: "Knock Chat lets you:\r
 
-  - 💰 Set a connection cost for strangers,\r
+  💰 Set a connection cost for strangers,\r
 
-  - 💬 Send encrypted direct messages,\r
+  💬 Send encrypted direct messages,\r
 
-  - 👥 Create and join public group chats,\r
+  👥 Create and join public group chats,\r
 
-  - 💸 Send and receive NIM directly in chat,\r
+  💸 Send and receive NIM directly in chat,\r
 
-  - 🎁 Gift NIM to other community members,\r
+  🎁 Gift NIM to other community members,\r
 
-  - ❤️ Reply to messages and react with emojis."
+  ❤️ Reply to messages and react with emojis."
 pricing: Free
 repo_url: https://github.com/kaichaosun/knock-chat
 demo_url: https://knockchat.org/
