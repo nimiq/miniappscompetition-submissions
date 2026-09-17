@@ -1,0 +1,31 @@
+app_name: Drift
+category: Social
+tagline: Paper planes with NIM, inside Nimiq Pay.
+description: "send NIM as a sealed paper plane to an @username\r
+
+  Only that wallet can open the note. Friends can cheer or speed the flight.
+  They cannot read the letter."
+pricing: Free
+repo_url: https://github.com/cipherEncrypt/Drift
+demo_url: https://drift-tan-eight.vercel.app
+video_url: https://youtube.com/shorts/DcHicJdyjqc?feature=share
+contact_email: obasanjoemmanuel9@gmail.com
+team_name: null
+team_members: null
+x_account: dex_cipher
+builder_story: I wanted sending NIM to feel like sending a letter, not pasting a
+  long address. Drift is a plane on a map with a sealed note. Only the recipient
+  can open it. Usernames and a public sky make it easy to try with someone else
+  in Nimiq Pay.
+skool_post_url: null
+social_post_url: https://x.com/dex_cipher/status/2100395622973030866?s=20
+heard_about: x
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: cipherEncrypt
+submitted_at: 2026-09-17T01:27:56.841Z
