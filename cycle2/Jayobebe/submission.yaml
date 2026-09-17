@@ -1,0 +1,36 @@
+app_name: Blacktop
+category: Social
+tagline: Made by a rider, backed by riders
+description: Blacktop is a privacy-first solo/ group ride companion app with
+  real riders logging real rides. Pay Up is its built-in wallet feature along
+  with Blacktank, a shared crew fuel pot that only pays out on unanimous vote,
+  plus instant QR tips in NIM or USDT with zero fees to us.
+pricing: Free
+repo_url: https://github.com/Jayobebe/Blacktop.git
+demo_url: https://blacktoplive.com
+video_url: https://youtu.be/IAYky-1sZzw
+contact_email: jesselukose@gmail.com
+team_name: null
+team_members:
+  - Jesse
+x_account: null
+builder_story: I'm a marine engineer who rides motorcycles. Blacktop started
+  because every ride app I tried wanted my data and money more than it wanted to
+  help me track rides. Built solo between stretches of sea time, it grew from a
+  simple ride tracker into convoy comms, live maps, safety tools, and a whole
+  trading-card and badge economy, shaped by feedback from actual riders using
+  it. I cold-pitched it at a local motorcycle shop's open day with zero ad
+  spend, and it's grown past 200 riders since, word of mouth, not budget.
+skool_post_url: https://www.skool.com/miniappscompetition/a-more-formal-introduction?p=68983558
+social_post_url: https://www.instagram.com/p/DdQrxn1Nu4F/?stkn=MXhvNzR0dDF2a2ZsYw==
+heard_about: Instagram
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Jayobebe
+submitted_at: 2026-09-17T20:30:16.082Z
