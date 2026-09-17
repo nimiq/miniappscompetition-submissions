@@ -1,0 +1,41 @@
+app_name: NimPulse
+category: Games
+tagline: Call the market. Take the duel.
+description: NimPulse turns daily market calls into 1v1 duels inside Nimiq Pay.
+  Pick YES or NO on today's crypto question with your signed wallet proof, send
+  the link to a friend, and let real open and close prices settle it.
+pricing: Free
+repo_url: https://github.com/Pizzylee001/nimpulse
+demo_url: https://nimpulse.vercel.app
+video_url: https://youtube.com/shorts/OzP9MPn3bu8
+contact_email: pizzylillee@gmail.com
+team_name: null
+team_members: null
+x_account: Pizzy_lee__
+builder_story: "I build on Nimiq because the wallet flow makes a small app feel
+  like a game instead of a bank. NimPulse started as a question between friends:
+  will BTC close higher today? Making that a 1v1 duel with real wallet
+  signatures felt like the right use of Nimiq Pay. \r
+
+  \r
+
+  The pick is probably yours, the opponent's is probably theirs, and the market
+  settles it. The hard part was making resolution honest: both prices for a
+  question come from the same source, ties count as NO, and if every price
+  source fails the question retries instead of guessing. Next I want the duel to
+  carry a real NIM stake, winner\r
+
+  takes the pot. The data model is already shaped for it."
+skool_post_url: https://www.skool.com/miniappscompetition/nimpulse-1v1-prediction-duels-inside-nimiq-pay-cycle-ii-entry?p=49fc1e9e
+social_post_url: https://x.com/Pizzy_lee__/status/2100706262942146661
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Pizzylee001
+submitted_at: 2026-09-17T22:05:42.637Z
