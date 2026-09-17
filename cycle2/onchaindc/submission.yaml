@@ -1,0 +1,56 @@
+app_name: ChainMate
+category: Games
+tagline: Play. Compete. Earn
+description: ChainMate is a competitive online chess platform for players who
+  want more than casual matches. challenge friends, watch live games, and
+  compete in skill based tournaments. With Nimiq Pay, players can connect their
+  Nimiq wallet and use NIM for tournament entry fees and earnprize
+pricing: Freemium
+repo_url: https://github.com/onchaindc/CHAINMATE
+demo_url: https://chainmate-gg.vercel.app/
+video_url: https://youtu.be/srAmGWAyDoM?si=fXm-kraWm5Wj04zJ
+contact_email: onchaindc@gmail.com
+team_name: null
+team_members: null
+x_account: onchaindc
+builder_story: "Chess is already competitive, but most online chess experiences
+  stop at the match itself. I wanted to build something that makes chess feel
+  more like a competitive community: play  opponents, build a rating, challenge
+  friends, follow live games, enter tournaments, and have something meaningful
+  on the line.\r
+
+  \r
+
+  That became ChainMate , a chess platform built around the idea that every game
+  should contribute to a player's competitive journey.\r
+
+  \r
+
+  The Nimiq Mini Apps Competition gave that idea another layer. Instead of
+  adding a wallet as a separate crypto feature, I wanted NIM to become part of
+  the competition itself: players can connect their Nimiq wallet, enter
+  skill-based tournaments with NIM, compete for prize pools, and build a
+  reputation through their results.\r
+
+  \r
+
+  The goal is simple: make competitive chess feel deeper, more social, and more
+  rewarding without getting in the way of the game.\r
+
+  \r
+
+  ChainMate is for players who want more than a one-off chess match, a place to
+  play, compete, improve, and come back for the next game."
+skool_post_url: null
+social_post_url: https://x.com/onchaindc/status/2100300586843320359/video/1?s=46
+heard_about: I heard about Nimiq mini apps competition on X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: onchaindc
+submitted_at: 2026-09-17T19:10:26.570Z
