@@ -1,0 +1,41 @@
+app_name: PROVIA
+category: Productivity
+tagline: Check before you pay. Verify after you pay
+description: "PROVIA helps NIM users verify that payments reach the intended
+  recipient with the correct amount and network. \r
+
+  \r
+
+  It is built for anyone who wants stronger payment assurance when sending or
+  receiving NIM."
+pricing: Free
+repo_url: https://github.com/PinnacleCryptNG/provia
+demo_url: https://provia-cyan.vercel.app/
+video_url: https://youtube.com/shorts/CRawximbQRc?si=ZnmCyvdEfuuFPHQM
+contact_email: pinnaclecrypt@gmail.com
+team_name: null
+team_members: null
+x_account: PinnacleCrypt
+builder_story: "I built PROVIA to solve a simple problem: a payment being sent
+  shouldn't automatically mean it's correct.\r
+
+  \r
+
+  PROVIA adds an independent verification layer to Nimiq Pay\r
+
+  \r
+
+  Checking the intended payment before it is sent and verifying the actual
+  transaction on-chain afterward."
+skool_post_url: https://www.skool.com/miniappscompetition/provia-is-going-live-soon?p=ba042766
+social_post_url: https://x.com/PinnacleCrypt/status/2099385060994523179
+heard_about: Nimiq X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: PinnacleCryptNG
+submitted_at: 2026-09-14T06:30:49.421Z
