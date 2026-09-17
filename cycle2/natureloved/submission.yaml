@@ -13,13 +13,7 @@ team_name: TipWall
 team_members:
   - Adejoke
 x_account: RastaDev_
-builder_story: "TipWall exists so that supporting someone costs nothing but the
-  support itself, no platform in the middle, no percentage skimmed, no account
-  to make first.\r
-
-  \r
-
-  The friction was doing the talking.\r
+builder_story: "The friction was doing the talking\r
 
   Every time I wanted to send someone money for something they made, something
   got in the way. A fee that made a small amount pointless. An account I had to
@@ -35,7 +29,7 @@ builder_story: "TipWall exists so that supporting someone costs nothing but the
 
   \r
 
-  The moment I decided to build it.\r
+  The moment I decided to build it\r
 
   I was looking at a payout statement from a platform I used to tip a developer
   whose library I had relied on for months. The number that reached them was not
@@ -47,23 +41,7 @@ builder_story: "TipWall exists so that supporting someone costs nothing but the
 
   That was the moment. Not anger, just clarity. If the act of saying thank you
   is taxed, fewer people say it. And the people who do say it are sending a
-  smaller signal than they think. Every percent is a person.\r
-
-  \r
-
-  Why Nimiq.\r
-
-  I stumbled upon the Nimiq ecosystem one day and I liked that it was designed
-  for payments first, not speculation. NIM settles in seconds, moves
-  wallet-to-wallet, and the fees are small enough that a tip of a few NIM still
-  makes sense. That is rare.\r
-
-  \r
-
-  What it buys TipWall is simple. The money moves straight from supporter to
-  creator. TipWall never holds anyone’s money, so it never has a reason to take
-  a cut of it and a fee-free product is only credible when the architecture
-  makes the fee impossible rather than generous."
+  smaller signal than they think. Every percent is a person."
 skool_post_url: https://www.skool.com/miniappscompetition/i-changed-tipwall-ux?p=2c8b62d7
 social_post_url: https://x.com/tipwallonNIM/status/2099772603804041471?s=20
 heard_about: X
@@ -76,4 +54,4 @@ screenshots:
   - screenshot-4.png
   - screenshot-5.png
 github_login: natureloved
-submitted_at: 2026-09-16T15:21:57.751Z
+submitted_at: 2026-09-17T11:05:41.534Z
