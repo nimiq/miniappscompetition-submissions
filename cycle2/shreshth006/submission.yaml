@@ -1,0 +1,69 @@
+app_name: NimReturn
+category: Shopping & deals
+tagline: The payment is your receipt. The merchant's signature is your policy.
+description: "NimReturn keeps a merchant's signed return and warranty terms
+  attached to your NIM payment, then verifies each claim, signed decision, and
+  refund on Nimiq. No custody, no reviews: just signed promises and verified
+  payments."
+pricing: Free
+repo_url: https://github.com/shreshth006/NimReturn
+demo_url: https://nimreturn-staging-cycle2.onrender.com/
+video_url: https://youtube.com/shorts/K1LNfFr0hDM
+contact_email: shreshthmishra333@gmail.com
+team_name: null
+team_members: null
+x_account: shreyyyshth
+builder_story: "Crypto proves that you paid. It does not prove what the merchant
+  promised when you paid. NimReturn is a consumer protection layer for Nimiq Pay
+  that keeps that promise attached to the payment.\r
+
+  \r
+
+  A merchant signs return and warranty terms with their Nimiq wallet. Before
+  paying, the buyer sees those verified terms and signs a short purchase key.
+  The buyer pays in NIM directly to the merchant, and NimReturn independently
+  verifies the transaction through Albatross finality. The result is a Purchase
+  Passport that permanently binds the purchase to the exact policy version that
+  existed at checkout, even if the merchant later changes their terms.\r
+
+  \r
+
+  If something goes wrong, the buyer files a signed return or warranty claim.
+  NimReturn checks it deterministically against the original policy window. The
+  merchant signs a decision, refunds NIM through Nimiq Pay, and NimReturn
+  verifies the refund on chain. Every verified event feeds a public Promise
+  Ledger: purchases, eligible claims, decisions, and refunds, calculated only
+  from signatures and chain evidence. No reviews, no star ratings, no editable
+  trust score.\r
+
+  \r
+
+  NimReturn never holds funds or keys. Nimiq Pay handles every signature and
+  payment; the chain proves money moved, and signatures prove what was promised
+  and decided.\r
+
+  \r
+
+  Building it on a real Android phone taught us how Nimiq Pay actually works: it
+  pays from a timelock contract account and signs with its owner account.
+  Instead of assuming those are the same, NimReturn binds a purchase key before
+  payment, refunds that key, and records the actual sender as evidence.\r
+
+  \r
+
+  It currently runs on Nimiq Testnet (TestAlbatross). Judges can open a
+  completed example without a wallet, or switch Nimiq Pay to Testnet to make a
+  protected purchase."
+skool_post_url: https://www.skool.com/miniappscompetition/can-you-tell-what-my-mini-app-does-before-i-explain-it?p=3f787857
+social_post_url: https://x.com/shreyyyshth/status/2100678165014458638
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: shreshth006
+submitted_at: 2026-09-17T20:29:53.960Z
