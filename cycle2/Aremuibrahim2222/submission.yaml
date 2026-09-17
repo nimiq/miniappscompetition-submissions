@@ -1,0 +1,62 @@
+app_name: Nimiq deals
+category: Shopping & deals
+tagline: Discover discounted products and pay with NIM through Nimiq Pay.
+description: Nimiq Deals is a mobile first shopping marketplace where you browse
+  discounted products, pay with NIM through Nimiq Pay, and earn cashback on
+  every order. Built for anyone who wants crypto payments to feel as easy as
+  everyday shopping.
+pricing: Free
+repo_url: https://github.com/Aremuibrahim2222/Nimiq-deals.git
+demo_url: https://nimiq-deals-38zr-iprwoarfv.vercel.app
+video_url: https://x.com/aremu_ibrah1m/status/2099447450687729823
+contact_email: ibrahimabdullateef2007@gmail.com
+team_name: Toshiro smart
+team_members:
+  - Toshiro
+x_account: https://x.com/aremu_ibrah1m
+builder_story: "Builder Story\r
+
+  \r
+
+  I built Nimiq Deals because I wanted to explore a simple question: how can
+  crypto become something people actually use in everyday life, instead of just
+  something they hold?\r
+
+  \r
+
+  While exploring the Nimiq Mini Apps ecosystem, I saw an opportunity to combine
+  shopping with Nimiq Pay. Nimiq Deals lets users discover discounted products,
+  pay with NIM or USDT, and earn cashback from their purchases.\r
+
+  \r
+
+  The problem I’m trying to solve is the gap between owning crypto and actually
+  spending it in a practical way. Shopping is something people already
+  understand, so I wanted to create a familiar experience while making Nimiq
+  payments useful in a real world context.\r
+
+  \r
+
+  I kept the idea intentionally simple: \r
+
+  find a deal → pay with Nimiq → earn cashback → come back for another deal.\r
+
+  \r
+
+  As a solo builder, I also wanted Nimiq Deals to be a practical demonstration
+  of what can be built with Nimiq Pay Mini Apps and how crypto payments can fit
+  naturally into everyday experiences."
+skool_post_url: https://www.skool.com/miniappscompetition/building-nimiq-deals?p=92356961
+social_post_url: https://x.com/aremu_ibrah1m/status/2099447450687729823
+heard_about: I saw the hackathon announcement on a hackathon platform, so I
+  decided to hop in and build something.
+icon: icon.jpg
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Aremuibrahim2222
+submitted_at: 2026-09-14T19:37:40.388Z
