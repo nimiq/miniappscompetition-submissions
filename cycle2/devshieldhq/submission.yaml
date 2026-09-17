@@ -1,0 +1,27 @@
+app_name: BALLAST
+category: On-chain services
+tagline: Turn a crash into parked yield, not panic.
+description: Ballast shields ETH, USDT, cbETH, wstETH, and cbBTC into USDC the
+  moment markets get rough, parks it in Aave V3 for real yield, and swaps back
+  whenever you're ready, all through already audited protocols on Base.
+pricing: Free
+repo_url: https://github.com/devshieldhq/Ballast
+demo_url: https://ballast-steel.vercel.app
+video_url: https://www.loom.com/share/42c82fa4643a498cb53349224292454e
+contact_email: olayojackdoopatrick@gmail.com
+team_name: NA
+team_members:
+  - Merie Mueni
+x_account: null
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/submitting-ballast-for-cycle-ii?p=3b338ed0
+social_post_url: https://x.com/merie_mueni/status/2100343158529831170?s=20
+heard_about: Twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: devshieldhq
+submitted_at: 2026-09-16T22:54:58.246Z
