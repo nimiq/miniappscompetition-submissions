@@ -1,0 +1,32 @@
+app_name: NColab (Nimiq Colab)
+category: Social
+tagline: Autonomous AI-powered group vaults and instant shared payments on Nimiq.
+description: An intelligent group treasury and expense-splitting mini app for
+  friends, trips, and teams—powered by autonomous AI agents and instant, low-fee
+  Nimiq payments.
+pricing: Freemium
+repo_url: https://github.com/AbdullahBalfaqih/NIMIQ-Colab
+demo_url: https://nimiq-colab.vercel.app/
+video_url: https://youtu.be/e0nVBUlWPUc?si=Tb-ov01k_mJdKOml
+contact_email: abdullahbalfaqih0@gmail.com
+team_name: Colab
+team_members: null
+x_account: aqih0
+builder_story: Managing shared group finances has always been a painful
+  experience filled with awkward payment reminders, messy spreadsheets, and
+  friction-heavy bank wires. While crypto promised borderless, instant money,
+  most Web3 wallets were built strictly for individual custody, making
+  multi-party pooling expensive and complex.
+skool_post_url: null
+social_post_url: https://x.com/aqih0/status/2101083776205963452?s=46&t=vnKjXgcVlKTxS7TXudn4Yg
+heard_about: X platform
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: AbdullahBalfaqih
+submitted_at: 2026-09-18T23:17:27.658Z
