@@ -1,0 +1,24 @@
+app_name: LST Chaco
+category: On-chain services
+tagline: Lets Stake Together
+description: Staking with friends in pots
+pricing: Free
+repo_url: https://github.com/gchacon011/SOLANADEV
+demo_url: https://chaco-stake-flow.base44.app/
+video_url: https://youtu.be/JWSMz9Mh6dE?si=BAh7z2N0x8eJkzTG
+contact_email: gonzalo.chacon.miranda@gmail.com
+team_name: null
+team_members: null
+x_account: Gchacon3
+builder_story: I love staking with friends
+skool_post_url: https://www.skool.com/miniappscompetition/today-is-the-last-day-submissions-close-tonight?p=62618667
+social_post_url: https://x.com/gchacon3/status/2101079537412931611
+heard_about: Ricardo told me participate
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: gchacon011
+submitted_at: 2026-09-18T22:47:40.657Z
