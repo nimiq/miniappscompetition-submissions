@@ -1,0 +1,40 @@
+app_name: NimZero
+category: On-chain services
+tagline: Pay USDT on Polygon without POL.
+description: "NimZero lets NimiqPay users send USDT on Polygon without holding
+  POL.\r
+
+  \r
+
+  A user enters a recipient and amount, reviews the payment, and authorizes it
+  directly in Nimiq Pay. NimZero sponsors the Polygon gas while binding the
+  authorized amount and recipient"
+pricing: Free
+repo_url: https://github.com/HillaryIkhais/NimZero
+demo_url: https://zero-topaz-two.vercel.app/
+video_url: https://youtube.com/shorts/jLBVDO6Z-XU?si=qJTiwT06s_p-UmHZ
+contact_email: ikhaishillary@gmail.com
+team_name: Caelum
+team_members: null
+x_account: maisonlarii
+builder_story: "I kept running into the same friction with crypto payments: the
+  asset you want to spend isn't always the asset you need to pay the network.\r
+
+  \r
+
+  I built NimZero to remove that extra step. The idea is simple: if someone
+  already has the money they want to send, they shouldn't have to acquire
+  another token just to make the payment. I wanted to see how far that could be
+  pushed inside Nimiq Pay, so I built the full flow around sponsored execution
+  and independent on-chain verification."
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: HillaryIkhais
+submitted_at: 2026-09-18T23:58:36.753Z
