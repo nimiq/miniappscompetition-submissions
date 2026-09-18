@@ -1,0 +1,29 @@
+app_name: NimRamp
+category: Earning
+tagline: The app that moves money
+description: A two-way stablecoin ramp that runs inside Nimiq Pay, moving value
+  between local currency and USDT or USDC in four African markets, across every
+  chain the wallet carries.
+pricing: Free
+repo_url: https://github.com/PhantomOz/nim-ramp
+demo_url: https://nimramp.xyz
+video_url: https://youtu.be/5QNxZRyw7Oc
+contact_email: faniogor@gmail.com
+team_name: NimRamp
+team_members:
+  - Favour Smart
+x_account: SuperDevFavour
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: WhatsApp Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: PhantomOz
+submitted_at: 2026-09-18T23:15:12.767Z
