@@ -1,0 +1,41 @@
+app_name: Turn
+category: On-chain services
+tagline: Refundable NIM deposits for reusable items.
+description: Turn lets merchants take refundable NIM deposits for reusable items
+  without cash or accounts. Customers pay the merchant directly, keep an
+  on-chain return receipt, and get the same NIM back when the item is returned.
+pricing: Free
+repo_url: https://github.com/ometere123/turn
+demo_url: https://turn-nimiq.vercel.app/
+video_url: https://youtu.be/MOaCnN6htME?si=9vzceM1EqqZXv683
+contact_email: lordejhay@gmail.com
+team_name: null
+team_members: null
+x_account: papito_dele
+builder_story: "I built Turn because refundable deposits for reusable items are
+  still often handled with cash, paper tickets or trust.\r
+
+  \r
+
+  Turn keeps it simple. A merchant creates a counter and sets a refundable
+  amount in NIM. The customer pays the merchant directly, and that payment
+  becomes the return receipt. When the item is returned, Turn verifies the
+  original transaction, amount and refund address before the merchant sends the
+  refund.\r
+
+  \r
+
+  Turn is not escrow and cannot force a refund. It simply makes the payment and
+  refund trail clear and verifiable on Nimiq without accounts, custody or a
+  backend holding users’ money."
+skool_post_url: null
+social_post_url: https://medium.com/@lordejhay/turn-refundable-nim-deposits-for-reusable-items-95a6d5a0354e
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: ometere123
+submitted_at: 2026-09-18T23:03:15.522Z
