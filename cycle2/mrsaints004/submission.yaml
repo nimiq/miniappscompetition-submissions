@@ -1,0 +1,36 @@
+app_name: Nimiq Racer
+category: Games
+tagline: Race, dodge, and earn,  a 3D racing Mini App powered by NIM
+description: Nimiq Racer is a fast-paced 3D endless racing game where players
+  dodge obstacles, collect coins, buy premium cars with NIM, compete on a global
+  leaderboard, challenge friends, and earn achievements. Built for everyone who
+  wants a fun, instant-play game right inside Nimiq Pay.
+pricing: Freemium
+repo_url: https://github.com/mrsaints004/NimiqRacer
+demo_url: https://nimiqracer.vercel.app/
+video_url: https://youtu.be/QJTeszse05I?si=BoBEG8IKl7XPjxRt
+contact_email: jamesfemiadedayo@gmail.com
+team_name: Team Deaneries
+team_members: null
+x_account: deaneries_
+builder_story: I wanted to build something that shows what Nimiq Mini Apps can
+  actually do beyond payments and utilities. A game felt like the perfect way to
+  push the SDK - it uses device identity for verified leaderboard entries, NIM
+  payments for a cosmetic car shop, and message signing for daily streak
+  check-ins. The whole thing runs at 60fps in the browser using Three.js, works
+  on both desktop and mobile, and degrades gracefully outside Nimiq Pay so
+  anyone can play. The leaderboard, anti-cheat system, achievements, and friend
+  challenges all run on a backend API. I built it because crypto needs more fun
+  stuff, and because proving real usage through an actual game people want to
+  play felt more interesting than another dashboard.
+skool_post_url: null
+social_post_url: https://x.com/deaneries_/status/2100741663467479442
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: mrsaints004
+submitted_at: 2026-09-18T01:33:27.666Z
