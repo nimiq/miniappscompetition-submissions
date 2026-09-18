@@ -1,0 +1,29 @@
+app_name: lattency
+category: Earning
+tagline: crowdsourced metro map of workable coffee spots
+description: "Lattency is a physical-world oracle - the best data about a
+  workspace comes from someone who is physically there. Lattency turns that
+  private experience into a public good: wifi speed tests, bounties and coffee
+  availability."
+pricing: Free
+repo_url: https://github.com/thisyearnofear/lattency
+demo_url: https://lattency.vercel.app/
+video_url: https://youtu.be/h9GY2Ba38gs
+contact_email: papaandthejimjams@gmail.com
+team_name: null
+team_members: null
+x_account: papajimjams
+builder_story: it feels like a lottery everytime i go into a coffee shop and/or
+  workspace - will there be oat milk, how decent will the wifi be, does it turn
+  into a bar/club just as i am getting into flow state
+skool_post_url: https://www.skool.com/miniappscompetition/lattency?p=9fdafa35
+social_post_url: https://x.com/papajimjams/status/2101073829716238359
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: thisyearnofear
+submitted_at: 2026-09-18T22:20:25.544Z
