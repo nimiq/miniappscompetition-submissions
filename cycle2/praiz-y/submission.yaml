@@ -1,0 +1,34 @@
+app_name: Rova
+category: Games
+tagline: Create. Compete. Win.
+description: ROVA is a community contest platform where creators can launch
+  contests and participants can compete, earn rewards, and climb the
+  leaderboard. Quizzes are the first contest format, with more community
+  competitions to come.
+pricing: Freemium
+repo_url: https://github.com/praiz-y/Rova
+demo_url: https://rovacompete.vercel.app/
+video_url: https://youtu.be/R8do7h-8DjY?si=Ec7PGVwkMiVPDSnv
+contact_email: kangvariant001@gmail.com
+team_name: null
+team_members: null
+x_account: TheVarian_t
+builder_story: "I built ROVA because I wanted to explore what a contest platform
+  could look like when wallets and payments are part of the experience from the
+  beginning. I started with quizzes as a simple way to build and test the core
+  flow: a creator sets up a contest, participants join with their Nimiq wallet,
+  compete, and see their results. The bigger idea is to make the platform
+  flexible enough for different types of community competitions beyond quizzes."
+skool_post_url: https://www.skool.com/miniappscompetition/rova-create-compete-win?p=682646a7
+social_post_url: https://x.com/TheVarian_t/status/2100898301658681491
+heard_about: A friend
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: praiz-y
+submitted_at: 2026-09-18T11:00:18.606Z
