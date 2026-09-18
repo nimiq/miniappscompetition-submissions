@@ -1,0 +1,43 @@
+app_name: Nimble Quiz
+category: Games
+tagline: Real-Time Web3 Trivia & Instant Micro-Payouts Powered by Nimiq Pay
+description: Nimble Quiz is a real-time Web3 trivia platform for gamers and
+  community hosts to stake NIM, compete in synchronized quiz battles, and
+  receive instant Nimiq Pay payouts.
+pricing: Free
+repo_url: https://github.com/Skinny001/Nimble-Quiz
+demo_url: https://nimble-quiz-ten.vercel.app/
+video_url: https://www.youtube.com/watch?v=trph45WwwQs
+contact_email: Bamigboyetemitope84@gmail.com
+team_name: Nimble
+team_members:
+  - Bamigboye Ayodeji Temitope
+  - QuickNode
+x_account: 0xSkinny001
+builder_story: "Inspiration: I wanted to bring the high-energy fun of trivia
+  games like Kahoot! to Web3 by using Nimiq Pay for instant, low-fee crypto
+  micro-stakes.\r
+
+  \r
+
+  Problem Solved: Web3 gaming is often ruined by wallet friction, slow payout
+  delays, and network lag. \r
+
+  \r
+
+  Nimble Quiz eliminates seed phrases with 1-tap Nimiq Pay staking, synchronizes
+  answer reveals to stop lag cheating, and auto-finalizes scores in under one
+  second for instant one-click winner payouts."
+skool_post_url: null
+social_post_url: https://x.com/0xSkinny001/status/2100899328592130311?s=20
+heard_about: NImiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Skinny001
+submitted_at: 2026-09-18T18:59:03.198Z
