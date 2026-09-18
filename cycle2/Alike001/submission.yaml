@@ -1,0 +1,39 @@
+app_name: NimPurchase
+category: Shopping & deals
+tagline: Pay once. You’re already a regular.
+description: NimPurchase turns a direct NIM payment into a verified Purchase
+  Passport with receipt details, loyalty progress, and merchant support.
+  Merchants receive NIM directly; customers need no merchant-specific account.
+pricing: Free
+repo_url: https://github.com/Alike001/nimpurchase
+demo_url: https://nimpurchase.vercel.app
+video_url: https://youtube.com/shorts/l-AAUjv7BeA
+contact_email: hammedoye10@gmail.com
+team_name: null
+team_members: null
+x_account: IamAlikeX
+builder_story: "Merchant payments usually end at the transfer. I wanted to make
+  a NIM payment useful after checkout without turning it into a custodial
+  payment platform or a generic\r
+
+  loyalty app. NimPurchase lets a merchant create a checkout, receive NIM
+  directly, and give the customer a verified Purchase Passport containing their
+  receipt, loyalty progress, and a route back to merchant support.\r
+
+  \r
+
+  Nimiq is essential: the customer approves a real direct NIM transfer in Nimiq
+  Pay, and NimPurchase independently verifies the transaction before activating
+  the Passport. The app never holds customer funds, private keys, or seed
+  phrases."
+skool_post_url: null
+social_post_url: https://x.com/IamAlikeX/status/2100920494304223657?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Alike001
+submitted_at: 2026-09-18T12:25:23.543Z
