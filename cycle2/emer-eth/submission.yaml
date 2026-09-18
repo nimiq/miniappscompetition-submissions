@@ -1,0 +1,31 @@
+app_name: SayPay
+category: Productivity
+tagline: Type or paste anything, Ask understands. You organizes/control. Confirm
+  in Nimiq Pay.
+description: "SayPay is work-money for freelancers in Nimiq Pay. Type or upload
+  in Ask; Gemini files tasks, reminders, and receipts in You. \r
+
+  Work holds jobs, timers, invoices, and two-party escrow. Chat is request-gated
+  and encrypted. Only Nimiq Pay moves NIM."
+pricing: Free
+repo_url: https://github.com/emer-eth/saypay
+demo_url: https://saypay-payment-assistant.emerxch.workers.dev
+video_url: https://youtube.com/shorts/n_cHWRPMp3E?feature=share
+contact_email: emerxch@gmail.com
+team_name: null
+team_members: null
+x_account: emerxch
+builder_story: null
+skool_post_url: null
+social_post_url: https://x.com/emer__eth/status/2101092397224431709?s=20
+heard_about: From X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: emer-eth
+submitted_at: 2026-09-18T23:38:58.121Z
