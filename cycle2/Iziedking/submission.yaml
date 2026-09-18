@@ -1,0 +1,116 @@
+app_name: NIM RUSH
+category: Games
+tagline: Race the ridge. Prove the run. Take the NIM.
+description: "NIM RUSH is a daily downhill bike race that runs inside Nimiq Pay
+  — no install,\r
+
+  no seed phrase, no signup. Your wallet signs the run, the server re-rides
+  your\r
+
+  inputs to work out the score itself, and the day's best three split a real
+  NIM\r
+
+  pool on mainnet."
+pricing: Free
+repo_url: https://github.com/Iziedking/nim-rush
+demo_url: https://www.nim-rush.xyz
+video_url: https://youtube.com/shorts/4e48mW7nLIs
+contact_email: iziedking17@gmail.com
+team_name: invincibles
+team_members:
+  - grachidefi
+x_account: Iziedking | @grachidefi
+builder_story: "We built NIM RUSH around a simple problem: games can make a
+  player feel skilled, but most web games cannot prove what happened during the
+  run.\r
+
+  \r
+
+  A downhill race can look fair while the leaderboard is built from numbers
+  submitted by the browser. The player sends a score, the server stores it, and
+  everyone is expected to trust the result.\r
+
+  \r
+
+  NIM RUSH takes a different approach.\r
+
+  \r
+
+  It is a daily downhill competition inside Nimiq Pay. Every ranked rider gets
+  the same course, the same rules, the same equipment, and three attempts.
+  Winning depends on decisions made on the hill: when to brake, which line to
+  take, how much speed to carry, where to spend boost, and whether a risky
+  shortcut is worth the collision penalty.\r
+
+  \r
+
+  Nimiq is part of the game because the competition needs more than a
+  username.\r
+
+  \r
+
+  The wallet gives each run a real rider identity. It signs participation and
+  connects the result to a player-controlled wallet. The Mini App format keeps
+  that identity close to the game, without a separate account system,
+  installation, or seed-phrase flow.\r
+
+  \r
+
+  During a ranked run, NIM RUSH records the rider’s sampled control trace. The
+  browser can submit a score claim, but it does not control the result. The
+  server checks the course ticket, wallet binding, ruleset, seed, attempt limit,
+  and trace hash. It then replays the run from the beginning and calculates the
+  score again.\r
+
+  \r
+
+  If the trace was altered, the ticket was reused, the run did not finish, or
+  the submitted score disagrees with the replay, the result is rejected.\r
+
+  \r
+
+  This gives the leaderboard a verifiable foundation. A player can prove how the
+  run was completed, not only what number appeared at the end.\r
+
+  \r
+
+  The same verified runs can become rival lines for later riders. Players
+  compete against recorded decisions from other descents instead of simulated
+  activity.\r
+
+  \r
+
+  When a daily reward pool is funded, verified performance can qualify for NIM
+  rewards sent to the rider’s wallet. The treasury balance and settlement can be
+  checked on-chain.\r
+
+  \r
+
+  We built NIM RUSH to connect three things that are usually separated: the fun
+  of the game, the proof behind the leaderboard, and the wallet that receives a
+  legitimate reward.\r
+
+  \r
+
+  The player makes the run.\r
+
+  \r
+
+  The server proves the result.\r
+
+  \r
+
+  Nimiq gives that result an identity and a settlement layer."
+skool_post_url: null
+social_post_url: https://x.com/grachidefi/status/2101069444705333604
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Iziedking
+submitted_at: 2026-09-18T22:13:22.030Z
