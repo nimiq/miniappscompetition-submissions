@@ -1,0 +1,52 @@
+app_name: Notch
+category: Social
+tagline: Put your conviction on the line.
+description: Notch is a social conviction market where anyone can create a
+  market on any topic, pick a side, and bet NIM. Winners split the pot. The
+  crowd decides.
+pricing: Freemium
+repo_url: https://github.com/danielamodu/Notch
+demo_url: https://youtu.be/3kpoV0Hlq88
+video_url: https://youtube.com/shorts/4ZsQjOOgN-c?feature=share
+contact_email: theamebonetwork@gmail.com
+team_name: null
+team_members: null
+x_account: szrxbt
+builder_story: "I wanted to build something that answered one question — what do
+  people actually believe when there's real money on it? Not polls, not likes,
+  not retweets. Skin in the game.\r
+
+  \r
+
+  Notch is a conviction market built natively on Nimiq Pay. Anyone can create a
+  market on anything — sports, crypto, culture, tech. You pick a side, commit
+  NIM, and the crowd settles it. Opinion markets auto-resolve when the timer
+  ends — majority NIM wins. Prediction markets let the creator call the outcome.
+  Winners split the full pool minus a 5% house cut.\r
+
+  \r
+
+  Every action is on-chain. Market creation costs 0.1 NIM and leaves an
+  immutable on-chain proof. Every bet is tagged with a structured memo. Every
+  payout is broadcast with a verifiable tx hash. Your wallet address is your
+  identity — no signup, no account.\r
+
+  \r
+
+  The result is a platform that feels alive. Open Notch and you immediately see
+  what people are putting real money behind right now. The probability numbers
+  shift in real time as new bets come in. It's Polymarket energy inside your
+  Nimiq Pay wallet."
+skool_post_url: null
+social_post_url: https://x.com/szrxbt/status/2101074337386176921?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: danielamodu
+submitted_at: 2026-09-18T23:05:25.935Z
