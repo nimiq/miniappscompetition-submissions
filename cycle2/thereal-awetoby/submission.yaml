@@ -1,0 +1,31 @@
+app_name: Nimiqgram
+category: Social
+tagline: A social feed where every tip is checked against the blockchain before
+  it counts.Likes are free Tips are real.
+description: "Nimiqgram is a social mini-app that runs on a Nimiq wallet instead
+  of a username and password.You post, follow, like, comment — like any social
+  app.\r
+
+  But tips are real NIM transactions,"
+pricing: Free
+repo_url: https://github.com/thereal-awetoby/nimiqgram
+demo_url: https://nimiqgram.vercel.app
+video_url: https://youtube.com/shorts/WbaNXO0aaeA?si=2dbzwDFInBAV2c4m
+contact_email: awedavid2007@gmail.com
+team_name: Bob the Builder
+team_members:
+  - Charliegonebrown
+x_account: winsoonbob
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/nimiqgram-is-live?p=493b24dc
+social_post_url: https://x.com/winsoonbob/status/2101005136956908023?s=46
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: thereal-awetoby
+submitted_at: 2026-09-18T21:10:06.285Z
