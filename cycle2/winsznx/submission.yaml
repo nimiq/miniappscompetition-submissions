@@ -1,0 +1,55 @@
+app_name: NIM Relay
+category: Games
+tagline: One NIM. One relay. One journey.
+description: NIM Relay is a social arcade game where a real 1 NIM baton moves
+  from player to player. Race the previous runner’s verified ghost, complete
+  your leg, and pass the baton through Nimiq Pay to extend a living journey
+  across the Relay Atlas.
+pricing: Free
+repo_url: https://github.com/winsznx/nim-relay
+demo_url: https://nimrelay.xyz
+video_url: https://youtu.be/6orRlOB75ww
+contact_email: xidoncapitals@gmail.com
+team_name: NimRelay
+team_members:
+  - "@IamOloba_"
+  - "@winsznx"
+x_account: NimRelay
+builder_story: "NIM Relay started with one question: what if the transaction
+  itself was the game mechanic?\r
+
+  \r
+
+  Instead of adding crypto rewards to a normal game, we made a real NIM transfer
+  the baton. Each runner receives it, races the previous runner’s verified
+  ghost, completes their leg, and passes it to the next person through Nimiq
+  Pay.\r
+
+  \r
+
+  As the baton moves, it builds a visible journey across the Relay Atlas. Every
+  verified handoff adds another runner, route and piece of history.\r
+
+  \r
+
+  We built the rest of the product around that idea: social challenges, verified
+  ghosts, relay history, progression and a world that changes as people keep the
+  baton moving.\r
+
+  \r
+
+  The goal is simple: make using NIM feel like play rather than payment
+  infrastructure."
+skool_post_url: https://www.skool.com/miniappscompetition/quick-update-on-nim-relay?p=b90cdf1b
+social_post_url: https://x.com/iamoloba_/status/2100558359996903930?s=46
+heard_about: x
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: winsznx
+submitted_at: 2026-09-18T20:47:34.153Z
