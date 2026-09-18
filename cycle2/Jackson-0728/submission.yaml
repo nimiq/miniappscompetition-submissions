@@ -1,0 +1,25 @@
+app_name: ProEdit
+category: Productivity
+tagline: Writing, Reimaged with AI
+description: The advanced AI-powered editor for professionals. Write faster,
+  edit smarter, and create content that stands out.
+pricing: Free
+repo_url: https://github.com/Jackson-0728/ProEdit
+demo_url: https://app-proedit.vercel.app/
+video_url: https://app-proedit.vercel.app/
+contact_email: crazyjackson0728@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Jackson-0728
+submitted_at: 2026-09-18T04:00:59.742Z
