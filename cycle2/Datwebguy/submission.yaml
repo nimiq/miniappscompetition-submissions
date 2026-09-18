@@ -1,0 +1,88 @@
+app_name: NimStall
+category: Marketplaces
+tagline: Decentralized Point-of-Sale for Nimiq Pay with zero hardware and
+  instant settlement
+description: NimStall turns any smartphone, tablet, or browser into an instant
+  crypto cash register for retail merchants. It enables zero-fee, non-custodial
+  checkout using native NIM and Polygon USDT with live on-chain consensus
+  verification.
+pricing: Free
+repo_url: https://github.com/Datwebguy/nimstall
+demo_url: https://nimstall.xyz
+video_url: https://youtu.be/YVF4h_CO4aY
+contact_email: princeabel2000@gmail.com
+team_name: null
+team_members: null
+x_account: Datweb3guy
+builder_story: "The problem:\r
+
+  \r
+
+  Small physical sellers, market vendors, pop up stalls, indie cafes, face an
+  unfair dilemma with retail payments. Traditional card terminals:\r
+
+  \r
+
+  Require expensive hardware leases\r
+
+  Lock merchants into monthly subscription fees\r
+
+  Take 3 to 5% off every small sale\r
+
+  Hold funds for days\r
+
+  \r
+
+  Most existing crypto checkout tools don't help either. They're built for
+  online webshops or force sellers into complex, custodial account systems.\r
+
+  \r
+
+  The solution:\r
+
+  \r
+
+  I built NimStall to solve this for the real world.\r
+
+  \r
+
+  By leveraging Nimiq Pay, any smartphone, tablet, or browser tab becomes a
+  functional cash register in 60 seconds, with zero upfront hardware costs and
+  0% platform commission.\r
+
+  \r
+
+  The app:\r
+
+  \r
+
+  Connects directly to the merchant's Nimiq wallet\r
+
+  Lets staff build carts on a touch optimized grid\r
+
+  Generates dynamic QR codes that carry order payloads straight to customer
+  phones, with no intermediary cloud servers needed\r
+
+  \r
+
+  What I'm most proud of:\r
+
+  \r
+
+  The verification mechanism. The terminal never relies on client side
+  assumptions. It embeds the order reference directly into the on chain
+  transaction data payload and polls Nimiq network consensus to verify block
+  inclusion before confirming the sale and issuing a digital receipt."
+skool_post_url: null
+social_post_url: https://x.com/Datweb3guy/status/2101008056259649547
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Datwebguy
+submitted_at: 2026-09-18T20:00:12.290Z
