@@ -1,0 +1,35 @@
+app_name: Validator Swipe
+category: On-chain services
+tagline: Pick your Nimiq validator with a swipe, delegate with a tap.
+description: Validator Swipe turns choosing a Nimiq validator — usually a dry
+  stats table — into a fast, informed decision. Compare ~40 real validators by
+  uptime, reliability and reward rate, set favorites aside, then delegate for
+  real in one tap. Built for anyone who wants to stake NIM witho
+pricing: Free
+repo_url: https://github.com/Julien59247787/nimiq-app-validatorswipe
+demo_url: https://validator-swipe.nimiq-ju.fr
+video_url: https://www.loom.com/share/8fd6134c0dff4960820c72df784846a7
+contact_email: ju@nimiq-ju.fr
+team_name: Ju
+team_members:
+  - Claude
+x_account: Julien59247787
+builder_story: "We kept staring at the same problem: picking a Nimiq validator
+  meant scrolling a dry table of stats most people never look at twice. So we
+  rebuilt the decision as a swipe — compare uptime, reliability and reward rate
+  at a glance, set a few favorites aside, then delegate for real in one tap. It
+  works inside Nimiq Pay and via Nimiq Hub from any browser, in 11 languages,
+  with zero custody the whole way through."
+skool_post_url: https://www.skool.com/miniappscompetition/validator-swipe-cycle-ii-submission?p=bb5bbe6e
+social_post_url: https://x.com/julien59247787/status/2101039364952281381?s=20
+heard_about: Nimiq Community, Discord, Telegram...
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Julien59247787
+submitted_at: 2026-09-18T20:41:35.780Z
