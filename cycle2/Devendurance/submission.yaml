@@ -1,0 +1,46 @@
+app_name: NimHunt
+category: Games
+tagline: Explore. Survive. Seal.
+description: NimHunt is a daily skill-based treasure adventure inside Nimiq Pay
+  for casual players and Nimiq users. Choose one of three missions, explore
+  Angkor Ruins, solve puzzles and survive hazards; successful runs are
+  server-verified before your wallet can seal an available NIM reward.
+pricing: Free
+repo_url: https://github.com/Devendurance/nimhunt
+demo_url: https://nimhunt.vercel.app
+video_url: https://x.com/devendyyy/status/2101074865834914180?s=20
+contact_email: devendurance@gmail.com
+team_name: null
+team_members: null
+x_account: devendyyy
+builder_story: "Most wallets are transactional, you open them to send, receive,
+  swap or check a balance, then leave. I wanted to test the opposite idea: could
+  Nimiq Pay become somewhere people return to because it is fun?\r
+
+  \r
+
+  That became NimHunt. Players get three daily expeditions, choose a visible
+  skill mission, explore Angkor Ruins, solve puzzles and survive hazards. Nimiq
+  is not bolted on: the wallet authorizes the expedition, the server
+  independently replays the actions instead of trusting the browser, and another
+  wallet signature seals an eligible NIM reward. Treasure Bank records secured
+  and delivered rewards, while daily missions, streaks and the Hall of Heroes
+  give players reasons to return.\r
+
+  \r
+
+  I built it for existing Nimiq users, casual players and people who might enjoy
+  the game before they ever need to think about the blockchain underneath it."
+skool_post_url: null
+social_post_url: https://docs.google.com/document/d/1YiHs_NtlcUUEig8HLFW2vnUw4YMnIREw6cPL2-APbCg/edit?usp=sharing
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Devendurance
+submitted_at: 2026-09-18T22:43:50.297Z
