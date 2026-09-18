@@ -1,0 +1,32 @@
+app_name: PayRun
+category: Productivity
+tagline: Pay people by name.
+description: Payroll for team leads who send NIM. Save a name and a wallet,
+  review payday flags, and confirm each send.
+pricing: Free
+repo_url: https://github.com/davy-patty/payrun
+demo_url: https://youtube.com/shorts/jut4RCt7wSY
+video_url: https://youtube.com/shorts/jut4RCt7wSY
+contact_email: mailquillofficial@gmail.com
+team_name: axisops-tech
+team_members: null
+x_account: payrun_nimiq
+builder_story: "Team payday kept living in a spreadsheet: names in one column,
+  wallets in another, and someone still had to copy each send by hand. Nimiq has
+  no username protocol, so you cannot just pay @raph. Payrun keeps the name and
+  the wallet together, flags new people and big amount jumps, and you still
+  confirm each send"
+skool_post_url: null
+social_post_url: null
+heard_about: "I have been using Nimiq for a couple of months and kept seeing the
+  ads in the app. A friend and I decided to enter. We shipped two mini apps:
+  Payrun and StealthPay."
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: davy-patty
+submitted_at: 2026-09-18T23:41:54.892Z
