@@ -1,0 +1,53 @@
+app_name: Nimgavel
+category: Marketplaces
+tagline: The live community auction house on Nimiq.
+description: Nimgavel is a live community auction house built for Nimiq Pay.
+  Hosts create a lot, set the starting bid, minimum increment, duration and
+  fulfilment terms, then sign with Nimiq Pay to launch a real-time auction.
+  Bidders receive pseudonymous paddles, acknowledge the published term
+pricing: Free
+repo_url: https://github.com/mystiquemide/nimgavel
+demo_url: https://nimgavel.midelabs.xyz
+video_url: https://youtu.be/TYdVrHq_l20
+contact_email: mide27145@gmail.com
+team_name: MideLabs
+team_members: null
+x_account: MystiqueMide
+builder_story: "Community auctions are incredibly easy to start in a group
+  chat,but once real people begin bidding, everything becomes harder: who bid
+  first, whether the deadline was fair, what happens when someone withdraws, who
+  actually won, and whether the winner really paid.\r
+
+  \r
+
+  I built Nimgavel to turn that messy process into one live, authoritative
+  auction room powered by Nimiq Pay. I wanted the wallet to be part of the
+  product from beginning to end, not something added only at checkout. Hosts
+  sign to create and control auctions, bidders receive pseudonymous paddles and
+  authorise their wallets, bids are checked against live NIM balances, and
+  winners settle directly with hosts through Nimiq Pay.\r
+
+  \r
+
+  During Cycle II I kept putting Nimgavel in front of real mobile users and
+  rebuilding the weak parts they found, including wallet detection, balance
+  checks, mobile navigation, auction previews, loading states and fulfilment
+  terms. \r
+
+  \r
+
+  By submission, we had completed real two-device mainnet auctions and verified
+  multiple NIM settlements on-chain."
+skool_post_url: https://www.skool.com/miniappscompetition/nimgavel-live-community-auction-house?p=15fdd733
+social_post_url: https://x.com/MystiqueMide/status/2100965084843356296?s=20
+heard_about: Nimiq Community , X , Email
+icon: icon.jpg
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: mystiquemide
+submitted_at: 2026-09-18T15:13:33.177Z
