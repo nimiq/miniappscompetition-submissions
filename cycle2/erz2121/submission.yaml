@@ -1,0 +1,34 @@
+app_name: SplitNIM
+category: Productivity
+tagline: One bill. Everyone settles.
+description: SplitNIM helps friends and groups split shared expenses and settle
+  each share directly in NIM. Create a bill, generate personal payment links or
+  QR codes, and track every verified on-chain payment in real time.
+pricing: Free
+repo_url: https://github.com/erz2121/splitnim
+demo_url: https://splitnim-pay.dedyerzz.chatgpt.site
+video_url: https://www.youtube.com/watch?v=g1uYWOnG8So
+contact_email: dedyerzz@gmail.com
+team_name: null
+team_members: null
+x_account: erz2121
+builder_story: Splitting shared expenses often becomes unnecessarily
+  complicated. Someone has to calculate every share, copy wallet addresses,
+  remind participants, and check payment screenshots manually. I built SplitNIM
+  to make that process simple and transparent. Each participant receives a
+  personal payment link or QR code with the exact amount already prepared, while
+  Nimiq Pay securely handles the transaction and SplitNIM verifies every payment
+  on-chain.
+skool_post_url: null
+social_post_url: https://x.com/erz2121/status/2101061060182852068?s=20
+heard_about: X and the Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: erz2121
+submitted_at: 2026-09-18T21:35:05.818Z
