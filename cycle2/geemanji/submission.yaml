@@ -1,0 +1,50 @@
+app_name: NIMPANIC
+category: Games
+tagline: PREDICT, STAKE, WIN
+description: "NIM Panic is a fast, social prediction game built around NIM.\r
+
+  Players choose a prediction, select an outcome, stake NIM, and race against
+  the countdown before the prediction locks. Once the outcome is resolved,
+  players see their result and track their performance through streaks"
+pricing: Free
+repo_url: https://github.com/geemanji/nim-panic
+demo_url: https://nim-panic.vercel.app
+video_url: https://www.youtube.com/watch?app=desktop&si=fuNTj0AibIp6HP9Z&v=zb_REKS09_o&feature=youtu.be
+contact_email: garmanjimichael@gmail.com
+team_name: null
+team_members: null
+x_account: GarryMike_M
+builder_story: "I started building NIM Panic after spending a lot of time
+  thinking about how to make crypto feel less complicated and more fun.\r
+
+  My first instinct was to build a prediction market.\r
+
+  Then I started using my own product and realized something was missing.\r
+
+  I didn't want another screen full of charts and numbers.\r
+
+  I wanted that feeling of:\r
+
+  \"Wait... I have 20 seconds to make this call?\"\r
+
+  So I started rebuilding around the feeling instead of the feature.\r
+
+  I'm experimenting with categories, streaks, challenges, leaderboards, 1v1s
+  and, of course, NIM.\r
+
+  Some ideas will work.\r
+
+  Some won't.\r
+
+  This is NIM Panic."
+skool_post_url: null
+social_post_url: https://twitter.com/GarryMike_M/status/2099726992069288178
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: geemanji
+submitted_at: 2026-09-18T12:32:08.283Z
