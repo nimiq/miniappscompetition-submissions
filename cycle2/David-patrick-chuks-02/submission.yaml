@@ -1,0 +1,33 @@
+app_name: StealthPay
+category: On-chain services
+tagline: Invoices without a public name.
+description: Private invoices for contractors. The client sees the name, the
+  work, and the amount — not your wallet. Not a mixer.
+pricing: Free
+repo_url: https://github.com/David-patrick-chuks-02/stealthpay
+demo_url: https://youtube.com/shorts/sN3oCPNiwl4
+video_url: https://youtube.com/shorts/sN3oCPNiwl4
+contact_email: pd3072894@gmail.com
+team_name: axisops-tech
+team_members: null
+x_account: StealthPay_nim
+builder_story: "I needed to invoice without putting a receiving wallet on a
+  public page. Most “private pay” tools oversell anonymity. StealthPay is the
+  opposite: the client sees who you are, the work, and the amount. The wallet
+  stays off the invoice. Settlement is a normal NIM transfer. Private invoices,
+  not a mixer."
+skool_post_url: null
+social_post_url: null
+heard_about: "I have been using Nimiq for a couple of months and kept seeing the
+  ads in the app. A friend and I decided to enter. We shipped two mini apps:
+  Payrun and StealthPay."
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: David-patrick-chuks-02
+submitted_at: 2026-09-18T23:53:24.688Z
