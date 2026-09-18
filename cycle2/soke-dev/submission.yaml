@@ -1,0 +1,51 @@
+app_name: Confam
+category: Earning
+tagline: The physical world, on demand.
+description: Know what's happening at a place before you go. Confam sends
+  somebody who's already nearby to check it and photograph it, and pays them
+  when you accept the answer.
+pricing: Free
+repo_url: https://github.com/soke-dev/confam-mini-app
+demo_url: https://nimiq.confam.xyz/
+video_url: https://youtu.be/IxRe_YhgVHI?si=9V3_hrKuw39pWsF1
+contact_email: coolexcollins@gmail.com
+team_name: Sotechy Labs
+team_members:
+  - Desh
+x_account: soke_decentra
+builder_story: "Google Maps can't tell me whether the filling station on Awolowo
+  Road has fuel today, or whether Boundary Road is flooded this morning. That
+  information isn't written down anywhere  and by the time it is, it's wrong.\r
+
+  \r
+
+  But somebody walked past that filling station ten minutes ago. The knowledge
+  already exists; it just has no way of reaching the person who needs it, and no
+  reason to travel.\r
+
+  \r
+
+  Confam gives it both. You ask about a place, put a small bounty on it, and
+  somebody nearby walks over and photographs it. In a city where a wasted trip
+  across town costs you an afternoon and the fuel to get there, knowing before
+  you go is worth far more than the bounty.\r
+
+  \r
+
+  I built it inside Nimiq Pay because the escrow was never the hard part. Asking
+  somebody to install an app, make an account and fund a wallet before they
+  could earn for a two-minute walk that was. In a mini app, the wallet is
+  already in their hand."
+skool_post_url: null
+social_post_url: https://x.com/confamai/status/2100950851749642538?s=20
+heard_about: Twitter(X)
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: soke-dev
+submitted_at: 2026-09-18T14:19:57.660Z
