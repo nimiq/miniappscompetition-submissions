@@ -1,0 +1,90 @@
+app_name: TAKEOVER
+category: Marketplaces
+tagline: the last minute marketplace for released capacity
+description: TAKEOVER is a last-minute marketplace for released capacity,
+  helping people sell or claim valuable reservations, bookings, appointments,
+  tickets, other transferable slots that would otherwise go unused. Built for
+  people who seek to recover value from cancelled/released capacity.
+pricing: Paid
+repo_url: https://github.com/onyebuchidaniel60/TAKEOVER
+demo_url: https://takeover-web-gamma.vercel.app
+video_url: https://youtu.be/pUFijMaj2pM?si=cYcIBuBBZ2xoWWOA
+contact_email: onyebuchidaniel60@gmail.com
+team_name: none
+team_members:
+  - none
+x_account: turnttfup99
+builder_story: "The idea came from a simple observation: valuable capacity can
+  disappear just because the person who originally booked it can no longer use
+  it.\r
+
+  \r
+
+  A restaurant table can sit empty after a last-minute cancellation. A sports
+  court can have an unused hour. A class can have an empty seat. An appointment
+  can go unfilled. In each case, the capacity still has value, but once the
+  original user gives it up, there often isn't a simple way to get that value to
+  someone else who wants it.\r
+
+  \r
+
+  I wanted to build a marketplace around that moment.\r
+
+  \r
+
+  TAKEOVER is designed to give released capacity a second chance. Someone who
+  can no longer use a reservation, booking, appointment, ticket, or other
+  transferable slot can publish it as an opening. Someone else looking for a
+  last-minute opportunity can discover it, claim it, and complete the
+  transfer.\r
+
+  \r
+
+  The problem isn't simply that people cancel things. The bigger problem is the
+  disconnect between released capacity and people who could immediately use
+  it.\r
+
+  \r
+
+  TAKEOVER tries to close that gap.\r
+
+  \r
+
+  I also wanted the transaction itself to feel trustworthy. Instead of making a
+  buyer send money directly to someone they don't know and hoping the handoff
+  happens, TAKEOVER uses escrow for the purchase. The payment is secured while
+  the transfer takes place and released when the required conditions are met.\r
+
+  \r
+
+  NIM has a specific role in the marketplace as well. Providers pay a 400 NIM
+  listing fee when publishing an opening. This acts as a platform service charge
+  while also adding an economic barrier against spam and mass automated
+  listings.\r
+
+  \r
+
+  The result is a marketplace where the underlying payment infrastructure is
+  important, but the product isn't about crypto for its own sake.\r
+
+  \r
+
+  Basically turns “I can't use this anymore” into “someone else can.”\r
+
+  \r
+
+  TAKEOVER is my attempt to make that last-minute exchange simple, useful, and
+  trustworthy."
+skool_post_url: https://www.skool.com/miniappscompetition/takeover?p=7fbb4e84
+social_post_url: https://x.com/Turnttfup99/status/2101048339131502754
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: onyebuchidaniel60
+submitted_at: 2026-09-18T21:02:35.102Z
