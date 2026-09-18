@@ -1,0 +1,43 @@
+app_name: Nimiq-Nft-Marketplace
+category: Marketplaces
+tagline: NFTs, Trading & Rewards — Powered by Nimiq.
+description: A gamified NFT marketplace where you can create, collect, trade,
+  and earn rewards — powered by Nimiq.
+pricing: Freemium
+repo_url: https://github.com/Nobody-983/nft-platform.git
+demo_url: https://nft-platform-rose.vercel.app/
+video_url: https://youtube.com/shorts/pO21u1ceTIg?si=ylbzEEFtUMnDi0Z0
+contact_email: aceai2007@gmail.com
+team_name: null
+team_members: null
+x_account: web_dev983
+builder_story: "I built Nimiq NFT to explore how NFTs can become more than just
+  digital collectibles. The idea was to create a simple, wallet-native
+  experience where users can create, discover, and trade NFTs while also having
+  a reason to keep coming back.\r
+
+  \r
+
+  I combined an NFT marketplace with Nimiq Pay payments and a gamified rewards
+  system, allowing users to play, earn rewards, and use their Nimiq within the
+  platform.\r
+
+  \r
+
+  As a developer learning and building with Nimiq, this project gave me the
+  opportunity to work hands-on with wallet authentication, NIM transactions, NFT
+  ownership, marketplace logic, and on-chain interactions while focusing on
+  creating an experience that is actually fun to use."
+skool_post_url: null
+social_post_url: https://x.com/web_dev983/status/2101063412495368447?s=20
+heard_about: from a friend
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Nobody-983
+submitted_at: 2026-09-18T23:58:07.589Z
