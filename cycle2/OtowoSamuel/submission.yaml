@@ -1,0 +1,32 @@
+app_name: FruitRush
+category: Games
+tagline: Fruit Rush — Slice Fast. Score Big. 🍉⚡
+description: Fruit Rush is a fast-paced arcade game where players slice falling
+  fruits, rack up points, and test their speed and reflexes.
+pricing: Free
+repo_url: https://github.com/OtowoSamuel/fruit-rush
+demo_url: https://fruit-rush-zeta.vercel.app/
+video_url: https://www.loom.com/share/9bf155320f41469da4d12057cecc8d5e
+contact_email: samuelotowo@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: I wanted to build a fun, fast-paced game that is easy to pick up
+  but challenging to master. Fruit Rush was inspired by classic fruit-slicing
+  games, with a modern, colorful experience focused on quick reflexes,
+  satisfying combos, and high scores. I built it to create a simple game that
+  anyone can enjoy for a few minutes while still giving players a reason to keep
+  coming back and beat their best score.
+skool_post_url: null
+social_post_url: null
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: OtowoSamuel
+submitted_at: 2026-09-18T15:48:20.982Z
