@@ -1,0 +1,42 @@
+app_name: Doodle Champion
+category: Games
+tagline: Draw to fight. One thumb. One page.
+description: Doodle Champion is a mobile ink-dueling game for players who want a
+  quick, tactile fight in the browser. You draw simple marks to attack and
+  defend where you draw changes what they do then challenge friends with a
+  shareable bout link and optionally save runs on Celo.
+pricing: Free
+repo_url: https://github.com/miss-yusrah/Doddle-Champion
+demo_url: https://doddle-champion.vercel.app/
+video_url: https://vimeo.com/1228003311?share=copy&fl=sv&fe=ci
+contact_email: mohammedyusi6@gmail.com
+team_name: null
+team_members: null
+x_account: https://x.com/mohammednusee
+builder_story: "I wanted a game that feels like a real pencil not tap icons and
+  pretend you’re drawing. Most mobile “action” games bury you under buttons; I
+  built Doodle Champion so one thumb on a phone is enough: five simple marks,
+  and where you draw changes what they do. Defend on your half of the page,
+  attack across the fold. That rule is the whole game.\r
+
+  \r
+
+  It’s for people who want a quick, tactile duel in the browser challenge a
+  friend with a shareable bout link, no live server required. On Celo, runs can
+  optionally be saved on-chain without gating play behind a wallet connect. The
+  problem it solves is simple: skill games in wallet browsers usually feel
+  bolted on; this one is built thumb-first and stays playable even if crypto is
+  off."
+skool_post_url: null
+social_post_url: null
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: miss-yusrah
+submitted_at: 2026-09-18T09:31:18.330Z
