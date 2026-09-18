@@ -1,0 +1,28 @@
+app_name: Trickshot
+category: Games
+tagline: Drag, Dunk, Chain
+description: A precision chain-hoop arcade game on Celo — drag, release, chain
+  the dunks. Monetized via powerups, pay-to-continue, season pass, and a 15%
+  tournament rake. It is for everyone
+pricing: Freemium
+repo_url: https://github.com/yinkscss/trickshot
+demo_url: https://trickshot-roan.vercel.app/
+video_url: https://www.loom.com/share/623775152f7b49a796f95f3eb639293c
+contact_email: isaacedoka02@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: DokaIzk
+submitted_at: 2026-09-18T14:06:20.741Z
