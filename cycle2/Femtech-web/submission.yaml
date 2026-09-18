@@ -1,0 +1,48 @@
+app_name: Truly
+category: Education
+tagline: Learn anything. By doing it.
+description: Truly is a Nimiq Mini App paired with a native macOS AI learning
+  companion. Learners start a private goal or choose a reviewed creator Path
+  inside Nimiq Pay, send it to a wallet-authorized Mac, and learn beside the
+  browser, editor, or app where the real work happens. Truly can an
+pricing: Freemium
+repo_url: https://github.com/Femtech-web/Truly
+demo_url: https://app.usetruly.site
+video_url: https://youtu.be/ZSqqTbh_GzY
+contact_email: Bossfemzy10@gmail.com
+team_name: Truly
+team_members: null
+x_account: https://x.com/DefiPreacherr
+builder_story: "Truly began with a frustration I kept seeing in learning
+  products: the lesson ends exactly where the real work begins. An explanation
+  lives in one tab, the editor or application lives in another, and the learner
+  is left to reconnect the two alone.\r
+
+  \r
+
+  I built Truly as two connected surfaces. The Nimiq Mini App owns identity,
+  Tasks, creator Paths, payments, devices and progress. A native macOS companion
+  stays beside the work, answers text or voice questions about a deliberately
+  shared screen, and checks a visible result only when the learner asks it to.
+  Teaching and completion are deliberately separate.\r
+
+  \r
+
+  Nimiq became more than checkout. Purpose-bound wallet signatures authorize the
+  learner, creator, reviewer and paired Mac; NIM lets creators sell reviewed
+  learning Paths without Truly taking custody; and progress follows the wallet
+  owner across devices. Building and physically testing the complete flow also
+  surfaced concrete SDK feedback, which is documented openly in the repository
+  for the Nimiq Pay team."
+skool_post_url: null
+social_post_url: https://x.com/DefiPreacherr/status/2100592392038502655?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: Femtech-web
+submitted_at: 2026-09-18T19:48:13.000Z
