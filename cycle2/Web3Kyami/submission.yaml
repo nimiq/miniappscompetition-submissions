@@ -1,0 +1,53 @@
+app_name: Rallyo
+category: Social
+tagline: Make the community the game
+description: Rallyo turns community activity into a live competition. Members
+  play games built around the project itself, complete real contribution tasks,
+  climb one shared seasonal leaderboard, and carry their identity into the
+  Rallyo Mini App for rankings, rewards, and Nimiq wallet features
+pricing: Free
+repo_url: https://github.com/Web3Kyami/Rallyo
+demo_url: https://rallyo.vercel.app/
+video_url: https://vimeo.com/1228222901
+contact_email: web3kyami@gmail.com
+team_name: null
+team_members: null
+x_account: Web3Kyami
+builder_story: "I’m a community mod, and I’ve seen the same pattern too many
+  times\r
+
+  Pre launch and launch week is always loud, everyone is active, then a few
+  weeks later the chat starts going quiet unless there’s another announcement,
+  giveaway, or incentive.\r
+
+  \r
+
+  So I built Rallyo around that to make the community become the game.\r
+
+  \r
+
+  Projects can turn their own knowledge, terminology, updates, and community
+  activity into Quiz/Race, Word Seek, Scramble, contribution tasks, seasons, and
+  one shared leaderboard.\r
+
+  \r
+
+  Telegram is where the action happens. The Rallyo Mini App is where your
+  identity, communities, rank, tasks, rewards, and Nimiq wallet come together.\r
+
+  \r
+
+  The idea is simple: give people a reason to come back even when there isn’t a
+  big announcement happening."
+skool_post_url: https://www.skool.com/miniappscompetition/rallyo-is-live?p=6cc8de3a
+social_post_url: https://x.com/Web3Kyami/status/2101084931807965195
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.jpg
+github_login: Web3Kyami
+submitted_at: 2026-09-18T23:09:46.698Z
