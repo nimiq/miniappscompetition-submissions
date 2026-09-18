@@ -1,0 +1,48 @@
+app_name: Triply
+category: Lifestyle
+tagline: Book real flights, stays, and cars with crypto - settled on-chain in minutes.
+description: "Triply is a web3 travel marketplace for everyone: search real
+  flights, hotels, and cars, pay with USDT on Polygon, and earn NIM cashback -
+  no sign-up, no KYC, no card. Your wallet is your account."
+pricing: Freemium
+repo_url: https://github.com/FlowFiApp/Triply
+demo_url: https://triply-nimiq.vercel.app
+video_url: https://www.youtube.com/watch?v=dKpkv-zC3og
+contact_email: devarogundade@gmail.com
+team_name: Triply
+team_members:
+  - Ibrahim Arogundade
+  - Taiwo Omoyeni
+x_account: TriplyOnNimiq
+builder_story: "Millions of people pay for everything with crypto, except
+  travel. Online Travel Agencies still demand cards, KYC, and bank accounts,
+  forcing crypto users to off-ramp just to book a hotel.\r
+
+  \r
+
+  So we built Triply: a travel marketplace where your wallet is your account.
+  Search real flights through Duffel, book stays and cars, pay with USDT on
+  Polygon, and earn NIM cashback - all settled on-chain in minutes. \r
+
+  \r
+
+  We built it as a Nimiq Mini App to prove the ecosystem can power real-world
+  commerce: Nimiq identity is the login, Nimiq points are the loyalty loop, and
+  the flow feels native in Nimiq Pay. \r
+
+  \r
+
+  We built the app we'd want to fly with."
+skool_post_url: https://www.skool.com/miniappscompetition/meet-triply-book-real-travel-with-crypto-no-kyc-no-card?p=0c1804a1
+social_post_url: https://x.com/triplyonnimiq/status/2100263779044909229
+heard_about: From a friend on Telegram
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: devarogundade
+submitted_at: 2026-09-18T11:07:59.341Z
