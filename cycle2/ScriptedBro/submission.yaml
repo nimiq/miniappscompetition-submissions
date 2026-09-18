@@ -1,0 +1,48 @@
+app_name: Luna Blade
+category: Games
+tagline: Cleanse the Forest. Restore the cosmos
+description: Luna Blade is a fast-paced retro 2D action-platformer where players
+  wield a lunar blade to purge ancient forest shrines consumed by dark
+  corruption. Carve through hordes of blighted beasts, conquer chapter bosses,
+  and survive relentless onslaughts in Endless Mode. Featuring fluid
+pricing: Free
+repo_url: https://github.com/ScriptedBro/Luna-Blade
+demo_url: https://luna-blade.vercel.app/
+video_url: https://youtube.com/shorts/yDKZ0VaBNIY?si=wTPwVVHsLoi-e7GK
+contact_email: fredrickloveday@gmail.com
+team_name: null
+team_members: null
+x_account: Itzobiszn
+builder_story: "I grew up on timeless 16-bit action platformers games where
+  tight controls, fluid combat rhythm, and mastering enemy attack patterns made
+  victory feel earned. When exploring Web3 and micro-transaction gaming, I
+  noticed a frustrating pattern: too many games sacrificed fun for financial
+  mechanics, bogging players down with gas fees, slow confirmations, and
+  friction-filled wallet popups.\r
+
+  \r
+
+  I built Luna Blade to prove that blockchain gaming could be different. My goal
+  was simple: make a genuinely great, fast-paced retro arcade game first.\r
+
+  \r
+
+  I wanted every jump, sword slash, wall-slide, and boss encounter to feel
+  punchy and responsive. Leveraging Nimiq’s instant, low-friction micropayment
+  rails allowed me to seamlessly weave crypto into the arcade experience—turning
+  in-game achievements, boss bounties, and crystal harvests into real,
+  instantaneous rewards without interrupting the action. Luna Blade is my love
+  letter to classic combat platformers, built for the modern decentralized web."
+skool_post_url: null
+social_post_url: https://x.com/Itzobiszn/status/2101082116318499070
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: ScriptedBro
+submitted_at: 2026-09-18T22:56:24.133Z
