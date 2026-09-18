@@ -1,0 +1,34 @@
+app_name: NimPass
+category: Marketplaces
+tagline: Turn sessions into digital passes — NP.
+description: Nimpass helps tutors, coaches, and trainers create prepaid session
+  passes, sell them with Nimiq, and manage everything in one place. Customers
+  can buy passes, track their remaining sessions, and access everything directly
+  from their account.
+pricing: Free
+repo_url: https://github.com/Root-Emin/NimPass
+demo_url: https://nimpass.vercel.app/
+video_url: https://youtube.com/shorts/SgTK75Fcs8A?feature=share
+contact_email: emin.kltklt@gmail.com
+team_name: null
+team_members: null
+x_account: https://x.com/EminKutluAi
+builder_story: "I wanted to solve a very common problem for independent service
+  providers: selling prepaid session packages without dealing with scattered
+  messages, manual tracking, or payment confusion. Nimpass gives tutors,
+  coaches, and trainers a simple way to sell session passes with NIM, while
+  giving customers a clear place to view what they bought and how many sessions
+  they have left."
+skool_post_url: https://www.skool.com/miniappscompetition/meet-nimpass-session-passes-paid-in-nim-np?p=09ff9b02
+social_post_url: https://www.youtube.com/shorts/SgTK75Fcs8A
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Root-Emin
+submitted_at: 2026-09-18T22:12:56.134Z
