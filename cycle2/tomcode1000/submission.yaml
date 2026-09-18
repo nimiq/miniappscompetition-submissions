@@ -1,0 +1,28 @@
+app_name: NimFind
+category: Lifestyle
+tagline: Lost and found for Nimiq Pay
+description: NimFind gives anyone who carries a phone, keys or a bag a QR code
+  for their lock screen and stickers, so whoever finds a lost item can message
+  the owner privately and get paid a NIM reward when it is returned. It is for
+  everyday Nimiq Pay users who want a way back for their thing
+pricing: Freemium
+repo_url: https://github.com/tomcode1000/NimFind
+demo_url: https://nim-find.vercel.app/
+video_url: https://youtu.be/swLMKowNyVs
+contact_email: toleexxzy@gmail.com
+team_name: Tolu's Team
+team_members: null
+x_account: Toluinweb3
+builder_story: null
+skool_post_url: null
+social_post_url: https://x.com/Toluinweb3/status/2100877393103655252?s=20
+heard_about: x
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: tomcode1000
+submitted_at: 2026-09-18T13:47:47.533Z
