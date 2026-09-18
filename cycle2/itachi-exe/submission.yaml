@@ -1,0 +1,60 @@
+app_name: Stride
+category: Earning
+tagline: Turn everyday spending into progress toward your goals.
+description: Stride is a savings experience built on Nimiq that helps users
+  automatically build toward personal and shared goals through round-ups, weekly
+  contributions, and income-based saving. Create a milestone, choose your
+  stride, and turn small, repeatable actions into visible progress.
+pricing: Free
+repo_url: https://github.com/itachi-exe/stride
+demo_url: https://stride-nine-jet.vercel.app
+video_url: https://youtu.be/91ySdlxeRKQ?si=mAySkMG4MPsAlfWe
+contact_email: ajkings711@gmail.com
+team_name: HACKDPLANET
+team_members:
+  - Itachi, kookie, ODK
+x_account: https://x.com/ONLY_D_KING
+builder_story: "Most people want to save, but wanting to save and actually
+  saving are two different things. Money comes in, expenses happen, and the
+  intention to move something aside often gets pushed to the next day or next
+  month.\r
+
+  \r
+
+  We wanted to explore what a wallet could do if it helped turn that intention
+  into a habit.\r
+
+  \r
+
+  That led to Stride.\r
+
+  \r
+
+  Instead of treating Nimiq Pay as somewhere money simply sits and moves around,
+  Stride turns everyday wallet activity into progress toward something
+  meaningful. Users create a milestone, choose a saving rule that fits their
+  life, and let small actions build toward the goal.\r
+
+  \r
+
+  We also wanted saving to feel more human. Some goals are personal, while
+  others are shared with friends, teammates, or family. Stride brings those
+  contributions together and makes the progress visible.\r
+
+  \r
+
+  The idea behind Stride is simple: you don't need to make a perfect saving
+  decision every time. Small, repeatable actions can get you somewhere."
+skool_post_url: null
+social_post_url: https://x.com/ONLY_D_KING/status/2100963996249506051
+heard_about: On x.
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: itachi-exe
+submitted_at: 2026-09-18T18:48:44.676Z
