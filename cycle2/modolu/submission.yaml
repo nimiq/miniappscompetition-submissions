@@ -1,0 +1,60 @@
+app_name: Tab
+category: Productivity
+tagline: Shared costs, settled
+description: Tab is a shared-expense Mini App for Nimiq Pay. Organizers create
+  one bill, assign exact NIM contributions, and share a link. Contributors pay
+  the recipient directly from Nimiq Pay, while Tab verifies each transaction
+  onchain and updates progress in real time.
+pricing: Free
+repo_url: https://github.com/modolu/Tab
+demo_url: https://tab-two-lime.vercel.app
+video_url: https://youtube.com/shorts/vVfQo8-sngo?feature=share
+contact_email: heritage143@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: "Shared expenses are simple until it is time to collect the
+  money. Someone pays first, everyone owes a different amount, links get lost,
+  and the organizer ends up chasing people while manually checking who has
+  paid.\r
+
+  \r
+
+  I built Tab to make that process explicit. An organizer creates one shared
+  obligation, adds the contributors, assigns each person's exact share, and
+  shares a single link. Each contributor opens the Tab in Nimiq Pay, selects
+  their slot, connects their wallet, reviews the exact sender, recipient and
+  amount, then pays the recipient directly.\r
+
+  \r
+
+  Tab is deliberately non-custodial: it never holds the funds. After a
+  transaction is submitted, the app does not immediately mark it as paid. It
+  independently checks the Nimiq transaction onchain against the expected
+  recipient, amount and payment reference, waits for finality, and only then
+  updates that contributor to Paid. Organizer and participant views update in
+  real time until the Tab is settled.\r
+
+  \r
+
+  The production deployment is configured for Nimiq mainnet. The complete
+  payment-to-verification flow was also physically tested on Nimiq Testnet,
+  including submission, onchain verification, Paid status and settlement
+  behavior.\r
+
+  \r
+
+  The goal was to make shared payment collection feel less like bookkeeping and
+  more like one clear, trustworthy flow inside Nimiq Pay."
+skool_post_url: null
+social_post_url: https://x.com/77pf_/status/2101063769728094473?s=20
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: modolu
+submitted_at: 2026-09-18T21:41:20.340Z
