@@ -1,0 +1,51 @@
+app_name: Rewind
+category: On-chain services
+tagline: "Post-purchase for NIM commerce: refunds requested, approved and
+  verified inside Nimiq Pay."
+description: For shops that sell for NIM, and their buyers. Only the wallet that
+  paid can request a refund, with one signature. The merchant approves and sends
+  it from their own wallet, no custody, and Rewind verifies both transactions on
+  chain on one receipt. Try the full loop for 0.01 NIM.
+pricing: Free
+repo_url: https://github.com/Harshyadav442277/rewind
+demo_url: https://rewind-rho.vercel.app
+video_url: https://www.youtube.com/shorts/od5swdRH7PY
+contact_email: harsh.2024a@vitstudent.ac.in
+team_name: null
+team_members: null
+x_account: hyadav42774
+builder_story: "Paying with NIM is easy; giving money back is not. Today a
+  crypto refund is a second payment to an address someone pasted into an email,
+  with nothing proving that address belongs to the buyer. Rewind makes the
+  refund part of the payment. Every payment carries an order reference; the
+  server reads it on chain, and a refund can only be requested by signing a
+  one-time message in Nimiq Pay with the wallet that funded the payment. The
+  refund is a new transaction that Rewind also verifies on chain and links to
+  the payment on one receipt.\r
+
+  \r
+
+  Building it on mainnet taught me how Nimiq Pay actually pays: out of an HTLC
+  contract that your wallet funds, signed by your wallet. My first refund to
+  that contract failed on chain, so Rewind now reads the payment's account type
+  and sends the refund to the wallet behind the contract, even after the
+  contract has closed.\r
+
+  \r
+
+  Try the Demo Store alone for 0.01 NIM, or register a shop with one signature
+  and share a payment link. The code is MIT, and README-DEV lists the mainnet
+  transactions behind each claim."
+skool_post_url: https://www.skool.com/miniappscompetition/rewind-refund-a-nim-payment-safely-inside-nimiq-pay-try-it-in-a-minute-for-001-nim-2
+social_post_url: https://x.com/hyadav42774/status/2099882589402312812
+heard_about: chatgpt
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Harshyadav442277
+submitted_at: 2026-09-18T20:36:06.255Z
