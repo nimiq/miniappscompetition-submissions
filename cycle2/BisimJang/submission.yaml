@@ -1,0 +1,31 @@
+app_name: EventQuest
+category: Creator tools
+tagline: Turn live events into instant NIM rewards.
+description: EventQuest helps hosts create live quizzes and wallet giveaways,
+  share them by link or QR code, and manage creator-approved NIM reward payouts
+  through Nimiq Pay.
+pricing: Free
+repo_url: https://github.com/BisimJang/task-master
+demo_url: https://task-master-kemomnytg-jasons-projects-618823f0.vercel.app/
+video_url: https://youtube.com/shorts/qKwd9BpRGnM?feature=share
+contact_email: jangjason27@gmail.com
+team_name: null
+team_members: null
+x_account: jasonbisimjang
+builder_story: "EventQuest turns live events into interactive reward moments.
+  Hosts can create quizzes or wallet giveaways, share them through links or QR
+  codes, and manage NIM rewards directly through Nimiq Pay. I focused on making
+  the creator workflow transparent: giveaway entries are visible, payouts are
+  queued, and each wallet transaction is approved by the creator rather than
+  hidden behind a custodial backend."
+skool_post_url: null
+social_post_url: https://x.com/jasonbisimjang/status/2101022487647539457?s=20
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: BisimJang
+submitted_at: 2026-09-18T18:58:48.233Z
