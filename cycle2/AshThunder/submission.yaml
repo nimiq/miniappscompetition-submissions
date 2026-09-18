@@ -1,0 +1,37 @@
+app_name: GatePass
+category: Lifestyle
+tagline: All-in-one event ticketing in Nimiq Pay.
+description: GatePass is a ticketing Mini App for hosts and guests. Create
+  events, buy tickets with NIM, check people in at the door, and rent Nimiq Hall
+  — all inside Nimiq Pay.
+pricing: Free
+repo_url: https://github.com/AshThunder/gatepass
+demo_url: https://gpass.up.railway.app/
+video_url: https://youtu.be/4rG6wxgVtOE
+contact_email: chrisgoldog@gmail.com
+team_name: null
+team_members: null
+x_account: chrisgold__
+builder_story: "I wanted event ticketing to live where the wallet already is.
+  Hosts should create an event, take payment, and check people in without a
+  stack of other tools. Guests should pay with NIM and show a ticket that still
+  works at the door.\r
+
+  \r
+
+  GatePass is that in one Mini App: host, buy, check in, and rent Nimiq Hall.
+  Built for Nimiq Pay so keys stay in Pay and the desk is not split across five
+  apps."
+skool_post_url: https://www.skool.com/miniappscompetition/gatepass-event-ticketing-mini-app-for-nimiq-pay
+social_post_url: https://x.com/ChrisGold__/status/2101022395637100996?s=20
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: AshThunder
+submitted_at: 2026-09-18T19:22:55.934Z
