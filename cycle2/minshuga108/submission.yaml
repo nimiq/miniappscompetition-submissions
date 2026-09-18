@@ -1,0 +1,57 @@
+app_name: Chit
+category: Productivity
+tagline: Paste the deal you already agreed. Both sign it. The payment carries the proof.
+description: Turn any agreement from Discord, WhatsApp, or DMs into a signed,
+  on-chain receipt in one second using Nimiq Pay. No accounts, no fees, and no
+  middleman holding your funds—just direct wallet-to-wallet payments with
+  permanent proof anyone can verify.
+pricing: Free
+repo_url: https://github.com/minshuga108/chit
+demo_url: https://chit-ecru.vercel.app
+video_url: https://youtu.be/9DUBPD1TRTA
+contact_email: neon10816@gmail.com
+team_name: Neon
+team_members:
+  - Neon, Prateek
+x_account: neon_isme
+builder_story: "Every freelance platform's worst reviews are the same complaint
+  in different words: locked\r
+
+  out of an account holding money you earned, a 20% cut, a two-week wait to
+  withdraw, support\r
+
+  that never answers. None of that is a policy problem — it's what happens when
+  a platform\r
+
+  holds your money and your identity at the same time. chit doesn't hold either.
+  There's no\r
+
+  account to be locked out of and no balance to freeze, so the failure modes the
+  whole industry\r
+
+  apologizes for don't exist here to apologize for. What's left is the smallest
+  possible\r
+
+  object: one line of text, signed by both sides, paid in NIM the moment it's
+  signed. Building\r
+
+  it against Nimiq Pay specifically meant the \"instant, feeless, works for an
+  empty wallet\"\r
+
+  claim had to be literally true before it could be a selling point — a $3 tip
+  and a $200\r
+
+  invoice go through the exact same five taps."
+skool_post_url: https://www.skool.com/miniappscompetition/introducing-chit-a-simple-digital-receipt-for-online-work?p=bbb1bd09
+social_post_url: https://x.com/neon_isme/status/2100934704610603029
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: minshuga108
+submitted_at: 2026-09-18T13:10:08.944Z
