@@ -1,0 +1,26 @@
+app_name: ParFolio Mini
+category: Health & fitness
+tagline: Play the round. Sign the result. Own your golf record.
+description: "ParFolio Mini lets golfers play GPS-ready courses, score hole by hole, and sign completed rounds with a Nimiq wallet, creating a shareable wallet-signed golf record."
+pricing: Free
+repo_url: https://github.com/ricbkewl/parfolio-mini
+demo_url: https://ricbkewl.github.io/parfolio-mini/
+video_url: https://x.com/rickbk199376/status/2100491280514207821
+contact_email: ricbkewl@gmail.com
+team_name: null
+team_members: null
+x_account: rickbk199376
+builder_story: "ParFolio Mini started with a simple idea: a golf score should be more than a number stored in an app. Golfers already use GPS, digital scorecards and round histories, while Nimiq makes it possible for a player to cryptographically sign the result with a wallet they control. ParFolio Mini brings those pieces together. A golfer can find a GPS-ready course, use the app during play, enter scores hole by hole, complete the round, connect Nimiq Pay and sign the finished result. The signed record preserves the course, date, score and wallet-signing evidence in a format that can be shared. The project was deliberately kept focused: the blockchain interaction supports the golf experience rather than replacing it. Building the competition version also meant adapting a full golf-product concept into a lightweight Mini App, restoring a premium mobile interface, making the wallet flow understandable to a first-time visitor, and ensuring the same production build works reliably on GitHub Pages."
+skool_post_url: null
+social_post_url: https://x.com/rickbk199376/status/2100491280514207821
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: ricbkewl
+submitted_at: 2026-09-18T09:20:00.000Z
