@@ -1,0 +1,34 @@
+app_name: Prometheus
+category: Creator tools
+tagline: Decode. Rebuild. Remix
+description: "Prometheus analyzes videos and deconstructs them and reconstrcuts
+  the creative recipe behind them.\r
+
+  \r
+
+  For creators who want to understand, recreate or remix compelling visual style
+  through Nimiq ecosystem (currently available on testnet for beta)."
+pricing: Freemium
+repo_url: https://github.com/samuelid22/PROMETHEUS.git
+demo_url: https://prometheus-beta-liard.vercel.app/
+video_url: https://x.com/obsidian98_/status/2101097130102239674
+contact_email: idowusamuel344@gmail.com
+team_name: null
+team_members: null
+x_account: obsidian98_
+builder_story: "It all started with me wondering how high detailed and beautiful
+  videos were made and wanting to replicate them.\r
+
+  This tool helps me analyze a whole video scene by scene and the knowledge to
+  replicate them."
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.png
+  - screenshot-3.jpg
+github_login: samuelid22
+submitted_at: 2026-09-18T23:54:14.431Z
