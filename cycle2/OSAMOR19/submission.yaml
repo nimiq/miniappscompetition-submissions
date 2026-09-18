@@ -1,0 +1,67 @@
+app_name: Nimcapsule
+category: Social
+tagline: Lock a moment, Unlock a Gift
+description: NimCapsule is a digital time capsule app built on Nimiq that lets
+  you seal a message, photos, and a letter into a secure vault locked until a
+  future date of your choice. Send it to someone you care about, they can't open
+  it a second before the moment arrives.
+pricing: Free
+repo_url: https://github.com/OSAMOR19/memoryvault.git
+demo_url: https://nimcapsule.xyz
+video_url: https://x.com/NimCapsule/status/2100837660193411555?s=20
+contact_email: isaacchukwuka67@gmail.com
+team_name: ACE TEAM
+team_members:
+  - CYBERZIK
+  - CTHUMBS OLOBA
+  - JAMES
+  - EDWARD
+x_account: https://x.com/NimCapsule
+builder_story: "A voice note recorded months in advance by someone who knew they
+  might not be around. The phone died before it was ever heard. That moment
+  never arrived.\r
+
+  \r
+
+  That stayed with us. And one question wouldn't leave, what if a message could
+  be sealed today and guaranteed to arrive exactly when it should? Not stored in
+  a phone that breaks. Not lost in a folder no one checks. Locked, waiting, and
+  delivered on time.\r
+
+  \r
+
+  We live in an age of instant everything. But the moments that actually hit, a
+  letter written months ago, a photo from a night you almost forgot, a gift that
+  arrives when someone needs it most, those are never instant. We wanted to
+  bring that intention back.\r
+
+  \r
+
+  Then we asked one more question. What if a capsule could carry real value too?
+  A letter from your parents on your 18th birthday is powerful. A crypto gift
+  they locked away years ago alongside it, that's someone investing in your
+  future, literally.\r
+
+  \r
+
+  Nimiq made that possible. Lightweight, seamless, built for human first
+  experiences. No complicated setups. No gas fees. Just seal it and let time do
+  the rest.\r
+
+  \r
+
+  We're not building for likes. We're building for the moments that actually
+  matter."
+skool_post_url: https://www.skool.com/miniappscompetition/update-on-nim-capsule-v2?p=c7b53c7f
+social_post_url: https://x.com/NimCapsule/status/2093000394657931593?s=20
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: OSAMOR19
+submitted_at: 2026-09-18T09:44:18.273Z
