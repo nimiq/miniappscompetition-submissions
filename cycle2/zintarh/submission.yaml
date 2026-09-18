@@ -1,0 +1,60 @@
+app_name: NimPet
+category: Productivity
+tagline: Focus. Earn. Evolve
+description: NimPet turns your deep work into a living companion. Complete focus
+  sessions to hatch your egg, earn XP, and evolve your creature from a baby into
+  an Elder. Integrated seamlessly with Nimiq Pay, you can spend NIM (or USDC on
+  Base) to feed your pet, customize it with cosmetics, or
+pricing: Free
+repo_url: https://github.com/zintarh/NimPet
+demo_url: https://nimpet.vercel.app/
+video_url: https://youtu.be/90Uju8fpYDY
+contact_email: zintarh.jonathan@gmail.com
+team_name: null
+team_members: null
+x_account: zintarh_dev
+builder_story: "I spent years wrestling with focus apps that worked for a week
+  before losing their novelty. The issue was simple: skipping a session carried
+  no real consequence.\r
+
+  \r
+
+  NimPet turns focus into responsibility:\r
+
+  \r
+
+  Evolve Through Deep Work: Complete sessions to hatch your egg and grow your
+  pet from baby to Elder.\r
+
+  \r
+
+  Real Accountability: Abandon your work for too long, and your pet dies.
+  Reviving it requires a tangible cost.\r
+
+  \r
+
+  True Ownership: Your milestones and companion stats are backed on-chain—never
+  lost to device wipes or resets.\r
+
+  \r
+
+  Native Payments: Spend NIM natively through Nimiq Pay with zero checkout
+  friction or extra account setup.\r
+
+  \r
+
+  Stop relying on willpower alone—build a companion that grows only when you
+  do."
+skool_post_url: null
+social_post_url: null
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: zintarh
+submitted_at: 2026-09-18T17:01:49.195Z
