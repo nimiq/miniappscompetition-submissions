@@ -1,0 +1,45 @@
+app_name: Dwellence
+category: Marketplaces
+tagline: Fresh evidence for how a place actually performs.
+description: Dwellence helps renters and buyers commission fresh property
+  connectivity and environmental evidence. It implements Nimiq Pay signatures
+  and direct NIM report purchases; native payments and physical sensors still
+  await verification.
+pricing: Paid
+repo_url: https://github.com/danielAsaboro/dwellence
+demo_url: https://dwellence.usereef.xyz
+video_url: https://vimeo.com/1228186980
+contact_email: asaborodaniel@gmail.com
+team_name: Dwellence
+team_members:
+  - danielAsaboro
+x_account: https://x.com/useLeash
+builder_story: "Dwellence focuses on the gap between a property listing and the
+  everyday conditions someone will live with. The app commissions fresh
+  connectivity and environmental evidence, keeps exact property results private,
+  and coordinates direct NIM payments to contributors. The build emphasizes
+  consent, recoverable errors, signed readings, independent payment
+  verification, and clear limits: wallet signatures establish key control, and
+  reports are informational. The public MIT repository passes 89 controlled
+  tests. Live browser checks and one partial iPhone observation are recorded;
+  physical sensors, completed native payments, and real-user feedback still need
+  verification.\r
+
+  \r
+
+  Team lead: danielAsaboro. GitHub: https://github.com/danielAsaboro\r
+
+  Nimiq payout address: NQ58 6E50 CCX4 JPGE MVE8 GJSH JD79 XQ5D 7K0F"
+skool_post_url: null
+social_post_url: https://x.com/useLeash/status/2101043941479174191
+heard_about: Discovery source not recorded.
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: danielAsaboro
+submitted_at: 2026-09-18T20:38:50.206Z
