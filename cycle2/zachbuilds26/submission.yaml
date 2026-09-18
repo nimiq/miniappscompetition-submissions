@@ -1,0 +1,48 @@
+app_name: Nimglyde
+category: Productivity
+tagline: Ask anything Nimiq - get a verified answer
+description: Nimglyde is an AI that answers any Nimiq question or questions
+  related to the Nimiq ecosystem from verified docs + live chain data, links you
+  straight to the Mini Apps, and shows the live $NIM price
+pricing: Free
+repo_url: https://github.com/zachbuilds26/nimglyde
+demo_url: https://nimglyde.onrender.com
+video_url: https://youtu.be/Yn2BWz6VTdQ
+contact_email: emmaolatunji760@gmail.com
+team_name: null
+team_members: null
+x_account: x.com/0x_zachh
+builder_story: "Hey, im zach\r
+
+  \r
+
+  I love Nimiq and I want more people to actually use it. Most newcomers get
+  lost - they don’t know which of the Mini Apps to start with, they dont know
+  how to simply build on nimiq, some find it hard to go through docs one by one
+  to get answers about what they need to know about nimiq.\r
+
+  \r
+
+  I built Nimglyde for anyone already using Nimiq and anyone curious to start.
+  You connect your wallet and you can ask anything - how to buy NIM, how to send
+  it, nimiq miniapps and how to use them - and it answers from verified docs and
+  live chain data, links you straight to the mini app page, and also you can ask
+  Nimglyde for $NIM price without having to start opening any exchange app.\r
+
+  \r
+
+  It’s a small entrance that makes the whole ecosystem feel approachable. If it
+  helps one more person stay and build on Nimiq, it’s worth it."
+skool_post_url: https://www.skool.com/miniappscompetition/nimglyde-launch?p=431bbeb1
+social_post_url: https://x.com/nimglyde/status/2100624416782614885
+heard_about: X (formerly twitter)
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: zachbuilds26
+submitted_at: 2026-09-17T17:47:53.429Z
