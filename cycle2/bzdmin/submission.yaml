@@ -1,0 +1,66 @@
+app_name: Hunch
+category: Social
+tagline: Can you predict people?
+description: Hunch is a Nimiq Pay Mini App for real human behavioral
+  experiments. Make decisions with real NIM, predict what another person will
+  do, then reveal the outcome and see how your hunch compares with real
+  behavior.
+pricing: Free
+repo_url: https://github.com/bzdmin/hunch
+demo_url: https://hunch-teal.vercel.app/live
+video_url: https://youtu.be/ImAEr4od6XE
+contact_email: bizadmie@gmail.com
+team_name: Bz Builds
+team_members: null
+x_account: bhadmee
+builder_story: "We make predictions about people constantly. Would they share?
+  Would they trust a stranger? Would they reject an offer they think is unfair?
+  Usually, there’s no way to put those hunches to the test.\r
+
+  \r
+
+  I built Hunch to turn that curiosity into a live behavioral experiment. You
+  make a real decision with NIM, lock your prediction about what another person
+  will do, wait for their independent decision, then reveal the outcome and
+  compare your hunch with real behavior and published research.\r
+
+  \r
+
+  I wanted Nimiq Pay to be part of the experiment itself, not just a payment
+  button added at the end. Hunch uses wallet signatures to commit decisions,
+  server-side locking to keep two-player choices blind, and real Nimiq
+  transactions for settlement.\r
+
+  \r
+
+  Hunch currently has three experiments: Split, where you decide how much NIM to
+  keep or pass forward; Trust, where another person decides what comes back; and
+  Ultimatum, where another person decides whether to accept your offer.\r
+
+  \r
+
+  Throughout the build, I focused on making the experience understandable within
+  seconds while keeping the mechanics real. No accounts, no simulated balances,
+  no random outcomes, and no personality scores. Just a simple loop:\r
+
+  \r
+
+  Decide. Predict. Wait. Reveal. Compare.\r
+
+  \r
+
+  The result is Hunch, a small experiment on whether we’re actually as good at
+  reading people as we think we are."
+skool_post_url: https://www.skool.com/miniappscompetition/hunch?p=7ce71b9d
+social_post_url: https://x.com/bhadmee/status/2101083619074670993
+heard_about: Nimiq Community on X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.png
+github_login: bzdmin
+submitted_at: 2026-09-18T23:00:14.118Z
