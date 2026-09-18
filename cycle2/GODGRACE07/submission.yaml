@@ -1,0 +1,36 @@
+app_name: nimrequest
+category: Productivity
+tagline: Ask anyone to pay you back  with proof, in one tap.
+description: "NimRequest lets you request payment from anyone a friend, a
+  client, anyone and get paid back with real proof it happened. Two modes:
+  Simple Debt settles instantly, direct from the payer's own wallet. Held Until
+  Confirmed puts payment in escrow until both sides agree the job's"
+pricing: Free
+repo_url: https://github.com/GODGRACE07/nimrequest
+demo_url: https://nimrequest.vercel.app
+video_url: https://youtu.be/94oYRILlCms
+contact_email: seunoiye@gmail.com
+team_name: null
+team_members: null
+x_account: investormikeo2
+builder_story: "I built NimRequest after noticing something simple but real:
+  bill-splitting apps tell you who owes what, but nobody actually follows
+  through, because asking a friend for money feels awkward — and freelancers
+  face the same problem in reverse, doing work and just hoping they get paid. I
+  wanted something that didn't just log a debt, but structurally solved it:
+  either make the ask effortless, or hold the money until both sides genuinely
+  agree it's earned. Every part of it  the escrow logic, the automatic payout,
+  the proof-of-settlement view  is real and tested on Nimiq's testnet with
+  actual on-chain transactions."
+skool_post_url: null
+social_post_url: https://x.com/investormikeo2/status/2100957248444862520?s=20
+heard_about: x twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: GODGRACE07
+submitted_at: 2026-09-18T20:42:41.819Z
