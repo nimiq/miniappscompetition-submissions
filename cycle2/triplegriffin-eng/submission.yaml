@@ -1,0 +1,34 @@
+app_name: Fire Scene Commander
+category: Games
+tagline: Fire Scene Commander — Command the chaos. Save the scene.
+description: Fire Scene Commander puts you in command of a dynamic emergency
+  scene where every decision matters. Deploy crews, manage resources, battle
+  evolving fire conditions, and bring the incident under control in a deep,
+  realistic firefighting command simulation.
+pricing: Paid
+repo_url: https://firescenecommander.base44.app
+demo_url: https://firescenecommander.base44.app
+video_url: https://youtu.be/UNr02EwW5QU?is=jP3AP8FMcGXNRCh8
+contact_email: Triplegriffin@gmail.com
+team_name: LDH Dynamics
+team_members:
+  - Alexander Griffin
+x_account: null
+builder_story: After years as a firefighter, I wanted to turn my real-world
+  experience and love of incident command into something others could
+  experience. Fire Scene Commander was built to put you in the command
+  seat—where conditions change, resources matter, and every decision can change
+  the outcome.
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: triplegriffin-eng
+submitted_at: 2026-09-18T15:51:13.840Z
