@@ -1,0 +1,29 @@
+app_name: NimDuel
+category: Games
+tagline: Tap. Stake. Win.
+description: NIM Duel is a real-time reaction game where two players stake NIM
+  and the fastest tap wins the pot — settled instantly, wallet to wallet, no
+  escrow, no house. Connect your wallet, set a stake, share the link. Both
+  players tap when they see GO; the loser's wallet automatically pay
+pricing: Paid
+repo_url: https://github.com/Nailer/nim-duel
+demo_url: https://nim-duel.vercel.app
+video_url: https://youtube.com/shorts/HfulPYkb5Z4
+contact_email: ajeemmanuel221@gmail.com
+team_name: null
+team_members: null
+x_account: EmmanuelAje7
+builder_story: A lot of games on Nimiq are very stressful to play and every
+  humans wants ease in games. We built tap, the most interactive game with less
+  activities
+skool_post_url: https://www.skool.com/miniappscompetition/nimduel-most-interactive-game-on-nimiq-with-just-a-tap?p=b7825235
+social_post_url: https://x.com/emmanuelaje7/status/2101092413888667712?s=46
+heard_about: Nimiq community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Nailer
+submitted_at: 2026-09-18T23:59:23.313Z
