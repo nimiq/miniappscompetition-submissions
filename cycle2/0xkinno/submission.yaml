@@ -1,0 +1,49 @@
+app_name: PROVENIM
+category: On-chain services
+tagline: Before a merchant fulfils an order, Provenim proves the NIM payment
+  that is supposed to pay for it.
+description: Provenim verifies NIM payments against real Nimiq Testnet evidence,
+  binding each payment to its intended transaction and producing tamper-evident
+  receipts that anyone can independently verify.
+pricing: Free
+repo_url: https://github.com/0xkinno/provenim
+demo_url: https://provenim.vercel.app
+video_url: https://youtu.be/CwLLKG9MeBs?si=7F9FYxDbp4-uBoS0
+contact_email: ojilerekingsley@gmail.com
+team_name: Team Kinno (Solo Build)
+team_members:
+  - Solo
+x_account: 0xkiddok
+builder_story: "Building Provenim started with a question: what should “paid”
+  actually mean?\r
+
+  \r
+
+  Most payment experiences stop at a wallet callback, a database flag, or a
+  transaction appearing somewhere in account history. For a merchant, however,
+  the real question is much simpler and more consequential: can I safely fulfil
+  this order?\r
+
+  \r
+
+  I built Provenim by starting from Nimiq’s infrastructure rather than from a
+  generic payments UI. The discovery was that payment attribution can span
+  different transaction and account representations, making a naive “I found a
+  payment” check insufficient.\r
+
+  \r
+
+  So Provenim turns payment into a verifiable claim."
+skool_post_url: https://www.skool.com/miniappscompetition/provenim?p=65105c24
+social_post_url: https://x.com/0xkiddok/status/2101056260128772188
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: 0xkinno
+submitted_at: 2026-09-18T21:14:59.894Z
