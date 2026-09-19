@@ -1,0 +1,26 @@
+app_name: D place
+category: Education
+tagline: Teach, learn and earn
+description: D place is a stall for knowledge, paid in NIM. You list a course,
+  guide, or template. A buyer pays the listed NIM from their wallet.
+pricing: Free
+repo_url: https://github.com/KAMEVETRICS/d-place
+demo_url: https://deplace.space
+video_url: https://youtu.be/i2Vj2xQUyd8
+contact_email: kcfreshkl@gmail.com
+team_name: null
+team_members: null
+x_account: mackmv_
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: KAMEVETRICS
+submitted_at: 2026-09-18T23:53:07.741Z
