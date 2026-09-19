@@ -1,0 +1,49 @@
+app_name: NIMIQ.kids
+category: Productivity
+tagline: Your house, running its own mini economy
+description: Parents price the jobs, kids do them, one approval sends real NIM
+  to an account the kid owns. The kid spends it back on screen time and treats,
+  so the family's money stays in the family. Five languages. Use any URL or try
+  it in the Nimiq Pay app today!
+pricing: Free
+repo_url: https://github.com/Andjroo111/nimiq-kids
+demo_url: https://nimiq.kids/
+video_url: https://youtu.be/Aobwj-1cBdk
+contact_email: andjroo111@gmail.com
+team_name: null
+team_members: null
+x_account: andjroo111
+builder_story: "I built this for my own house. I have small kids, and I want
+  them to earn their own screen time and manage it. So I built my house its own
+  mini economy.\r
+
+  \r
+
+  The reason was consistency. Chores got done some days and not others. This
+  gets us working together toward a common goal: they do the jobs, they get
+  rewarded, they get what they want, and the money circles back to the family. A
+  circular economy.\r
+
+  \r
+
+  Jobs pay every day. Goals are separate: we set one together, it becomes a path
+  of steps, and the prize waits at the top. It stops being a chore and starts
+  being a game.\r
+
+  \r
+
+  Tested all month on two tablets with my own kids. Five languages. Use any URL
+  or try it in the Nimiq Pay app today."
+skool_post_url: https://www.skool.com/miniappscompetition/nimiqkids-your-house-running-its-own-mini-economy
+social_post_url: https://x.com/andjroo111/status/2101096046390861912?s=46
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Andjroo111
+submitted_at: 2026-09-18T23:52:33.789Z
