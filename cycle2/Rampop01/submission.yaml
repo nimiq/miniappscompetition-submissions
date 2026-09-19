@@ -1,0 +1,85 @@
+app_name: Rosco
+category: Social
+tagline: Save together, Grow together
+description: "Rosco is a digital savings circle that helps build financial
+  discipline and access interest-free cash when they need it.\r
+
+  A group pools a set amount of money each week or month, takes turns collecting
+  the full payout, and can also lock away personal savings toward private goals"
+pricing: Free
+repo_url: https://github.com/Rampop01/Rosco
+demo_url: https://rosco-frontend.vercel.app/
+video_url: https://x.com/OmowumiRahmat/status/2101024875640946770
+contact_email: popoolarahmat96@gmail.com
+team_name: Team Rosco
+team_members:
+  - Iyanuoluwa Adewale
+x_account: omowumiRahmat
+builder_story: "Inspiration & Problem\r
+
+  Over 1 billion people worldwide rely on informal community rotating savings
+  groups—known culturally as ROSCAs, Esusu (West Africa), Kolo (Nigeria), Tandas
+  (Latin America), Chit Funds (India), Hui (East Asia), and Pardna (Caribbean).
+  Together, they circulate over $500 Billion annually based entirely on trust.\r
+
+  \r
+
+  However, traditional informal circles suffer from fatal flaws:\r
+
+  \r
+
+  Default & Counterparty Risk: Members who take an early payout round can
+  disappear or default on future payments.\r
+
+  Manual Administration & Fraud: Organizers must physically collect, count,
+  track, and disburse cash, exposing groups to theft and human error.\r
+
+  Unfair Payout Scheduling: Turn order is often rigged or contested, creating
+  conflict within communities.\r
+
+  Predatory Banking Alternative: Commercial banks charge steep account
+  maintenance fees, enforce rigid credit checks, and provide negligible
+  interest.\r
+
+  The Solution: Rosco\r
+
+  Rosco re-engineers traditional community savings into a transparent,
+  decentralized, non-custodial Web3 application powered by the Nimiq
+  blockchain.\r
+
+  \r
+
+  0% Platform Fees: 100% of the pooled funds go directly to the rotating winner
+  or saver.\r
+
+  Instant, Micro-Fee Settlements: Powered by Nimiq's instant proof-of-stake
+  Albatross consensus.\r
+
+  Native 1-Tap Nimiq Pay: Seamless mobile checkout without exporting seed words
+  or dealing with complex gas fees.\r
+
+  Smart Vault Discipline: Enforced lock timers, scheduled deposits, and
+  automatic on-chain payouts.\r
+
+  \r
+
+  Key Features\r
+
+  1. Rotating Savings Circles (ROSCAs / Kolo)\r
+
+  2. Personal Target Savings Vaults (Discipline & Solo Savings)\r
+
+  3. In-App Real-Time Notification Center"
+skool_post_url: null
+social_post_url: https://x.com/OmowumiRahmat/status/2101024875640946770
+heard_about: I heard about it on X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Rampop01
+submitted_at: 2026-09-18T22:57:18.951Z
