@@ -1,0 +1,45 @@
+app_name: NimCare
+category: Social
+tagline: Send a moment, not just money.
+description: NimCare lets you send digital surprises photos, playlists,
+  movie-night moments alongside NIM gifts to someone you care about. Each
+  CareDrop becomes part of a private shared Loop between you.
+pricing: Free
+repo_url: https://github.com/Benita2001/NimCare
+demo_url: https://nimcare-app.vercel.app/
+video_url: https://youtu.be/GR5fsD2Co-Q?si=sLL4w5Svs6A08fD6
+contact_email: 0xbeni123@gmail.com
+team_name: Benita
+team_members: null
+x_account: 0x_beni_
+builder_story: "I built NimCare around a simple idea sending someone money can
+  be useful but it rarely feels personal.\r
+
+  \r
+
+  I wanted to make digital payments feel more like a real gesture between
+  people, so NimCare turns NIM into a CareDrop a private surprise that can
+  include a photo, playlist, movie-night moment, a note and a small NIM gift.\r
+
+  \r
+
+  The goal was to remove the usual “crypto transaction” feeling and make the
+  experience feel human first. Instead of just seeing that someone sent you
+  funds you open a moment they created for you.\r
+
+  \r
+
+  NimCare is built around that emotional layer send something meaningful, let
+  the recipient respond and gradually build a shared Loop of moments between two
+  wallets."
+skool_post_url: https://www.skool.com/miniappscompetition/i-built-nimcare-for-nimiq-mini-apps-competition?p=1c494c1c
+social_post_url: https://x.com/0x_beni_/status/2101091046381801901?s=20
+heard_about: Twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: Benita2001
+submitted_at: 2026-09-18T23:41:35.240Z
