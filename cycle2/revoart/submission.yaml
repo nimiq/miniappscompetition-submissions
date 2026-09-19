@@ -1,0 +1,49 @@
+app_name: parkpilot
+category: Marketplaces
+tagline: Find parking. Host Parking. Pay in NIM.
+description: ParkPilot is a peer-to-peer parking marketplace inside Nimiq Pay.
+  Drivers find and book nearby driveways and parking spaces and pay in NIM
+  straight from their wallet — no cards, no accounts. Hosts list their own space
+  and are paid automatically, keeping 90% of every booking.
+pricing: Free
+repo_url: https://github.com/revoart/parkpilot-nimiq-pay
+demo_url: https://parkpilot-khaki.vercel.app
+video_url: https://youtu.be/3F5-erzL6Kw
+contact_email: demmypayne22@gmail.com
+team_name: parkpilot team
+team_members:
+  - abdulafeez arogundade
+  - Hellen Dolapo
+x_account: null
+builder_story: "Parking is a solved problem in theory and a miserable one in
+  practice. You circle a block, you find nothing, you pay a machine that eats
+  your card, and the space you eventually take belongs to someone who'd happily
+  rent it to you.\r
+
+  \r
+
+  ParkPilot closes that loop. It runs inside Nimiq Pay, so there is no signup,
+  no card, and no custodian — a driver pays a host directly from their own
+  wallet, in NIM, in one approval. Hosts list a driveway in minutes and get paid
+  automatically.\r
+
+  \r
+
+  Building it meant solving a real one: proving a wallet is yours without a
+  signature scheme. Nimiq Pay's sign() returns a signature that neither Nimiq's
+  own verifier nor standard Ed25519 can validate, so we authenticate with a 1
+  Luna transfer instead — the sender of a transaction is on-chain proof of
+  ownership, and nobody can forge it."
+skool_post_url: https://www.skool.com/miniappscompetition/parkpilot-find-parking-pay-with-usdt-no-meter-no-card-no-account?p=88bd63b8
+social_post_url: https://www.facebook.com/share/p/193WVwJck3/?mibextid=wwXIfr
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: revoart
+submitted_at: 2026-09-17T19:30:21.700Z
