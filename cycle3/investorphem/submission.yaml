@@ -1,0 +1,57 @@
+app_name: AbaPay
+category: Pay
+tagline: Pay everyday bills with NIM
+description: AbaPay lets users pay for airtime, data, electricity, cable TV,
+  education bills, and local bank transfers directly with NIM inside Nimiq Pay.
+  It’s built for Nimiq users who want to spend their NIM on real-world everyday
+  needs without leaving the app.
+pricing: Paid
+repo_url: https://github.com/investorphem/AbaPay
+demo_url: https://nim.abapays.com
+video_url: https://www.loom.com/share/e6f3afa3fdb8496d858cde1c9d4df297
+contact_email: hello@abapays.com
+team_name: AbaPay
+team_members: null
+x_account: investorphem
+builder_story: "AbaPay turns NIM into real-world utility inside Nimiq Pay.\r
+
+  \r
+
+  Most people hold NIM but still struggle to spend it on everyday needs. AbaPay
+  solves that by letting users pay for airtime, mobile data, electricity, cable
+  TV, education PINs, and local bank transfers directly with NIM — all from a
+  Mini App that runs inside Nimiq Pay.\r
+
+  \r
+
+  We built this after months of shipping real bill-payment infrastructure on
+  Celo, where AbaPay has processed thousands of live utility payments and
+  received recognition including a Prezenti Frontier grant and first place at
+  the Celo Agents at Work hackathon. That work proved people want crypto they
+  can actually use for real life, not just trade.\r
+
+  On Nimiq Pay, the experience is simple and non-custodial. Users connect their
+  wallet through the Mini App SDK, see a live NIM quote based on market rates,
+  confirm the payment, and the bill is delivered. No seed phrases are entered
+  into the app, and no funds are held by AbaPay.\r
+
+  \r
+
+  AbaPay is for anyone in the Nimiq community who wants their NIM to pay for
+  something useful today — topping up a phone, keeping the lights on, or sending
+  money to a local bank account — without leaving Nimiq Pay.\r
+
+  By bringing proven real-world payment rails into the Nimiq ecosystem, we give
+  NIM holders a practical reason to use and hold the token. This is utility that
+  works on the first try."
+skool_post_url: https://www.skool.com/miniappscompetition/abapay-is-now-live-on-nimiq-pay?p=05d6da04
+social_post_url: https://x.com/abapays/status/2094503000857248137
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: investorphem
+submitted_at: 2026-10-25T21:42:56.612Z
