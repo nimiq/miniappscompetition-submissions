@@ -1,0 +1,45 @@
+app_name: PhoenixWire
+category: Pay
+tagline: Email connects people. Wire aims to connect their payments.
+description: PhoenixWire lets you send NIM, USDC and USDT by email as payment
+  cards protected by an email verification code, so only the intended recipient
+  can claim them. Built for everyday users, it supports sending and receiving
+  NIM directly through Nimiq Pay or Nimiq Wallet.
+pricing: Free
+repo_url: https://github.com/xcoder2088/PhoenixWire
+demo_url: https://wire.phoenixmail.ca/
+video_url: https://youtu.be/xtovIPGg1Zk
+contact_email: Xcoder@outlook.fr
+team_name: null
+team_members: null
+x_account: null
+builder_story: "PhoenixWire grew out of PhoenixMail, my email client. After
+  integrating Nimiq Cashlinks into emails, I wondered: what if a payment link
+  could be protected so that forwarding it wasn’t enough to claim the money?\r
+
+  \r
+
+  That question became PhoenixWire: payment cards for NIM, USDC and USDT,
+  protected by a verification code sent to the recipient’s email. It also
+  supports sending and receiving NIM directly through Nimiq Pay or Nimiq
+  Wallet.\r
+
+  \r
+
+  My goal is to make crypto easier to discover and use, especially for people
+  who have never tried it. Sending someone their first NIM should feel as
+  familiar as sending them an email. What started as a small feature became a
+  project of its own—and perhaps a slightly crazy idea worth pursuing!"
+skool_post_url: https://www.skool.com/miniappscompetition/phoenixwire-send-a-payment-like-you-send-a-message?p=28eaa785
+social_post_url: https://x.com/brad04668932/status/2114093415705059539?s=20
+heard_about: Nimiq community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: xcoder2088
+submitted_at: 2026-10-24T20:36:58.622Z
