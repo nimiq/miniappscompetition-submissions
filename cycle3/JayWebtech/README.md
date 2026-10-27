@@ -21,8 +21,8 @@
 | Link | URL |
 | --- | --- |
 | Repo | [https://github.com/JayWebtech/khalkospay](<https://github.com/JayWebtech/khalkospay>) |
-| Demo | [https://nimpay.app/miniapps/open/khalkospay.vercel.app](<https://nimpay.app/miniapps/open/khalkospay.vercel.app>) |
-| Video | [https://youtu.be/drIGN7ajz_8](<https://youtu.be/drIGN7ajz_8>) |
+| Demo | [https://khalkospay.vercel.app](<https://khalkospay.vercel.app>) |
+| Video | [https://vimeo.com/1239853705](<https://vimeo.com/1239853705>) |
 | Skool post | [https://www.skool.com/miniappscompetition/introducing-khalkospay-buy-and-cash-out-nim-to-your-local-bank?p=9c601a54](<https://www.skool.com/miniappscompetition/introducing-khalkospay-buy-and-cash-out-nim-to-your-local-bank?p=9c601a54>) |
 | Social post | [https://x.com/jaykosai/status/2111912313229853178](<https://x.com/jaykosai/status/2111912313229853178>) |
 
