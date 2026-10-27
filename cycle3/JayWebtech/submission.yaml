@@ -1,0 +1,49 @@
+app_name: KhalkosPay
+category: On/Off-Ramp
+tagline: NIM for everyday life, from shop counter to bank account.
+description: KhalkosPay turns NIM into everyday money. You can cash out to any
+  bank account in seconds, by tapping or just by talking to our AI voice
+  assistant. You can also buy NIM in local currency, pay at shops by scanning a
+  QR code, and send NIM as gift cards.
+pricing: Free
+repo_url: https://github.com/JayWebtech/khalkospay
+demo_url: https://khalkospay.vercel.app
+video_url: https://vimeo.com/1239853705
+contact_email: jethroadamzy@gmail.com
+team_name: null
+team_members: null
+x_account: jaykosai
+builder_story: "If you hold crypto, you know the dance. You find a P2P trader,
+  send first, refresh your bank app forty times, pray, and hope the alert lands
+  before your data does. Holding NIM shouldn’t feel like a trust exercise just
+  to buy jollof.\r
+
+  \r
+
+  So I built KhalkosPay: crypto that behaves like normal money. Tell it how much
+  (out loud, if you like), approve once, and money lands in your bank. You can
+  easily buy NIM tokens using your credit card\r
+
+  \r
+
+  And because money is for living, I added a pet that guilt-trips you into
+  eating vegetables.\r
+
+  \r
+
+  The name? Khalkos is Greek for copper, one of the first metals people ever
+  used as money. KhalkosPay is that idea for the NIM era: honest money that
+  moves when you say so."
+skool_post_url: https://www.skool.com/miniappscompetition/introducing-khalkospay-buy-and-cash-out-nim-to-your-local-bank?p=9c601a54
+social_post_url: https://x.com/jaykosai/status/2111912313229853178
+heard_about: Twitter
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: JayWebtech
+submitted_at: 2026-10-24T21:58:06.362Z
