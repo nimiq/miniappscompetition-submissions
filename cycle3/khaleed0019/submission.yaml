@@ -1,0 +1,39 @@
+app_name: Pact.v2
+category: Pay
+tagline: Don't just send money. Send certainty.
+description: PACT helps brands and creators turn work agreements into
+  wallet-signed terms and verifiable payments. Publish campaigns, invite
+  specific contributors, track deliverables, and pay through Nimiq Pay with NIM
+  or supported USDT. PACT connects the work to the payment without hold fund
+pricing: Free
+repo_url: https://github.com/khaleed0019/pact
+demo_url: https://pact-nimiq.vercel.app
+video_url: https://youtu.be/6n78vloDfoM?si=O_9nAEbfZoJIuNHP
+contact_email: adelekekhaleed105@gmail.com
+team_name: null
+team_members: null
+x_account: makeclipbag
+builder_story: "I’m building PACT to make freelance and creator-work agreements
+  clearer and payments easier to verify. PACT connects brands and contributors
+  through clear terms, wallet signatures, work tracking and payment records. For
+  Cycle III, I’m focused on helping brands find the right contributors through
+  public campaigns and private invitations, while making it easier for
+  contributors to understand their terms and track their work from agreement to
+  payment.\r
+
+  \r
+
+  My goal is to make Nimiq Pay more useful for real-world work."
+skool_post_url: https://www.skool.com/miniappscompetition/running-a-campaign-on-pact-with-nim?p=1f0749e4
+social_post_url: https://x.com/makeclipbag/status/2115472122336124960
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.jpg
+github_login: khaleed0019
+submitted_at: 2026-10-28T15:54:38.749Z
