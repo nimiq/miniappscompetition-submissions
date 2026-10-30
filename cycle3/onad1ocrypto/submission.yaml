@@ -1,0 +1,52 @@
+app_name: StakeSafe
+category: Earn
+tagline: Your Nimiq staking, in sight.
+description: Track your Nimiq staking position, explore validators, and review
+  stake, add, switch and staged unstaking actions inside Nimiq Pay. Real mainnet
+  reads, native wallet confirmation, light/dark themes, and no custody of your
+  keys.
+pricing: Free
+repo_url: https://github.com/onad1ocrypto/stakesafe
+demo_url: https://stakesafe-kappa.vercel.app/
+video_url: https://youtube.com/shorts/Iq2gzverQi0?si=igE_gNKtbhh91gAD
+contact_email: weycatur@gmail.com
+team_name: null
+team_members: null
+x_account: onadeonft
+builder_story: "StakeSafe started with a simple problem: it should be easy to
+  understand a Nimiq staking position without confusing the account being
+  monitored with the wallet that signs a transaction.\r
+
+  \r
+
+  The app combines an actual mainnet staking profile, a searchable validator
+  directory, and reviewed native staking actions in Nimiq Pay. It separates
+  active, inactive and retired funds, explains the staged unstaking process, and
+  distinguishes a basic address balance from funds Pay may hold in HTLC
+  contracts.\r
+
+  \r
+
+  I focused on transparent failure states, remembered read-only monitoring,
+  exact transaction amounts, explicit owner checks, and safeguards against
+  repeating a request with an unknown result. Keys stay in Pay; the app's server
+  only forwards a small allowlist of mainnet read requests.\r
+
+  \r
+
+  The interface supports Light, Dark and System themes and mobile navigation.
+  Automated tests cover the main UI and financial request guards with mocked
+  hosts and RPC; they are not a substitute for physical-device verification. The
+  public code is MIT licensed, with dependency attribution."
+skool_post_url: https://www.skool.com/miniappscompetition/stakesafe-staking-in-sight-inside-nimiq-pay?p=febdb6d3
+social_post_url: https://x.com/onadeonft/status/2116263047920828840?a=fWTcFL3Gcv5WP5JRMlk&s=20
+heard_about: x
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: onad1ocrypto
+submitted_at: 2026-10-30T20:20:47.613Z
