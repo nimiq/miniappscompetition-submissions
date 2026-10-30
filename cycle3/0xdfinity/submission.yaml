@@ -1,0 +1,37 @@
+app_name: Nimiqme
+category: Pay
+tagline: Your AI agent that shops anything, anywhere, and pays in NIM
+description: Nimiqme is an AI shopping agent for Nimiq Pay. Tell it what you
+  want in plain language, it compares merchant offers, builds one cart, and you
+  approve a single NIM payment that's verified on mainnet. Built for anyone who
+  wants the internet to shop for them
+pricing: Free
+repo_url: https://github.com/0xdfinity/nimiqme
+demo_url: http://nimiqme.vercel.app
+video_url: https://youtu.be/AwgmhofP25w?si=ZmiQbbT0ENsPsAPM
+contact_email: official.atundess@gmail.com
+team_name: null
+team_members: null
+x_account: 0xDfinity
+builder_story: "I kept abandoning carts because comparing a dozen merchants is
+  exhausting, and crypto checkout made it worse, not better. I wanted the
+  opposite: an agent that does the shopping and only asks you for one thing, one
+  approval. Nimiq Pay's mini app SDK was the first place that flow could
+  actually work end to end, so I built it. Every payment is verified against
+  Nimiq mainnet RPC before the order shows as paid, because a shopping agent has
+  to be honest or it's useless\r
+
+  \r
+
+  Ps: skool isn't available in my region, so I use linkdln instead"
+skool_post_url: https://lnkd.in/p/dJ4Fw8tU
+social_post_url: https://x.com/0xDfinity/status/2116052721971204452?a=i8FcY37F-0m8CLxlZMc&s=19
+heard_about: X
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: 0xdfinity
+submitted_at: 2026-10-30T06:31:58.859Z
