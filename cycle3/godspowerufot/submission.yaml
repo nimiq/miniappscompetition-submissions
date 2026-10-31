@@ -1,0 +1,33 @@
+app_name: Oinkly
+category: Save
+tagline: the piggy bank that pays kids to save.
+description: Oinkly is a piggy bank for kids that runs inside Nimiq Pay, parents
+  create a Piggy (a real Nimiq address) for each child, post quests, and pay
+  rewards in NIM. Kids earn coins, save toward a Dream, collect daily saver
+  points for money they keep, and unlock name tags and badges for
+pricing: Free
+repo_url: https://github.com/0xGp/Oinkly
+demo_url: https://oinkly-rosy.vercel.app
+video_url: https://youtu.be/zWTv-tN46Y4
+contact_email: Ufotgodspower8@gmail.com
+team_name: null
+team_members: null
+x_account: GodspowerUnk
+builder_story: Watching kids get pocket money as cash, it disappears by Friday,
+  parents can’t see where it went, and “saving” stays a grown-up lecture,
+  Parents can  pay quests in real NIM. Kids save toward a Dream, collect saver
+  points for coins they keep, rank up with name tags and badges, and can cash
+  points back into NIM.
+skool_post_url: null
+social_post_url: https://www.linkedin.com/feed/update/urn:li:activity:7522293533119156225/
+heard_about: x
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: godspowerufot
+submitted_at: 2026-10-31T13:52:38.968Z
