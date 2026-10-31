@@ -1,0 +1,58 @@
+app_name: NimCFA
+category: On/Off-Ramp
+tagline: Cash out NIM to MTN MoMo or Orange Money, or top up NIM with mobile
+  money, without leaving Nimiq Pay.
+description: NimCFA turns NIM into FCFA and back through MTN MoMo and Orange
+  Money, right inside Nimiq Pay. It's for people in Cameroon who are paid in NIM
+  and need cash, or who want NIM without a bank. French and English, locked
+  quotes and automatic refunds.
+pricing: Free
+repo_url: https://github.com/mbanyadev/nimcfa
+demo_url: https://mbanyadev.github.io/nimcfa/
+video_url: https://vimeo.com/1241703996
+contact_email: maureenwepngong+mbanya@gmail.com
+team_name: Mbanya Dev
+team_members: null
+x_account: null
+builder_story: "Across Cameroon, money moves through MTN MoMo and Orange Money,
+  not banks. Someone who earns or receives NIM has no simple way to turn it into
+  francs they can spend at the market, and someone with francs has no simple way
+  to get NIM.\r
+
+  \r
+
+  NimCFA puts that swap inside Nimiq Pay. To cash out, you type the FCFA you
+  want and your MoMo or Orange number. The operator is detected from the prefix,
+  and the rate is locked for 10 minutes. One approval in Nimiq Pay sends NIM to
+  escrow with the order memo. The order engine checks the sender, memo, amount
+  and network on-chain, then pays out to mobile money. To top up, you approve a
+  USSD prompt on your phone, and NIM arrives in your Nimiq Pay wallet.\r
+
+  \r
+
+  Nobody should lose money to a failed transfer. If the operator rejects a
+  payout, the NIM goes straight back. A late, short or wrong-wallet deposit is
+  refunded too. An unknown payout result goes to manual review instead of being
+  retried, so nobody is paid twice. Phone numbers are masked, and the app never
+  sees a private key.\r
+
+  \r
+
+  The app uses the Nimiq Pay mini app SDK for accounts, balance and sending with
+  a memo, and follows the host's language (French or English) and network. Today
+  it runs on Nimiq testnet with a mobile money simulator. Next come a Fapshi or
+  CamPay sandbox, testers in Cameroon, USDT cash-out and a network of local
+  agents."
+skool_post_url: null
+social_post_url: null
+heard_about: Nimiq community / miniappscompetition.com
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: mbanyadev
+submitted_at: 2026-10-31T12:31:03.322Z
