@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/subimpact/nimbooks](<https://github.com/subimpact/nimbooks>) |
 | Demo | [https://nimbooks.subimpact.net](<https://nimbooks.subimpact.net>) |
-| Video | [https://www.youtube.com/shorts/HMD5eVVgajQ](<https://www.youtube.com/shorts/HMD5eVVgajQ>) |
+| Video | [https://www.youtube.com/watch?v=JR34Tv98sPA](<https://www.youtube.com/watch?v=JR34Tv98sPA>) |
 | Skool post | [https://www.skool.com/miniappscompetition/nimbooks-is-entering-cycle-3-earn?p=3a7e5dc9](<https://www.skool.com/miniappscompetition/nimbooks-is-entering-cycle-3-earn?p=3a7e5dc9>) |
 | Social post | [https://x.com/subimpact/status/2111836539319947319?s=20](<https://x.com/subimpact/status/2111836539319947319?s=20>) |
 
