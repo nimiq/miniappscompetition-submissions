@@ -28,7 +28,7 @@
 
 ## Description
 
-Nimshop is a gift-card and digital-goods storefront built for Nimiq Pay that uses the blockchain three ways: pay with NIM and earn cashback, stake with our Nimiq Base Staking pool (80M NIM) to boost it by up to +10%, and rate and review every order on-chain. Its gift em
+Nimshop is a gift-card and digital-goods storefront built for Nimiq Pay that uses the blockchain three ways: pay with NIM and earn cashback, stake with our Nimiq Base Staking pool (80M NIM) to boost it by up to +10%, and rate and review every order on-chain.
 
 ## Builder story
 
