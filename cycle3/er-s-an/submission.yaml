@@ -1,0 +1,54 @@
+app_name: TabSplit
+category: Pay
+tagline: Split a restaurant or bar tab; friends settle shares to the host with
+  NIM (Nimiq Pay SDK) or Polygon USDT.
+description: "Create a tab (venue, tip, tax), add people and line items, assign
+  items, host connects wallet, each payer settles remaining balance. Inside
+  Nimiq Pay: real `@nimiq/mini-app-sdk` NIM transfers + `window.ethereum`
+  Polygon USDT ERC-20 transfer."
+pricing: Free
+repo_url: https://github.com/er-s-an/tabsplit
+demo_url: https://tabsplit-psi.vercel.app
+video_url: https://review-clips.vercel.app/v/tabsplit-explainer
+contact_email: 3137612974@qq.com
+team_name: Solo · Caesar (Jiachen Xie) · GitHub er-s-an
+team_members: null
+x_account: null
+builder_story: "License: MIT\r
+
+  Team: Solo · Caesar (Jiachen Xie) · GitHub er-s-an\r
+
+  \r
+
+  One-liner: Split a restaurant or bar tab; friends settle shares to the host
+  with NIM (Nimiq Pay SDK) or Polygon USDT via the injected wallet.\r
+
+  \r
+
+  How it works: Create a tab (venue, tip, tax), add people and line items,
+  assign items, host connects wallet, each payer settles remaining balance.
+  Inside Nimiq Pay: real `@nimiq/mini-app-sdk` NIM transfers + `window.ethereum`
+  Polygon USDT ERC-20 transfer. Outside host: clearly labeled browser demo mode
+  with simulated hashes. No backend, no custody — localStorage + share URL.\r
+
+  \r
+
+  Honesty: Real NIM/USDT only when opened in Nimiq Pay with providers;
+  standalone browser is demo mode.\r
+
+  \r
+
+  Demo: https://tabsplit-psi.vercel.app\r
+
+  Mini App path: https://tabsplit-psi.vercel.app/app"
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: er-s-an
+submitted_at: 2026-11-05T10:35:32.719Z
