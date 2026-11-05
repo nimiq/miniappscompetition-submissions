@@ -1,0 +1,47 @@
+app_name: Ponte
+category: On/Off-Ramp
+tagline: Swap, spend and cash out NIM in Nigeria, Europe and everywhere in between.
+description: "Ponte turns NIM and USDT into real life inside Nimiq Pay: pay
+  Nigerian bills, airtime and data, buy European eSIMs, swap NIM ⇄ USDT with no
+  gas, pay any QR, and cash out to naira or euros through an onchain P2P escrow.
+  For Nigeria, Europe and in between."
+pricing: Free
+repo_url: https://github.com/mrnetwork0001/Ponte
+demo_url: https://tryponte.xyz
+video_url: https://www.youtube.com/watch?v=Y0S3azEGrZU
+contact_email: mrnetwork0001@gmail.com
+team_name: Ponte
+team_members:
+  - MrNetwork
+x_account: tryponte
+builder_story: "I live between Italy and Nigeria. Every month I watch the same
+  thing happen: people hold crypto, but when the electricity token runs out back
+  home, or someone needs airtime, they still have to find a bank, a middleman or
+  a friend with naira. Nimiq Pay made paying with NIM easy, but it couldn't pay
+  a bill, top up a phone or reach a bank account.\r
+
+  \r
+
+  Ponte is the bridge. It shows the meter owner's name before you pay and
+  delivers the electricity token in seconds. It swaps NIM and USDT with no gas,
+  and it lets people cash out to each other through an escrow on Polygon, where
+  a buyer can take just the part they need.\r
+
+  \r
+
+  Every payment is verified onchain. In its first week on mainnet, Ponte handled
+  about 140 real payments, and our quest campaign paid 15 testers 150,000 NIM in
+  under 2 hours."
+skool_post_url: https://www.skool.com/miniappscompetition/ponte-is-live-in-nimiq-pay-swap-cash-out-get-paid-with-a-qr?p=d185952d
+social_post_url: https://x.com/tryPonte/status/2116011721500323879
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: mrnetwork0001
+submitted_at: 2026-11-05T16:57:43.734Z
