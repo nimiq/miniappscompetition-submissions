@@ -1,0 +1,29 @@
+app_name: Bountex
+category: Off-theme
+tagline: Good work pays.
+description: Bountex helps builders and communities turn small tasks into NIM
+  rewards. Workers claim bounties and submit proof; creators review the work and
+  pay directly through Nimiq Pay, with clear progress and on-chain payment
+  verification.
+pricing: Free
+repo_url: https://github.com/greyw0rks/bountex
+demo_url: https://bountex.vercel.app
+video_url: https://youtu.be/HH_CVf1lT7w
+contact_email: el.chapie1@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: greyw0rks
+submitted_at: 2026-11-05T20:11:03.963Z
