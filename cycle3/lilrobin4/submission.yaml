@@ -1,0 +1,60 @@
+app_name: NimTera
+category: Pay
+tagline: A NIM storefront and cashier for PC and mobile, powered by Nimiq Pay.
+description: NimTera is a digital storefront and cashier app that helps shops
+  and cafés manage products, take orders, and accept NIM payments. Currently
+  available on Testnet.
+pricing: Free
+repo_url: https://github.com/lilrobin4/nimtera
+demo_url: https://nimtera.store/
+video_url: https://youtu.be/cyui7cFwUGg?si=QhA6M2dW1XwXEeXW
+contact_email: syifamehrunnisa@gmail.com
+team_name: null
+team_members: null
+x_account: cryptotudemun
+builder_story: "NimTera started with a simple goal: make accepting NIM useful
+  for everyday shops, not just demonstrate a payment button.\r
+
+  \r
+
+  I wanted sellers to manage products, share a storefront, and follow orders
+  through checkout and payment confirmation in one place. Customers should be
+  able to browse and order without creating an account, on either PC or
+  mobile.\r
+
+  \r
+
+  NimTera supports email/password sign-in in a browser and wallet sign-in inside
+  Nimiq Pay. Sellers can explicitly link both methods to the same shop. Payments
+  go directly to the merchant’s wallet—NimTera never holds customer funds.\r
+
+  \r
+
+  One key challenge was matching incoming payments without asking merchants to
+  copy transaction hashes. NimTera adds a clearly displayed unique payment
+  adjustment and checks incoming transactions automatically while the relevant
+  page is open.\r
+
+  \r
+
+  I also focused on everyday usability: product photos, six interface languages,
+  Day/Night themes, optional two-factor authentication, and cashier audio
+  announcements.\r
+
+  \r
+
+  Version 1.0 runs on Nimiq Testnet. The demos show the actual desktop, mobile,
+  and Nimiq Pay flows, including a confirmed Testnet payment. Mainnet support is
+  planned for a future release after further testing and security review."
+skool_post_url: https://www.skool.com/miniappscompetition/nimtera-v10-a-nim-storefront-cashier-for-pc-and-mobile?p=25bf6c69
+social_post_url: https://x.com/cryptotudemun/status/2118760251264750014?a=g4psZr4PLVodsRE2b2k&s=20
+heard_about: x
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: lilrobin4
+submitted_at: 2026-11-06T17:51:49.441Z
