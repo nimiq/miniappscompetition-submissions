@@ -1,0 +1,71 @@
+app_name: Thence
+category: Pay
+tagline: Your NIM can go further.
+description: Thence is a cross-chain payment mini app built for Nimiq Pay. It
+  lets users pay with NIM while recipients receive cryptocurrency on another
+  supported blockchain, without manually swapping or bridging funds. Starting
+  with USDC on Polygon, Thence offers live payment quotes, deliver
+pricing: Free
+repo_url: https://github.com/kaelah971/thence
+demo_url: https://paywiththence.cv/
+video_url: https://youtube.com/shorts/t9NncKoJ98o?is=H9x8U4j6dDHQ3uFN
+contact_email: kaelah679@gmail.com
+team_name: null
+team_members: null
+x_account: _Kaaelaa_ @usethence
+builder_story: "I built Thence because something about crypto payments has
+  always bothered me: why should paying someone become complicated just because
+  we use different blockchains?\r
+
+  \r
+
+  Imagine holding NIM and wanting to pay someone who prefers USDC on Polygon.
+  Suddenly, a simple payment becomes a process involving swaps, bridges,
+  multiple wallets, and different networks.\r
+
+  \r
+
+  I wanted to remove that friction.\r
+
+  \r
+
+  So I built Thence, a cross-chain payment mini app for Nimiq Pay that allows
+  users to pay with NIM while recipients receive supported assets on another
+  blockchain.\r
+
+  \r
+
+  Getting it to work with real funds took several iterations. I had to work
+  through payment confirmation delays, settlement verification, and
+  delivery-state issues.\r
+
+  \r
+
+  But eventually, I completed real NIM-to-USDC payments on mainnet and verified
+  that the funds arrived on Polygon.\r
+
+  \r
+
+  That was the moment Thence went from an idea to something genuinely useful.\r
+
+  \r
+
+  USDC on Polygon is our first live destination, but my bigger vision is to make
+  NIM useful for payments across more blockchain ecosystems.\r
+
+  \r
+
+  Your NIM can go further."
+skool_post_url: https://www.skool.com/miniappscompetition/i-built-a-way-to-pay-beyond-the-nimiq-ecosystem?p=e63fc40a
+social_post_url: https://x.com/usethence/status/2119047521540645196?a=pCIscIsqWYewm0jzVZQ&s=46
+heard_about: On X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: kaelah971
+submitted_at: 2026-11-07T12:49:12.685Z
