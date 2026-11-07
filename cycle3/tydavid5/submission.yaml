@@ -1,0 +1,27 @@
+app_name: Holdfast
+category: Save
+tagline: A savings jar that holds you to your own money rules.
+description: Holdfast is a savings jar with a memory for Nimiq Pay. You set
+  money rules in plain words, and the jar holds you to them, blocking
+  withdrawals that break your rules and keeping a ledger of every attempt.
+pricing: Free
+repo_url: https://github.com/tydavid5/holdfast
+demo_url: https://holdfast-gh8paf5oy-tydavid5.vercel.app/
+video_url: https://youtu.be/YCaV5_QpnA0
+contact_email: 0x5ive@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: tydavid5
+submitted_at: 2026-11-07T15:29:26.832Z
