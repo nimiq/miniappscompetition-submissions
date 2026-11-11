@@ -1,0 +1,26 @@
+app_name: NimClaim
+category: Pay
+tagline: Signed claims. Verified NIM rewards.
+description: Manage NIM contributor rewards with wallet-signed claims, organiser
+  approvals and on-chain payment verification. Send rewards through Nimiq Pay
+  without giving up custody of your funds.
+pricing: Free
+repo_url: https://github.com/Alike001/nimclaim
+demo_url: https://nimclaim-mainnet-smv5.onrender.com/
+video_url: https://youtu.be/NF4i5qoZNiU
+contact_email: hammedoye10@gmail.com
+team_name: null
+team_members: null
+x_account: IamAlikeX
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+github_login: Alike001
+submitted_at: 2026-11-11T23:48:40.846Z
