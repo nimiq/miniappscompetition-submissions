@@ -1,0 +1,33 @@
+app_name: Stacks
+category: Save
+tagline: "Onchain savings circles: save and get interest free loans with people
+  you trust"
+description: Do we really need banks and interest to fund ourselves? A savings
+  circle is a group of people who each put in money regularly (no fees, no
+  interest) and one person gets the whole pot each time, taking turns until
+  everyone gets their big payout.
+pricing: Free
+repo_url: https://github.com/BreadchainCoop/app-stacks
+demo_url: https://development.stacks.bread.coop/
+video_url: https://youtu.be/Eru04GEBU8Q
+contact_email: mettodo@protonmail.com
+team_name: Bread Cooperative
+team_members:
+  - Blessing
+x_account: https://x.com/breadcoop
+builder_story: Our mission at Bread Coop is to build tools that empower working
+  people. Bringing onchain a centuries old solidarity practice that workers all
+  over the world use is a no-brainer
+skool_post_url: https://www.skool.com/miniappscompetition/stacks-onchainc-savings-circles?p=0dbdb61c
+social_post_url: https://x.com/mettoddo/status/2120620622325961026?a=xuA7DKxusdHkG00Md-o&s=20
+heard_about: TG
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Mettodo
+submitted_at: 2026-11-11T20:54:33.729Z
