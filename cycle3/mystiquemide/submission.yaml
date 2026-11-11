@@ -1,0 +1,35 @@
+app_name: Sevu
+category: Save
+tagline: Savings nobody can touch. Not even us.
+description: Lock USDT until a date you choose, right inside Nimiq Pay. Your
+  money sits in a public contract on Polygon with no owner, no admin and no
+  upgrade path, so nobody can move it early, not even us. On the date it opens
+  and pays only you. Locking is gasless, and if our server ever dis
+pricing: Free
+repo_url: https://github.com/mystiquemide/sevu
+demo_url: https://sevu.midelabs.xyz
+video_url: https://youtu.be/J2G94uL6fbw
+contact_email: mide27145@gmail.com
+team_name: MideLabs
+team_members: null
+x_account: MystiqueMide
+builder_story: Money in a wallet is always one tap from being spent. Savings
+  apps fix that by holding your money for you, so you have to trust them not to
+  freeze it, lose it or move it. I wanted the lock without the trust. Sevu's
+  contract has no owner and no admin functions at all, so the only thing that
+  can open an envelope is its date. Gasless permits made it work for Nimiq Pay
+  users who hold USDT but no POL. The first lock went in on 1 Nov from my phone
+  with zero POL, the contract refused my own early withdrawal, and on 8 Nov it
+  paid the full amount back. Both transactions are on Polygonscan.
+skool_post_url: https://www.skool.com/miniappscompetition/sevu?p=136ff9e2
+social_post_url: https://x.com/MystiqueMide/status/2120558368859271218
+heard_about: Email
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+github_login: mystiquemide
+submitted_at: 2026-11-11T17:12:30.583Z
