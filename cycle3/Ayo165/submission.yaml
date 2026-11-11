@@ -1,0 +1,32 @@
+app_name: GAZE
+category: Earn
+tagline: Save smart. Trade with Limits.
+description: "GAZE is an Arbitrum USDT portfolio manager for Nimiq Pay. Pick
+  your risk: Conservative (Aave V3 lending), Balanced (50% protected reserve),
+  or Aggressive (GMX V2 ETH trading). Smart contracts and wallet signatures
+  enforce all limits. The app currently runs in simulated beta."
+pricing: Free
+repo_url: https://github.com/oadeniran/gaze-pm
+demo_url: https://gaze-pm-d53c5f598d72.herokuapp.com/
+video_url: https://youtu.be/ofwebocxQzc?si=Pk3Lvwjf8yTQbXIW
+contact_email: mostwantd000001@gmail.com
+team_name: CreditGraph
+team_members:
+  - Pawpz
+  - Owo
+  - Falcon
+x_account: null
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/gaze?p=70fc534f
+social_post_url: https://x.com/CreditGraphDev/status/2120635364175908950?a=pinhWlB5BnQ5a2E7Xrc&s=19
+heard_about: Google
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Ayo165
+submitted_at: 2026-11-11T23:06:51.374Z
