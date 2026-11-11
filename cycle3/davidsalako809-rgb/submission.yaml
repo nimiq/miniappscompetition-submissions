@@ -1,0 +1,28 @@
+app_name: stubpay
+category: Pay
+tagline: Sell event tickets in NIM or USDT. Share one link, get paid wallet to
+  wallet, scan guests at the door
+description: Stub let's anyone sell tickets in Nimiq Pay. Hosts create an event
+  and share one link or poster. Guests pay in NIM or USDT straight to the host's
+  wallet, and each ticket is a QR of the payment. At the door, Stub verifies it
+  on-chain and admits the ticket once. No server, no fees!
+pricing: Free
+repo_url: https://github.com/davidsalako809-rgb/Stub
+demo_url: https://stubnimiq.netlify.app
+video_url: https://www.loom.com/share/86b23fa3be524fc59cdd96290ee233bb
+contact_email: davidsalako809@gmail.com
+team_name: null
+team_members: null
+x_account: ToluDavid29
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: null
+icon: icon.jpg
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: davidsalako809-rgb
+submitted_at: 2026-11-11T18:11:18.244Z
