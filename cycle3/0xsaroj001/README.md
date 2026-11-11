@@ -40,8 +40,6 @@ A star rating is easy to leave, but the details that help the next guest take ti
 
 ## Screenshots
 
-![Screenshot 1](screenshot-1.png)
-
 ![Screenshot 2](screenshot-2.png)
 
 ![Screenshot 3](screenshot-3.png)

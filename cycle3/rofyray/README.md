@@ -44,8 +44,6 @@ The technical knot was gas. Nimiq Pay users hold NIM and USDT, not POL, so CediN
 
 ## Screenshots
 
-![Screenshot 1](screenshot-1.jpg)
-
 ![Screenshot 2](screenshot-2.png)
 
 ![Screenshot 3](screenshot-3.png)

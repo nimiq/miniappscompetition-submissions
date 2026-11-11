@@ -97,9 +97,8 @@ skool_post_url: https://www.skool.com/miniappscompetition/meet-dibs-save-nim-for
 social_post_url: https://x.com/calldibs_app/status/2120331986145612079
 heard_about: Word of mouth
 icon: icon.png
-thumbnail: thumbnail.gif
+thumbnail: thumbnail.png
 screenshots:
-  - screenshot-1.png
   - screenshot-2.png
   - screenshot-3.png
   - screenshot-4.png

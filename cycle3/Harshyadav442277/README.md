@@ -42,8 +42,6 @@ Picture a member whose sewing machine breaks. Her group can lend her money for t
 
 ## Screenshots
 
-![Screenshot 1](screenshot-1.png)
-
 ![Screenshot 2](screenshot-2.png)
 
 ![Screenshot 3](screenshot-3.png)

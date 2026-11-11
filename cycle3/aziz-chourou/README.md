@@ -54,11 +54,9 @@ Dibs! It's yours.
 
 ## Thumbnail
 
-![Thumbnail](thumbnail.gif)
+![Thumbnail](thumbnail.png)
 
 ## Screenshots
-
-![Screenshot 1](screenshot-1.png)
 
 ![Screenshot 2](screenshot-2.png)
 

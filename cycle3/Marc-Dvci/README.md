@@ -54,8 +54,6 @@ Team lead: Marc Donovici · https://github.com/Marc-Dvci · Nimiq payout address
 
 ## Screenshots
 
-![Screenshot 1](screenshot-1.png)
-
 ![Screenshot 2](screenshot-2.png)
 
 ![Screenshot 3](screenshot-3.png)
