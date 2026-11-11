@@ -1,0 +1,43 @@
+app_name: Stub
+category: Pay
+tagline: The rent book, on-chain. Every month's rent, with the stub to prove it.
+description: Stub is a Nimiq Pay Mini App that helps landlords create
+  wallet-signed rent requests, track monthly payments and reconcile NIM
+  transactions with individual rental units. Tenants pay directly through Nimiq
+  Pay and keep a printable, verifiable payment record.
+pricing: Free
+repo_url: https://github.com/Faadil1/rentrail
+demo_url: https://rentrail-operations-staging-csejev19s-faadil1s-projects.vercel.app/
+video_url: https://youtu.be/Z1AaQ54essA
+contact_email: boussarifaadil@yahoo.com
+team_name: Stub
+team_members:
+  - Benita Ukachi
+x_account: null
+builder_story: "Stub started with a simple question: why is tracking monthly
+  rent still so complicated for small landlords and tenants?\r
+
+  \r
+
+  We wanted to turn a wallet transfer into a more understandable recurring
+  payment experience. By combining Nimiq Pay, signed rent requests and a
+  traditional paper-inspired rent book, we built Stub to make rent easier to
+  request, track and verify.\r
+
+  \r
+
+  Our goal is to demonstrate how blockchain payments can solve an everyday
+  problem without requiring users to understand the underlying technology."
+skool_post_url: https://www.skool.com/miniappscompetition/introducing-stub-the-rent-book-on-chain?p=c21baba5
+social_post_url: https://x.com/0x_beni_/status/2120605647003595014?a=GbLkfUzHNm1Ee2T_SDg&s=46
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Faadil1
+submitted_at: 2026-11-11T23:27:12.421Z
