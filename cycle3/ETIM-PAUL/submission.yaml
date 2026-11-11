@@ -1,0 +1,60 @@
+app_name: Droplets
+category: Save
+tagline: Every payment leaves a droplet.
+description: Droplets is a savings app for Nimiq Pay. When an app pays you NIM,
+  your chosen share goes straight into savings, staked from your own account,
+  and the rest goes to your wallet. Only you can move your savings.
+pricing: Free
+repo_url: https://github.com/ETIM-PAUL/droplets
+demo_url: https://droplets-app.onrender.com/
+video_url: https://youtu.be/JFgrKskTW-I
+contact_email: etimpaul22@gmail.com
+team_name: Catalyst
+team_members: null
+x_account: catalyst_hub_
+builder_story: "Droplets grew out of Nimiq's Mini Apps Competition (Cycle III),
+  Save track. Nimiq defines Save as \"extend what users can hold\". Most other
+  Save entries only label part of a spendable wallet as savings, or keep the
+  money in a pool the app controls. The goal was a savings app that lasts beyond
+  the competition, with savings the user really owns.\r
+
+  \r
+
+  The problem it solves is that saving is a decision people have to keep making,
+  and it loses to spending. Money in a wallet is easy to spend. Droplets takes
+  the decision out of the moment. When an app pays you NIM, your chosen share
+  goes straight into savings before you can spend it. Apps you pay can add a
+  little on top, and a catch-up button saves part of what you spend elsewhere.\r
+
+  \r
+
+  The savings are NIM staked from your own Nimiq account. Inside Nimiq Pay, that
+  is the only place savings sit apart from spending money without someone else
+  holding them. They earn staking rewards, only you can move them, and Droplets
+  never holds your money.\r
+
+  \r
+
+  Most Mini Apps pay the address Nimiq Pay gives them and never ask for a code.
+  Droplets lets you allow apps by address, so they can save for you without
+  changing how they pay. Goals with dates keep money for a purpose, and breaking
+  one early costs 10% and a 24-hour wait. A weekly draw gives savers a chance at
+  1,000 NIM without putting their savings at risk.\r
+
+  \r
+
+  In one line: Droplets makes saving a side effect of money you were already
+  receiving or spending."
+skool_post_url: https://www.skool.com/miniappscompetition/droplets
+social_post_url: https://x.com/catalyst_hub_/status/2120615171756359766
+heard_about: Nimiq Community
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: ETIM-PAUL
+submitted_at: 2026-11-11T23:39:13.624Z
