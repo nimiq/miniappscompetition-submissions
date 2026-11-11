@@ -1,0 +1,26 @@
+app_name: Veyl
+category: Save
+tagline: Explore and trade US tokenized stocks with USDT on BNB Smart chain.
+description: Veyl lets you explore & trade tokenized stocks on BNB Smart Chain
+  and track your portfolio.
+pricing: Free
+repo_url: https://github.com/zachbuilds26/veyl-io
+demo_url: https://veyl-io.vercel.app
+video_url: https://youtu.be/mXBOMzRZupo?si=YKZQSpnlfgvLai2t
+contact_email: emmaolatunji760@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: https://www.skool.com/miniappscompetition/veyl?p=c776262d
+social_post_url: https://x.com/0x_zachh/status/2120611759686136119?s=46
+heard_about: Twitter (X)
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+github_login: zachbuilds26
+submitted_at: 2026-11-11T20:30:00.212Z
