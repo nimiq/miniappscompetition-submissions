@@ -1,0 +1,40 @@
+app_name: Nimbill
+category: Pay
+tagline: Invoice in your local currency. Get paid globally in crypto.
+description: Nimbill makes invoicing and crypto payments simple for freelancers
+  and small businesses. Create invoices in your local currency and receive
+  payments in NIM or USDT, with on-chain payment verification.
+pricing: Free
+repo_url: https://github.com/Emmanuelmelvin/nimbill
+demo_url: https://nimbill.mblob.me
+video_url: https://vimeo.com/1246025219
+contact_email: chidiemmanuel2005@gmail.com
+team_name: 404 Founders
+team_members:
+  - Ogowole Covenant
+  - Daniel Chidi
+x_account: mercichidi
+builder_story: "As a freelancer, getting paid across borders shouldn't be harder
+  than doing the actual work. Between payment restrictions, currency
+  conversions, and the complexity of international transfers, receiving money
+  can be unnecessarily frustrating.\r
+
+  \r
+
+  We built Nimbill to make that easier. It lets freelancers and small businesses
+  invoice in their local currency and receive payments in NIM or USDT, with
+  on-chain verification. And we're thinking beyond payments: in future updates,
+  you'll be able to stack your earnings and save them directly within Nimbill.
+  The idea is simple: make getting paid globally as seamless as sending an
+  invoice."
+skool_post_url: null
+social_post_url: https://x.com/mercichidi/status/2120411275691733151
+heard_about: Nimiq Community.
+icon: icon.png
+thumbnail: thumbnail.jpg
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+github_login: Emmanuelmelvin
+submitted_at: 2026-11-11T07:01:43.281Z
