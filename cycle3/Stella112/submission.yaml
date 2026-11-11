@@ -1,0 +1,38 @@
+app_name: Kittora
+category: Save
+tagline: save alone, grow together
+description: Kittora brings personal savings and cooperative finance into Nimiq
+  Pay. Create flexible, goal-based and locked savings pockets, or join a group
+  to contribute, request collateral-backed loans, approve lending together and
+  share realized interest at the end of a savings cycle. Smar
+pricing: Free
+repo_url: https://github.com/Stella112/kittora
+demo_url: https://kittora.xyz/
+video_url: https://youtu.be/8-MLt5si7_g?si=IaRsCmyLIEwI7LIY
+contact_email: mebostellamaris@gmail.com
+team_name: null
+team_members: null
+x_account: kittorasave
+builder_story: "Across Nigeria and much of Africa, people save together in esusu
+  and ajo groups: everyone contributes each meeting, members can borrow, and the
+  pot is shared at the end. It works because people trust each other, but the
+  records live in a notebook and the money sits idle in naira that loses value.
+  Kittora puts that circle on-chain inside Nimiq Pay. Savings are in dollars
+  that earn, every contribution, loan and approval is visible to the whole
+  group, loans need guarantors and approvals, and at Share-Out everyone gets
+  their savings plus the group's interest. Members never touch gas: they sign in
+  Nimiq Pay and Kittora pays the fees. NIM holders can keep their NIM staked and
+  back a savings promise with a bond. \"Save alone, grow together.\""
+skool_post_url: https://www.skool.com/miniappscompetition/introducing-kittora-personal-savings-meets-cooperative-finance?p=3dc7fe1d
+social_post_url: https://x.com/kittorasave/status/2119176715834441920
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.jpg
+  - screenshot-2.jpg
+  - screenshot-3.jpg
+  - screenshot-4.jpg
+  - screenshot-5.jpg
+github_login: Stella112
+submitted_at: 2026-11-11T21:33:32.205Z
