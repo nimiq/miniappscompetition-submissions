@@ -1,0 +1,30 @@
+app_name: NimPoint
+category: On/Off-Ramp
+tagline: Every POS stand, a NIM cash point.
+description: NimPoint is a Nimiq Pay Mini App that lets people in Nigeria cash
+  out NIM to any Nigerian bank or fintech wallet, or as cash at a local POS
+  agent, and top up NIM with Naira. Customers pay agents wallet-to-wallet.
+  NimPoint locks the rate, verifies every NIM payment on the Nimiq bl
+pricing: Free
+repo_url: https://github.com/opeblow/NIMPOINT
+demo_url: https://nimpoint.vercel.app
+video_url: https://youtu.be/xasleZF4qhE
+contact_email: olaboyefavour52@gmail.com
+team_name: Pavilion
+team_members:
+  - Opeoluwa Mobolaji
+x_account: olathepavilion
+builder_story: null
+skool_post_url: null
+social_post_url: https://x.com/nimpoint/status/2120636662329802824?s=19
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: Pavilion-devs
+submitted_at: 2026-11-11T22:05:18.598Z
