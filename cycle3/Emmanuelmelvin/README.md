@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/Emmanuelmelvin/nimbill](<https://github.com/Emmanuelmelvin/nimbill>) |
 | Demo | [https://nimbill.mblob.me](<https://nimbill.mblob.me>) |
-| Video | [https://vimeo.com/1245708774](<https://vimeo.com/1245708774>) |
+| Video | [https://vimeo.com/1246025219](<https://vimeo.com/1246025219>) |
 | Skool post | _Not provided — optional_ |
 | Social post | [https://x.com/mercichidi/status/2120411275691733151](<https://x.com/mercichidi/status/2120411275691733151>) |
 
