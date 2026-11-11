@@ -1,0 +1,36 @@
+app_name: Tally
+category: Pay
+tagline: Shared expenses. Actually settled.
+description: Tally keeps one shared tab for groups who split costs. Each person
+  agrees to their own share, and Tally turns what's owed into the fewest NIM
+  payments, marking each one paid only once it's confirmed on the Nimiq network.
+pricing: Free
+repo_url: https://github.com/winsznx/tally
+demo_url: https://tally-neon-chi.vercel.app
+video_url: https://youtu.be/-h1qpekaeXE
+contact_email: xidoncapitals@gmail.com
+team_name: Tally
+team_members: null
+x_account: winsznx
+builder_story: "Tally started in Cycle I as a testnet experiment in automatic
+  settlement, and it didn't win. Testing it with real groups showed the hard
+  part was never the maths. It was trust: did my friend actually pay, and did I
+  really agree to that amount? For Cycle III we rebuilt it around that. Every
+  share needs the debtor's own signed agreement, every payment is approved in
+  Nimiq Pay, and a payment only counts once Tally finds it on mainnet with the
+  right recipient, amount and memo. We switched off the old auto-pay key because
+  Nimiq Pay's co-signed spending account made it the wrong trade-off. The first
+  real payments between two of our wallets confirmed in about a minute."
+skool_post_url: null
+social_post_url: https://x.com/winsznx/status/2120655917318598664?a=Urfx1mdOUtyIXpv_4To&s=20
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: winsznx
+submitted_at: 2026-11-11T23:13:56.821Z
