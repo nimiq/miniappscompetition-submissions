@@ -1,0 +1,43 @@
+app_name: NimiSave
+category: Save
+tagline: Automate disciplined savings toward physical goals with zero gas fees.
+description: Nimisave is a non custodial micro savings app that helps crypto
+  holders and everyday hobbyists build disciplined financial habits.
+pricing: Free
+repo_url: https://github.com/wisdomdivine/nimisave
+demo_url: https://nimisave.pages.dev/
+video_url: https://youtu.be/Ge3PC7dSDBE?si=FqqSj0Tc7Po7TImC
+contact_email: wisdomdivine3d@gmail.com
+team_name: NimiSave
+team_members: null
+x_account: null
+builder_story: "Saving money often feels abstract and disconnected from our
+  daily routines. Many people want to build solid reserves, yet traditional
+  savings products lack emotional resonance and charge high transaction fees
+  that punish frequent small deposits.\r
+
+  \r
+
+  We built Nimisave to transform disciplined saving into an exciting, visual
+  habit. By combining voluntary hobby triggers with Nimiq micro settlements,
+  users can automatically set aside funds whenever their favorite team wins a
+  match or after a weekly hobby session. Each contribution immediately assembles
+  another physical piece of their chosen 3D goal in real time, from modern dream
+  houses to vehicles and travel funds.\r
+
+  Nimiq makes this possible through zero gas fees, instant finality, and non
+  custodial security. Users stay in full control of their keys while
+  experiencing the satisfaction of watching their dreams take shape with every
+  victory."
+skool_post_url: null
+social_post_url: null
+heard_about: Google
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: wisdomdivine
+submitted_at: 2026-11-11T23:01:40.967Z
