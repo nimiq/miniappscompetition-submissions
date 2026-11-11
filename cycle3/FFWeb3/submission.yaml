@@ -1,0 +1,29 @@
+app_name: Tide Pay
+category: Pay
+tagline: Automated crypto yield aggregator built directly into Nimiq Pay
+description: Tide Pay is a non custodial yield aggregator that lets everyday
+  users earn clean returns on their USDT and NIM. It compares lending venues and
+  validator pools in real time, automatically protecting small savers from
+  network fees.
+pricing: Free
+repo_url: https://github.com/FFWeb3/tide-pay
+demo_url: https://tide-pay.pages.dev/
+video_url: https://youtube.com/shorts/0j-IxoO3fyE
+contact_email: founderfotress@gmail.com
+team_name: null
+team_members: null
+x_account: null
+builder_story: null
+skool_post_url: null
+social_post_url: null
+heard_about: X
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: FFWeb3
+submitted_at: 2026-11-11T23:59:41.580Z
