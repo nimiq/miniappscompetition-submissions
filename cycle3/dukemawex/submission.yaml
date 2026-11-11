@@ -1,0 +1,29 @@
+app_name: DuesBook
+category: Pay
+tagline: Group dues in NIM, with a register that keeps itself.
+description: '"DuesBook helps treasurers of estates, alumni sets, cooperatives
+  and clubs collect recurring dues in NIM inside Nimiq Pay. A treasurer creates
+  a group, sets the amount and period, and shares a link. Members open it in
+  Nimiq Pay and pay with one tap. Each payment carries a short o'
+pricing: Free
+repo_url: https://github.com/dukemawex/duesbook
+demo_url: https://duesbook-app.vercel.app/
+video_url: https://youtu.be/_Hd0O0VOVp4?is=np7p2b2q-BPjnemg
+contact_email: starduke001@gmail.com
+team_name: DUKERS
+team_members: null
+x_account: starduke001
+builder_story: null
+skool_post_url: null
+social_post_url: https://x.com/Emmanue07495029/status/2120621238867435787?a=3lBw4ZpArYLhwHrTWRw&s=19
+heard_about: null
+icon: icon.png
+thumbnail: thumbnail.png
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+  - screenshot-3.png
+  - screenshot-4.png
+  - screenshot-5.png
+github_login: dukemawex
+submitted_at: 2026-11-11T20:55:08.935Z
