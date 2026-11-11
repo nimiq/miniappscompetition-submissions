@@ -22,7 +22,7 @@
 | --- | --- |
 | Repo | [https://github.com/Julien59247787/nimiq-app-validatorswipe](<https://github.com/Julien59247787/nimiq-app-validatorswipe>) |
 | Demo | [https://validator-swipe.nimiq-ju.fr](<https://validator-swipe.nimiq-ju.fr>) |
-| Video | [https://youtube.com/shorts/3SuM3vKXSPY](<https://youtube.com/shorts/3SuM3vKXSPY>) |
+| Video | [https://youtube.com/shorts/AySK6sId--8](<https://youtube.com/shorts/AySK6sId--8>) |
 | Skool post | [https://www.skool.com/miniappscompetition/validator-swipe-is-back-for-cycle-iii-swipe-stake-unstake-safely](<https://www.skool.com/miniappscompetition/validator-swipe-is-back-for-cycle-iii-swipe-stake-unstake-safely>) |
 | Social post | [https://x.com/julien59247787/status/2120609992906523026](<https://x.com/julien59247787/status/2120609992906523026>) |
 
