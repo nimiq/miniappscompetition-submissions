@@ -28,11 +28,20 @@
 
 ## Description
 
-Staking, add stake and balances verified on mainnet. Stop earning and withdraw verified end to end on testnet. Open source, MIT.
+Stake NIM, grow a garden of hex plots. Create, add, stop earning and withdraw all verified on mainnet. Read-only Validators view shows fee, reliability and estimated yield. Yield is an estimate, never guaranteed. Open source, MIT.
+
+## Current state (2026-11-11)
+
+- Create stake, add stake, stop earning and withdraw (retire then remove) are all verified on mainnet with real transactions, and on testnet.
+- Stake, then Validators: a read-only list with fee, reliability (Sunny, Cloudy or Stormy, always with a text label), network share and an estimated yearly rate to one decimal. Your validator is tagged. Your stake stays with your current validator.
+- A Refresh button reloads your stake, validator health and the yield estimate.
+- How it works now opens with the intro: "Stake NIM. Grow a garden."
+- Yield figures are estimates, never guaranteed. Watering is just for fun and never changes rewards.
+- Switching validators is not supported yet.
 
 ## Builder story
 
-I'm a final-year pharmacy student and self-taught developer in Nigeria. I built Hexgrove to make staking feel less like a spreadsheet and more like something you tend. I verified the real flows myself: a live 200 NIM stake on mainnet, and the full stop-earning and withdraw cycle on testnet. Mainnet stop earning and withdraw are the one part I haven't been able to run yet, because of the 12 to 24 hour unstake wait, and I say so in the README rather than claim it. Since launch, Vercel Analytics (anonymous, no cookies, no wallet data) shows 9 visitors and 16 page views in the first day, a few of them from my own testing. The app is open source (MIT) and I plan to keep building it.
+I'm a final-year pharmacy student and self-taught developer in Nigeria. I built Hexgrove to make staking feel less like a spreadsheet and more like something you tend. I verified the real flows myself on a phone: create, add, stop earning and withdraw all ran on mainnet, the last on 2026-11-11 after the 12 to 24 hour unstake wait, and the full cycle also ran on testnet. Since launch, Vercel Analytics (anonymous, no cookies, no wallet data) shows 9 visitors and 16 page views in the first day, a few of them from my own testing. The app is open source (MIT) and I plan to keep building it.
 
 ## Thumbnail
 
